@@ -128,6 +128,11 @@ const thebe_selector_output = ".output, .cell_output"
    SCRAPPING PTA
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="scrapping_berita_online.html">
+   SCRAPPING BERITA ONLINE
+  </a>
+ </li>
 </ul>
 
     </div>
@@ -436,49 +441,49 @@ Uninstalling twint-2.1.21:
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/
 Requirement already satisfied: Twint in /usr/local/lib/python3.8/dist-packages (2.1.20)
 Requirement already satisfied: pysocks in /usr/local/lib/python3.8/dist-packages (from Twint) (1.7.1)
-Requirement already satisfied: pandas in /usr/local/lib/python3.8/dist-packages (from Twint) (1.3.5)
-Requirement already satisfied: googletransx in /usr/local/lib/python3.8/dist-packages (from Twint) (2.4.2)
-Requirement already satisfied: cchardet in /usr/local/lib/python3.8/dist-packages (from Twint) (2.1.7)
-Requirement already satisfied: elasticsearch in /usr/local/lib/python3.8/dist-packages (from Twint) (8.6.2)
-Requirement already satisfied: geopy in /usr/local/lib/python3.8/dist-packages (from Twint) (1.17.0)
-Requirement already satisfied: beautifulsoup4 in /usr/local/lib/python3.8/dist-packages (from Twint) (4.6.3)
 Requirement already satisfied: schedule in /usr/local/lib/python3.8/dist-packages (from Twint) (1.1.0)
-Requirement already satisfied: aiohttp in /usr/local/lib/python3.8/dist-packages (from Twint) (3.8.4)
-Requirement already satisfied: fake-useragent in /usr/local/lib/python3.8/dist-packages (from Twint) (1.1.1)
-Requirement already satisfied: aiodns in /usr/local/lib/python3.8/dist-packages (from Twint) (3.0.0)
 Requirement already satisfied: aiohttp-socks in /usr/local/lib/python3.8/dist-packages (from Twint) (0.8.0)
+Requirement already satisfied: beautifulsoup4 in /usr/local/lib/python3.8/dist-packages (from Twint) (4.6.3)
+Requirement already satisfied: pandas in /usr/local/lib/python3.8/dist-packages (from Twint) (1.3.5)
+Requirement already satisfied: elasticsearch in /usr/local/lib/python3.8/dist-packages (from Twint) (8.6.2)
+Requirement already satisfied: fake-useragent in /usr/local/lib/python3.8/dist-packages (from Twint) (1.1.1)
+Requirement already satisfied: geopy in /usr/local/lib/python3.8/dist-packages (from Twint) (1.17.0)
+Requirement already satisfied: cchardet in /usr/local/lib/python3.8/dist-packages (from Twint) (2.1.7)
+Requirement already satisfied: aiodns in /usr/local/lib/python3.8/dist-packages (from Twint) (3.0.0)
+Requirement already satisfied: aiohttp in /usr/local/lib/python3.8/dist-packages (from Twint) (3.8.4)
+Requirement already satisfied: googletransx in /usr/local/lib/python3.8/dist-packages (from Twint) (2.4.2)
 Requirement already satisfied: pycares&gt;=4.0.0 in /usr/local/lib/python3.8/dist-packages (from aiodns-&gt;Twint) (4.3.0)
-Requirement already satisfied: yarl&lt;2.0,&gt;=1.0 in /usr/local/lib/python3.8/dist-packages (from aiohttp-&gt;Twint) (1.8.2)
-Requirement already satisfied: attrs&gt;=17.3.0 in /usr/local/lib/python3.8/dist-packages (from aiohttp-&gt;Twint) (21.4.0)
-Requirement already satisfied: async-timeout&lt;5.0,&gt;=4.0.0a3 in /usr/local/lib/python3.8/dist-packages (from aiohttp-&gt;Twint) (4.0.2)
-Requirement already satisfied: multidict&lt;7.0,&gt;=4.5 in /usr/local/lib/python3.8/dist-packages (from aiohttp-&gt;Twint) (6.0.4)
-Requirement already satisfied: frozenlist&gt;=1.1.1 in /usr/local/lib/python3.8/dist-packages (from aiohttp-&gt;Twint) (1.3.3)
-Requirement already satisfied: aiosignal&gt;=1.1.2 in /usr/local/lib/python3.8/dist-packages (from aiohttp-&gt;Twint) (1.3.1)
 Requirement already satisfied: charset-normalizer&lt;4.0,&gt;=2.0 in /usr/local/lib/python3.8/dist-packages (from aiohttp-&gt;Twint) (3.0.1)
+Requirement already satisfied: yarl&lt;2.0,&gt;=1.0 in /usr/local/lib/python3.8/dist-packages (from aiohttp-&gt;Twint) (1.8.2)
+Requirement already satisfied: aiosignal&gt;=1.1.2 in /usr/local/lib/python3.8/dist-packages (from aiohttp-&gt;Twint) (1.3.1)
+Requirement already satisfied: frozenlist&gt;=1.1.1 in /usr/local/lib/python3.8/dist-packages (from aiohttp-&gt;Twint) (1.3.3)
+Requirement already satisfied: async-timeout&lt;5.0,&gt;=4.0.0a3 in /usr/local/lib/python3.8/dist-packages (from aiohttp-&gt;Twint) (4.0.2)
+Requirement already satisfied: attrs&gt;=17.3.0 in /usr/local/lib/python3.8/dist-packages (from aiohttp-&gt;Twint) (21.4.0)
+Requirement already satisfied: multidict&lt;7.0,&gt;=4.5 in /usr/local/lib/python3.8/dist-packages (from aiohttp-&gt;Twint) (6.0.4)
 Requirement already satisfied: python-socks[asyncio]&lt;3.0.0,&gt;=2.0.0 in /usr/local/lib/python3.8/dist-packages (from aiohttp-socks-&gt;Twint) (2.1.1)
 Requirement already satisfied: elastic-transport&lt;9,&gt;=8 in /usr/local/lib/python3.8/dist-packages (from elasticsearch-&gt;Twint) (8.4.0)
 Requirement already satisfied: importlib-resources&gt;=5.0 in /usr/local/lib/python3.8/dist-packages (from fake-useragent-&gt;Twint) (5.12.0)
-Requirement already satisfied: geographiclib&lt;2,&gt;=1.49 in /usr/local/lib/python3.8/dist-packages (from geopy-&gt;Twint) (1.52)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: geographiclib&lt;2,&gt;=1.49 in /usr/local/lib/python3.8/dist-packages (from geopy-&gt;Twint) (1.52)
 Requirement already satisfied: requests in /usr/local/lib/python3.8/dist-packages (from googletransx-&gt;Twint) (2.25.1)
 Requirement already satisfied: pytz&gt;=2017.3 in /usr/local/lib/python3.8/dist-packages (from pandas-&gt;Twint) (2022.7.1)
-Requirement already satisfied: numpy&gt;=1.17.3 in /usr/local/lib/python3.8/dist-packages (from pandas-&gt;Twint) (1.22.4)
 Requirement already satisfied: python-dateutil&gt;=2.7.3 in /usr/local/lib/python3.8/dist-packages (from pandas-&gt;Twint) (2.8.2)
+Requirement already satisfied: numpy&gt;=1.17.3 in /usr/local/lib/python3.8/dist-packages (from pandas-&gt;Twint) (1.22.4)
 Requirement already satisfied: urllib3&lt;2,&gt;=1.26.2 in /usr/local/lib/python3.8/dist-packages (from elastic-transport&lt;9,&gt;=8-&gt;elasticsearch-&gt;Twint) (1.26.14)
 Requirement already satisfied: certifi in /usr/local/lib/python3.8/dist-packages (from elastic-transport&lt;9,&gt;=8-&gt;elasticsearch-&gt;Twint) (2022.12.7)
 Requirement already satisfied: zipp&gt;=3.1.0 in /usr/local/lib/python3.8/dist-packages (from importlib-resources&gt;=5.0-&gt;fake-useragent-&gt;Twint) (3.14.0)
 Requirement already satisfied: cffi&gt;=1.5.0 in /usr/local/lib/python3.8/dist-packages (from pycares&gt;=4.0.0-&gt;aiodns-&gt;Twint) (1.15.1)
 Requirement already satisfied: six&gt;=1.5 in /usr/local/lib/python3.8/dist-packages (from python-dateutil&gt;=2.7.3-&gt;pandas-&gt;Twint) (1.15.0)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: idna&gt;=2.0 in /usr/local/lib/python3.8/dist-packages (from yarl&lt;2.0,&gt;=1.0-&gt;aiohttp-&gt;Twint) (2.10)
+Requirement already satisfied: idna&gt;=2.0 in /usr/local/lib/python3.8/dist-packages (from yarl&lt;2.0,&gt;=1.0-&gt;aiohttp-&gt;Twint) (2.10)
 Requirement already satisfied: chardet&lt;5,&gt;=3.0.2 in /usr/local/lib/python3.8/dist-packages (from requests-&gt;googletransx-&gt;Twint) (4.0.0)
 Requirement already satisfied: pycparser in /usr/local/lib/python3.8/dist-packages (from cffi&gt;=1.5.0-&gt;pycares&gt;=4.0.0-&gt;aiodns-&gt;Twint) (2.21)
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/
 Collecting twint
-  Cloning https://github.com/twintproject/twint.git (to revision origin/master) to /tmp/pip-install-fb_dr4n5/twint_012cb03aa0a246e5ade0e024eb7d3702
-  Running command git clone --filter=blob:none --quiet https://github.com/twintproject/twint.git /tmp/pip-install-fb_dr4n5/twint_012cb03aa0a246e5ade0e024eb7d3702
+  Cloning https://github.com/twintproject/twint.git (to revision origin/master) to /tmp/pip-install-282fy3_k/twint_fe399f5bceee4afbae3f6b91819b5ee9
+  Running command git clone --filter=blob:none --quiet https://github.com/twintproject/twint.git /tmp/pip-install-282fy3_k/twint_fe399f5bceee4afbae3f6b91819b5ee9
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Yellow">  WARNING: Did not find branch or tag &#39;origin/master&#39;, assuming revision or ref.</span>
@@ -501,37 +506,37 @@ Requirement already satisfied: geopy in /usr/local/lib/python3.8/dist-packages (
 Requirement already satisfied: fake-useragent in /usr/local/lib/python3.8/dist-packages (from twint) (1.1.1)
 Requirement already satisfied: googletransx in /usr/local/lib/python3.8/dist-packages (from twint) (2.4.2)
 Requirement already satisfied: pycares&gt;=4.0.0 in /usr/local/lib/python3.8/dist-packages (from aiodns-&gt;twint) (4.3.0)
-Requirement already satisfied: attrs&gt;=17.3.0 in /usr/local/lib/python3.8/dist-packages (from aiohttp-&gt;twint) (21.4.0)
-Requirement already satisfied: frozenlist&gt;=1.1.1 in /usr/local/lib/python3.8/dist-packages (from aiohttp-&gt;twint) (1.3.3)
-Requirement already satisfied: yarl&lt;2.0,&gt;=1.0 in /usr/local/lib/python3.8/dist-packages (from aiohttp-&gt;twint) (1.8.2)
-Requirement already satisfied: aiosignal&gt;=1.1.2 in /usr/local/lib/python3.8/dist-packages (from aiohttp-&gt;twint) (1.3.1)
-Requirement already satisfied: charset-normalizer&lt;4.0,&gt;=2.0 in /usr/local/lib/python3.8/dist-packages (from aiohttp-&gt;twint) (3.0.1)
-Requirement already satisfied: multidict&lt;7.0,&gt;=4.5 in /usr/local/lib/python3.8/dist-packages (from aiohttp-&gt;twint) (6.0.4)
 Requirement already satisfied: async-timeout&lt;5.0,&gt;=4.0.0a3 in /usr/local/lib/python3.8/dist-packages (from aiohttp-&gt;twint) (4.0.2)
+Requirement already satisfied: yarl&lt;2.0,&gt;=1.0 in /usr/local/lib/python3.8/dist-packages (from aiohttp-&gt;twint) (1.8.2)
+Requirement already satisfied: attrs&gt;=17.3.0 in /usr/local/lib/python3.8/dist-packages (from aiohttp-&gt;twint) (21.4.0)
+Requirement already satisfied: aiosignal&gt;=1.1.2 in /usr/local/lib/python3.8/dist-packages (from aiohttp-&gt;twint) (1.3.1)
+Requirement already satisfied: multidict&lt;7.0,&gt;=4.5 in /usr/local/lib/python3.8/dist-packages (from aiohttp-&gt;twint) (6.0.4)
+Requirement already satisfied: charset-normalizer&lt;4.0,&gt;=2.0 in /usr/local/lib/python3.8/dist-packages (from aiohttp-&gt;twint) (3.0.1)
+Requirement already satisfied: frozenlist&gt;=1.1.1 in /usr/local/lib/python3.8/dist-packages (from aiohttp-&gt;twint) (1.3.3)
 Requirement already satisfied: python-socks[asyncio]&lt;3.0.0,&gt;=2.0.0 in /usr/local/lib/python3.8/dist-packages (from aiohttp_socks-&gt;twint) (2.1.1)
 Requirement already satisfied: elastic-transport&lt;9,&gt;=8 in /usr/local/lib/python3.8/dist-packages (from elasticsearch-&gt;twint) (8.4.0)
 Requirement already satisfied: importlib-resources&gt;=5.0 in /usr/local/lib/python3.8/dist-packages (from fake-useragent-&gt;twint) (5.12.0)
 Requirement already satisfied: geographiclib&lt;2,&gt;=1.49 in /usr/local/lib/python3.8/dist-packages (from geopy-&gt;twint) (1.52)
 Requirement already satisfied: requests in /usr/local/lib/python3.8/dist-packages (from googletransx-&gt;twint) (2.25.1)
 Requirement already satisfied: numpy&gt;=1.17.3 in /usr/local/lib/python3.8/dist-packages (from pandas-&gt;twint) (1.22.4)
-Requirement already satisfied: python-dateutil&gt;=2.7.3 in /usr/local/lib/python3.8/dist-packages (from pandas-&gt;twint) (2.8.2)
 Requirement already satisfied: pytz&gt;=2017.3 in /usr/local/lib/python3.8/dist-packages (from pandas-&gt;twint) (2022.7.1)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: urllib3&lt;2,&gt;=1.26.2 in /usr/local/lib/python3.8/dist-packages (from elastic-transport&lt;9,&gt;=8-&gt;elasticsearch-&gt;twint) (1.26.14)
+Requirement already satisfied: python-dateutil&gt;=2.7.3 in /usr/local/lib/python3.8/dist-packages (from pandas-&gt;twint) (2.8.2)
 Requirement already satisfied: certifi in /usr/local/lib/python3.8/dist-packages (from elastic-transport&lt;9,&gt;=8-&gt;elasticsearch-&gt;twint) (2022.12.7)
+Requirement already satisfied: urllib3&lt;2,&gt;=1.26.2 in /usr/local/lib/python3.8/dist-packages (from elastic-transport&lt;9,&gt;=8-&gt;elasticsearch-&gt;twint) (1.26.14)
 Requirement already satisfied: zipp&gt;=3.1.0 in /usr/local/lib/python3.8/dist-packages (from importlib-resources&gt;=5.0-&gt;fake-useragent-&gt;twint) (3.14.0)
 Requirement already satisfied: cffi&gt;=1.5.0 in /usr/local/lib/python3.8/dist-packages (from pycares&gt;=4.0.0-&gt;aiodns-&gt;twint) (1.15.1)
 Requirement already satisfied: six&gt;=1.5 in /usr/local/lib/python3.8/dist-packages (from python-dateutil&gt;=2.7.3-&gt;pandas-&gt;twint) (1.15.0)
 Requirement already satisfied: idna&gt;=2.0 in /usr/local/lib/python3.8/dist-packages (from yarl&lt;2.0,&gt;=1.0-&gt;aiohttp-&gt;twint) (2.10)
 Requirement already satisfied: chardet&lt;5,&gt;=3.0.2 in /usr/local/lib/python3.8/dist-packages (from requests-&gt;googletransx-&gt;twint) (4.0.0)
 Requirement already satisfied: pycparser in /usr/local/lib/python3.8/dist-packages (from cffi&gt;=1.5.0-&gt;pycares&gt;=4.0.0-&gt;aiodns-&gt;twint) (2.21)
-Building wheels for collected packages: twint
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Building wheels for collected packages: twint
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  Building wheel for twint (setup.py) ... ?25l?25hdone
-  Created wheel for twint: filename=twint-2.1.21-py3-none-any.whl size=38870 sha256=98df9a987c067c8c4759e99f41c468d403d82f3a535beb94bbcb3d91704af114
-  Stored in directory: /tmp/pip-ephem-wheel-cache-0n3fz2rr/wheels/82/67/14/5495652787d3c55288164de4234c0712a1f785a64f61f1ea70
+  Created wheel for twint: filename=twint-2.1.21-py3-none-any.whl size=38870 sha256=d0b747fe9a5972d910e490e7c5406f19a983d10f48d0ff71a9c30a4b9838682d
+  Stored in directory: /tmp/pip-ephem-wheel-cache-1mvp5h7s/wheels/82/67/14/5495652787d3c55288164de4234c0712a1f785a64f61f1ea70
 Successfully built twint
 </pre></div>
 </div>
@@ -564,9 +569,132 @@ Requirement already satisfied: nest_asyncio in /usr/local/lib/python3.8/dist-pac
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1629117798244048896 2023-02-24 13:55:25 +0000 &lt;AhmadKhairyDzak&gt; Sebelumnya Litbang Kompas merilis hasil survei tentang calon presiden (capres) alternatif selain Anies Baswedan, Ganjar Pranowo dan Prabowo Subianto. Gubernur Jawa Barat Ridwan Kamil unggul dominan di survei figur capres alternatif. #BersamaJuara
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1629119751812440065 2023-02-24 14:03:11 +0000 &lt;AhmadKhairyDzak&gt; ‘Kepada pengurus KONI, agar menerapkan filosopi sunda yaitu silih asah, silih asih, silih asuh. Jangan menerapkan sistem bos di KONI tapi pimpinan. Jadi keberadaan KONI ini sebagai pengabdian dan dedikasi untuk organisasi,’ ucap Ridwan Kamil. #BersamaJuara
+1629119749300031488 2023-02-24 14:03:10 +0000 &lt;AhmadKhairyDzak&gt; Pada kesempatan itu, ia (Ridwan Kamil) membuat tag line baru untuk olahrgaa Jabar yaitu “Jabar Hattrick Juara”. #BersamaJuara
+1629119746456326145 2023-02-24 14:03:09 +0000 &lt;AhmadKhairyDzak&gt; ‘Kita dua kali berturut-turut juara umum di era modern. Jadi yang pertama saya berpesan untuk merangkul semua elemen cabang olahraga dan berkolaborasi agar semuanya tercapai. Kemudian visi misi harus sama dengan pemerintah yaitu Jabar Juara,’ kata Ridwan Kamil. #BersamaJuara
+1629119738428395520 2023-02-24 14:03:07 +0000 &lt;AhmadKhairyDzak&gt; Ridwan Kamil mengajak pengurus KONI Jabar menyatukan visi dan misi bersama Pemerintah Provinsi (Pemprov) Jabar, khususnya menghadapi tantangan berat mambawa Jabar “hattrick” pada PON XXI tahun 2024 di Sumut-Aceh. #BersamaJuara
+1629119736654225408 2023-02-24 14:03:07 +0000 &lt;AgilFil&gt; ‘Kepada pengurus KONI, agar menerapkan filosopi sunda yaitu silih asah, silih asih, silih asuh. Jangan menerapkan sistem bos di KONI tapi pimpinan. Jadi keberadaan KONI ini sebagai pengabdian dan dedikasi untuk organisasi,’ ucap Ridwan Kamil. #BersamaJuara
+1629119735467241473 2023-02-24 14:03:07 +0000 &lt;AhmadKhairyDzak&gt; Gubernur Jawa Barat, Ridwan Kamil akhirnya mau menerima audiensi pengurus KONI Jawa Barat periode 2022-2026 pimpinan Dr. H M. Budiana di Ruang Edukasi Masjid Raya Al-Jabbar, Jl. Cimencrang, Gede Bage Kota Bandung, Kamis 23 Februari 2023. #BersamaJuara
+1629119733974069248 2023-02-24 14:03:06 +0000 &lt;AgilFil&gt; Pada kesempatan itu, ia (Ridwan Kamil) membuat tag line baru untuk olahrgaa Jabar yaitu “Jabar Hattrick Juara”. #BersamaJuara
+1629119732040486912 2023-02-24 14:03:06 +0000 &lt;AhmadKhairyDzak&gt; Akhirnya Gubernur (Ridwan Kamil) Mau Ketemu Ketum KONI Jabar #BersamaJuara  https://t.co/lRtfWMP9xH
+1629119730287280128 2023-02-24 14:03:05 +0000 &lt;AgilFil&gt; ‘Kita dua kali berturut-turut juara umum di era modern. Jadi yang pertama saya berpesan untuk merangkul semua elemen cabang olahraga dan berkolaborasi agar semuanya tercapai. Kemudian visi misi harus sama dengan pemerintah yaitu Jabar Juara,’ kata Ridwan Kamil. #BersamaJuara
+1629119724889182208 2023-02-24 14:03:04 +0000 &lt;AgilFil&gt; Ridwan Kamil mengajak pengurus KONI Jabar menyatukan visi dan misi bersama Pemerintah Provinsi (Pemprov) Jabar, khususnya menghadapi tantangan berat mambawa Jabar “hattrick” pada PON XXI tahun 2024 di Sumut-Aceh. #BersamaJuara
+1629119721269510147 2023-02-24 14:03:03 +0000 &lt;AgilFil&gt; Gubernur Jawa Barat, Ridwan Kamil akhirnya mau menerima audiensi pengurus KONI Jawa Barat periode 2022-2026 pimpinan Dr. H M. Budiana di Ruang Edukasi Masjid Raya Al-Jabbar, Jl. Cimencrang, Gede Bage Kota Bandung, Kamis 23 Februari 2023. #BersamaJuara
+1629119717347823618 2023-02-24 14:03:02 +0000 &lt;AgilFil&gt; Akhirnya Gubernur (Ridwan Kamil) Mau Ketemu Ketum KONI Jabar #BersamaJuara  https://t.co/Q624Ry8le5
+1629119489907519488 2023-02-24 14:02:08 +0000 &lt;_amod_&gt; @ridwankamil AFH IYH, MINT?
+1629119437487083520 2023-02-24 14:01:56 +0000 &lt;AhmadKhairyDzak&gt; Gubernur Jawa Barat Ridwan Kamil penataan dan pemeliharaan Kawasan dan Masjid Raya Al Jabbar bertujuan untuk menciptakan kenyamanan beribadah dan menghadirkan pelayanan yang baik menjelang Bulan Suci Ramadhan. #BersamaJuara
+1629119432915296258 2023-02-24 14:01:55 +0000 &lt;AhmadKhairyDzak&gt; Selama 2 Pekan, Kawasan dan Masjid Raya Al Jabbar Ditutup Sementara #BersamaJuara  #RidwanKamil  https://t.co/QkTmjqzBTg
+1629119426036641792 2023-02-24 14:01:53 +0000 &lt;AgilFil&gt; Gubernur Jawa Barat Ridwan Kamil penataan dan pemeliharaan Kawasan dan Masjid Raya Al Jabbar bertujuan untuk menciptakan kenyamanan beribadah dan menghadirkan pelayanan yang baik menjelang Bulan Suci Ramadhan. #BersamaJuara
+1629119420760223744 2023-02-24 14:01:52 +0000 &lt;AgilFil&gt; Selama 2 Pekan, Kawasan dan Masjid Raya Al Jabbar Ditutup Sementara #BersamaJuara  #RidwanKamil  https://t.co/JKPdl0uepO
+1629119300299812864 2023-02-24 14:01:23 +0000 &lt;AhmadKhairyDzak&gt; &quot;Pak Gubernur (Ridwan Kamil) sudah mengamanatkan kepada Kepala BP Cekban dalam waktu dekat berkomunikasi dengan semua kepala daerah untuk membicarakan akselerasi infrastruktur di Cekungan Bandung,&quot; ujar Sumasna. #BersamaJuara
+1629119296269074433 2023-02-24 14:01:22 +0000 &lt;AhmadKhairyDzak&gt; Sumasna mengklaim Ridwan Kamil sudah memberi amanah kepada Kepala BP Cekban untuk berkomunikasi dengan kepala daerah soal pembangunan infrastruktur di sekitaran Cekungan Bandung. #BersamaJuara
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1629119290946523137 2023-02-24 14:01:21 +0000 &lt;AhmadKhairyDzak&gt; Kepala Bappeda Jabar Sumasna, menyebut Ridwan Kamil sudah menetapkan kepala definitif Badan Pengelola Cekungan Bandung, yakni Tatang Rustandar Wiraatmadja, sekitar dua pekan lalu. Sosok ini sudah tak asing dengan masalah tata ruang dan perencanaan perkotaan. #BersamaJuara
+1629119288421535745 2023-02-24 14:01:20 +0000 &lt;AgilFil&gt; &quot;Pak Gubernur (Ridwan Kamil) sudah mengamanatkan kepada Kepala BP Cekban dalam waktu dekat berkomunikasi dengan semua kepala daerah untuk membicarakan akselerasi infrastruktur di Cekungan Bandung,&quot; ujar Sumasna. #BersamaJuara
+1629119285502287872 2023-02-24 14:01:19 +0000 &lt;AhmadKhairyDzak&gt; Menindaklanjuti aspirasi soal masalah kemacetan ini, Gubernur Jawa Barat, Ridwan Kamil, sudah menunjuk Kepala Badan Pengelola Cekungan Bandung (BP Cekban) untuk ikut mengurai masalah ini. #BersamaJuara
+1629119284529213440 2023-02-24 14:01:19 +0000 &lt;AgilFil&gt; Sumasna mengklaim Ridwan Kamil sudah memberi amanah kepada Kepala BP Cekban untuk berkomunikasi dengan kepala daerah soal pembangunan infrastruktur di sekitaran Cekungan Bandung. #BersamaJuara
+1629119279638675457 2023-02-24 14:01:18 +0000 &lt;AhmadKhairyDzak&gt; Sepekan terakhir, kemacetan di sekitaran Bojongsoang menjadi isu yang mengemuka. Bupati Bandung, Dadang Supriatna, berharap pembangunan fly over Bojongsoang bisa segera direncanakan. #BersamaJuara  #RidwanKamil Ridwan Kamil
+1629119278292307970 2023-02-24 14:01:18 +0000 &lt;AgilFil&gt; Kepala Bappeda Jabar Sumasna, menyebut Ridwan Kamil sudah menetapkan kepala definitif Badan Pengelola Cekungan Bandung, yakni Tatang Rustandar Wiraatmadja, sekitar dua pekan lalu. Sosok ini sudah tak asing dengan masalah tata ruang dan perencanaan perkotaan. #BersamaJuara
+1629119275926691840 2023-02-24 14:01:17 +0000 &lt;AhmadKhairyDzak&gt; Gubernur Jawa Barat (Ridwan Kamil) sudah memberi amanat kepada Kepala Badan Pengelola Cekungan Bandung ( BP Cekban), Tatang RW, untuk berkomunikasi dengan kepala daerah di Cekungan Bandung, salah satunya soal isu kemacetan di Bojongsoang. #BersamaJuara
+1629119272273477633 2023-02-24 14:01:16 +0000 &lt;AgilFil&gt; Menindaklanjuti aspirasi soal masalah kemacetan ini, Gubernur Jawa Barat, Ridwan Kamil, sudah menunjuk Kepala Badan Pengelola Cekungan Bandung (BP Cekban) untuk ikut mengurai masalah ini. #BersamaJuara
+1629119267382898689 2023-02-24 14:01:15 +0000 &lt;AhmadKhairyDzak&gt; Mantan Pejabat Pemkab Bandung Ini Ditunjuk jadi Kepala Badan Pengelola Cekungan Bandung, Ini Amanat Kang Emil (Ridwan Kamil) #BersamaJuara  https://t.co/EX3e2Cjpiw
+1629119265411596288 2023-02-24 14:01:15 +0000 &lt;Retatamareta&gt; &quot;Makasih banyak bapak haji Ridwan kamil sudah beli cilung saya... senang Bisa foto dan ngonten bareng bapak... Saya fans berat bapak. Ga nyangkanyangka, emang bapak H Ridwan kamil terbaik dan Merakyat banget, &quot; ungkap penjual cilung. #BersamaJuara
+1629119265231245314 2023-02-24 14:01:15 +0000 &lt;AgilFil&gt; Sepekan terakhir, kemacetan di sekitaran Bojongsoang menjadi isu yang mengemuka. Bupati Bandung, Dadang Supriatna, berharap pembangunan fly over Bojongsoang bisa segera direncanakan. #BersamaJuara  #RidwanKamil Ridwan Kamil
+1629119263087939584 2023-02-24 14:01:14 +0000 &lt;Retatamareta&gt; Selain menghadiri acara peresmian itu, Hasan cilung dan bapak gubernur membuat konten sebagai pembeli dan penjual. Hasan cilung mengutarakan rasa bahagianya saat bertemu bapak gubernur. #BersamaJuara Ridwan Kamil
+1629119260701384704 2023-02-24 14:01:13 +0000 &lt;Retatamareta&gt; Berkat usahanya kini, Hasan cilung di lirik beberapa pejabat negara, mulai dari walikota Tasikmalaya, hingga bapak Gubernur Jawa Barat yakni Ridwan Kamil. Ridwan Kamil mengundang Hasan cilung pada peresmian gedung creative tanggal 21 Februari 2023 kemarin. #BersamaJuara
+1629119259069775874 2023-02-24 14:01:13 +0000 &lt;AgilFil&gt; Gubernur Jawa Barat (Ridwan Kamil) sudah memberi amanat kepada Kepala Badan Pengelola Cekungan Bandung ( BP Cekban), Tatang RW, untuk berkomunikasi dengan kepala daerah di Cekungan Bandung, salah satunya soal isu kemacetan di Bojongsoang. #BersamaJuara
+1629119258486767616 2023-02-24 14:01:13 +0000 &lt;Retatamareta&gt; Kalimat tersebutlah yang menjadi viral dan dijadikan sound video oleh warganet. Selain dengan ciri khas kalimat yang ia lontarkan, ia juga kerap kali berpenampilan ala anak kantoran seprti memakai kemeja bahkan jas saat jualan cilungnya. #BersamaJuara Ridwan Kamil
+1629119255764516865 2023-02-24 14:01:12 +0000 &lt;Retatamareta&gt; Tidak hanya cilung, sekarang juga ada telor gulung, bihun gulunung, dan berbagai macam minuman sachet. Hasan cilung ini terkenal karena punya ciri khas yakni ia selalu melontarkan kalimat pertanyaan: &quot;Mau beli apa teh?&quot;. #BersamaJuara Ridwan Kamil
+1629119253885636611 2023-02-24 14:01:12 +0000 &lt;AgilFil&gt; Mantan Pejabat Pemkab Bandung Ini Ditunjuk jadi Kepala Badan Pengelola Cekungan Bandung, Ini Amanat Kang Emil (Ridwan Kamil) #BersamaJuara  https://t.co/M2wTMS3EHO
+1629119253000626177 2023-02-24 14:01:12 +0000 &lt;Retatamareta&gt; Dahulu pengusaha asal Tasikmalaya ini menggunakan motor yang di modifikasi dengan gerobak dibelakangnya, namu sejak viral ia berhasil membuat toko kecil dan menambah banyak produk jualannya. #BersamaJuara Ridwan Kamil
+1629119250635059202 2023-02-24 14:01:11 +0000 &lt;Retatamareta&gt; Pengusaha muda lewat cilung ini juga sudah menerima endorsement dari akun media sosialnya. Mulai dari pakaian, perawatan rambut, kaca mata, hingga teflon pun ia terima. #BersamaJuara Ridwan Kamil
+1629119248286257152 2023-02-24 14:01:11 +0000 &lt;Retatamareta&gt; Sejauh ini ia tidak hanya berjualan dan bikin konten soal cilung di Tiktok saja, Hasan cilung juga membuat YouTube, Instagram, dan media sosial lainnya. #BersamaJuara Ridwan Kamil
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1629119246042267648 2023-02-24 14:01:10 +0000 &lt;Retatamareta&gt; Hasan cilung ini berjualan offline dan online juga, ia menerima pesanan via WhatsApp lalu nanti pembeli datang sudah jadi tanpa perlu mengantri kembali. #BersamaJuara Ridwan Kamil
+1629119243664105472 2023-02-24 14:01:09 +0000 &lt;Retatamareta&gt; Pengusaha makanan ringan atau jajanan anak-anak ini yakni Aci digulung (cilung) yang bernama Hasan cilung viral di media sosial. #BersamaJuara Ridwan Kamil
+1629119240883273729 2023-02-24 14:01:09 +0000 &lt;Retatamareta&gt; Viral! Ridwan Kamil Jajan di Hasan Cilung, Begini Reaksinya...  https://t.co/pG1GaxJ73C #BersamaJuara
+1629119205500149760 2023-02-24 14:01:00 +0000 &lt;alexanderkuskus&gt; &quot;Makasih banyak bapak haji Ridwan kamil sudah beli cilung saya... senang Bisa foto dan ngonten bareng bapak... Saya fans berat bapak. Ga nyangkanyangka, emang bapak H Ridwan kamil terbaik dan Merakyat banget, &quot; ungkap penjual cilung. #BersamaJuara
+1629119203239432194 2023-02-24 14:01:00 +0000 &lt;alexanderkuskus&gt; Selain menghadiri acara peresmian itu, Hasan cilung dan bapak gubernur membuat konten sebagai pembeli dan penjual. Hasan cilung mengutarakan rasa bahagianya saat bertemu bapak gubernur. #BersamaJuara Ridwan Kamil
+1629119200961908739 2023-02-24 14:00:59 +0000 &lt;alexanderkuskus&gt; Berkat usahanya kini, Hasan cilung di lirik beberapa pejabat negara, mulai dari walikota Tasikmalaya, hingga bapak Gubernur Jawa Barat yakni Ridwan Kamil. Ridwan Kamil mengundang Hasan cilung pada peresmian gedung creative tanggal 21 Februari 2023 kemarin. #BersamaJuara
+1629119198680207361 2023-02-24 14:00:59 +0000 &lt;alexanderkuskus&gt; Kalimat tersebutlah yang menjadi viral dan dijadikan sound video oleh warganet. Selain dengan ciri khas kalimat yang ia lontarkan, ia juga kerap kali berpenampilan ala anak kantoran seprti memakai kemeja bahkan jas saat jualan cilungnya. #BersamaJuara Ridwan Kamil
+1629119196071350274 2023-02-24 14:00:58 +0000 &lt;alexanderkuskus&gt; Tidak hanya cilung, sekarang juga ada telor gulung, bihun gulunung, dan berbagai macam minuman sachet. Hasan cilung ini terkenal karena punya ciri khas yakni ia selalu melontarkan kalimat pertanyaan: &quot;Mau beli apa teh?&quot;. #BersamaJuara Ridwan Kamil
+1629119193722552320 2023-02-24 14:00:58 +0000 &lt;alexanderkuskus&gt; Dahulu pengusaha asal Tasikmalaya ini menggunakan motor yang di modifikasi dengan gerobak dibelakangnya, namu sejak viral ia berhasil membuat toko kecil dan menambah banyak produk jualannya. #BersamaJuara Ridwan Kamil
+1629119191369539584 2023-02-24 14:00:57 +0000 &lt;alexanderkuskus&gt; Pengusaha muda lewat cilung ini juga sudah menerima endorsement dari akun media sosialnya. Mulai dari pakaian, perawatan rambut, kaca mata, hingga teflon pun ia terima. #BersamaJuara Ridwan Kamil
+1629119189008150528 2023-02-24 14:00:56 +0000 &lt;alexanderkuskus&gt; Sejauh ini ia tidak hanya berjualan dan bikin konten soal cilung di Tiktok saja, Hasan cilung juga membuat YouTube, Instagram, dan media sosial lainnya. #BersamaJuara Ridwan Kamil
+1629119186546069505 2023-02-24 14:00:56 +0000 &lt;alexanderkuskus&gt; Hasan cilung ini berjualan offline dan online juga, ia menerima pesanan via WhatsApp lalu nanti pembeli datang sudah jadi tanpa perlu mengantri kembali. #BersamaJuara Ridwan Kamil
+1629119184088240128 2023-02-24 14:00:55 +0000 &lt;alexanderkuskus&gt; Pengusaha makanan ringan atau jajanan anak-anak ini yakni Aci digulung (cilung) yang bernama Hasan cilung viral di media sosial. #BersamaJuara Ridwan Kamil
+1629119181600980995 2023-02-24 14:00:55 +0000 &lt;alexanderkuskus&gt; Viral! Ridwan Kamil Jajan di Hasan Cilung, Begini Reaksinya...  https://t.co/efEROlxKtr #BersamaJuara
+1629119019084308480 2023-02-24 14:00:16 +0000 &lt;adrianaputriii&gt; &quot;Makasih banyak bapak haji Ridwan kamil sudah beli cilung saya... senang Bisa foto dan ngonten bareng bapak... Saya fans berat bapak. Ga nyangkanyangka, emang bapak H Ridwan kamil terbaik dan Merakyat banget, &quot; ungkap penjual cilung. #BersamaJuara
+1629119016861327360 2023-02-24 14:00:15 +0000 &lt;adrianaputriii&gt; Selain menghadiri acara peresmian itu, Hasan cilung dan bapak gubernur membuat konten sebagai pembeli dan penjual. Hasan cilung mengutarakan rasa bahagianya saat bertemu bapak gubernur. #BersamaJuara Ridwan Kamil
+1629119014571237376 2023-02-24 14:00:15 +0000 &lt;adrianaputriii&gt; Berkat usahanya kini, Hasan cilung di lirik beberapa pejabat negara, mulai dari walikota Tasikmalaya, hingga bapak Gubernur Jawa Barat yakni Ridwan Kamil. Ridwan Kamil mengundang Hasan cilung pada peresmian gedung creative tanggal 21 Februari 2023 kemarin. #BersamaJuara
+1629119012285333509 2023-02-24 14:00:14 +0000 &lt;adrianaputriii&gt; Kalimat tersebutlah yang menjadi viral dan dijadikan sound video oleh warganet. Selain dengan ciri khas kalimat yang ia lontarkan, ia juga kerap kali berpenampilan ala anak kantoran seprti memakai kemeja bahkan jas saat jualan cilungnya. #BersamaJuara Ridwan Kamil
+1629119009076703235 2023-02-24 14:00:13 +0000 &lt;adrianaputriii&gt; Tidak hanya cilung, sekarang juga ada telor gulung, bihun gulunung, dan berbagai macam minuman sachet. Hasan cilung ini terkenal karena punya ciri khas yakni ia selalu melontarkan kalimat pertanyaan: &quot;Mau beli apa teh?&quot;. #BersamaJuara Ridwan Kamil
+1629119006358798338 2023-02-24 14:00:13 +0000 &lt;adrianaputriii&gt; Dahulu pengusaha asal Tasikmalaya ini menggunakan motor yang di modifikasi dengan gerobak dibelakangnya, namu sejak viral ia berhasil membuat toko kecil dan menambah banyak produk jualannya. #BersamaJuara Ridwan Kamil
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1629119004089675777 2023-02-24 14:00:12 +0000 &lt;adrianaputriii&gt; Pengusaha muda lewat cilung ini juga sudah menerima endorsement dari akun media sosialnya. Mulai dari pakaian, perawatan rambut, kaca mata, hingga teflon pun ia terima. #BersamaJuara Ridwan Kamil
+1629119001707298818 2023-02-24 14:00:12 +0000 &lt;adrianaputriii&gt; Sejauh ini ia tidak hanya berjualan dan bikin konten soal cilung di Tiktok saja, Hasan cilung juga membuat YouTube, Instagram, dan media sosial lainnya. #BersamaJuara Ridwan Kamil
+1629118999379447813 2023-02-24 14:00:11 +0000 &lt;adrianaputriii&gt; Hasan cilung ini berjualan offline dan online juga, ia menerima pesanan via WhatsApp lalu nanti pembeli datang sudah jadi tanpa perlu mengantri kembali. #BersamaJuara Ridwan Kamil
+1629118996942565377 2023-02-24 14:00:11 +0000 &lt;adrianaputriii&gt; Pengusaha makanan ringan atau jajanan anak-anak ini yakni Aci digulung (cilung) yang bernama Hasan cilung viral di media sosial. #BersamaJuara Ridwan Kamil
+1629118994543443968 2023-02-24 14:00:10 +0000 &lt;adrianaputriii&gt; Viral! Ridwan Kamil Jajan di Hasan Cilung, Begini Reaksinya...  https://t.co/RZYo7NUjTO #BersamaJuara
+1629118940214599681 2023-02-24 13:59:57 +0000 &lt;AbdoerRazakk&gt; Tidak hanya cilung, sekarang juga ada telor gulung, bihun gulunung, dan berbagai macam minuman sachet. Hasan cilung ini terkenal karena punya ciri khas yakni ia selalu melontarkan kalimat pertanyaan: &quot;Mau beli apa teh?&quot;. #BersamaJuara Ridwan Kamil
+1629118883759296512 2023-02-24 13:59:44 +0000 &lt;coden_denco&gt; @ridwankamil Hukum tidak perlu ditambah Hukum kekerasan kan udah ada. Karena hukum di kitab uud 45 banyak.
+1629118883738296320 2023-02-24 13:59:44 +0000 &lt;aderahmafitria1&gt; &quot;Makasih banyak bapak haji Ridwan kamil sudah beli cilung saya... senang Bisa foto dan ngonten bareng bapak... Saya fans berat bapak. Ga nyangkanyangka, emang bapak H Ridwan kamil terbaik dan Merakyat banget, &quot; ungkap penjual cilung. #BersamaJuara
+1629118881418854410 2023-02-24 13:59:43 +0000 &lt;aderahmafitria1&gt; Selain menghadiri acara peresmian itu, Hasan cilung dan bapak gubernur membuat konten sebagai pembeli dan penjual. Hasan cilung mengutarakan rasa bahagianya saat bertemu bapak gubernur. #BersamaJuara Ridwan Kamil
+1629118879497854978 2023-02-24 13:59:43 +0000 &lt;AhmadKhairyDzak&gt; Kini Kang Emil (Ridwan Kamil) makin kompak di Golkar. Hal ini terlihat setelah Kang Emil memposting aktivitas foto shotnya bersama kader baru Golkar, Rian Ernest, 22 Februari 2023. #BersamaJuara
+1629118879061647360 2023-02-24 13:59:42 +0000 &lt;aderahmafitria1&gt; Berkat usahanya kini, Hasan cilung di lirik beberapa pejabat negara, mulai dari walikota Tasikmalaya, hingga bapak Gubernur Jawa Barat yakni Ridwan Kamil. Ridwan Kamil mengundang Hasan cilung pada peresmian gedung creative tanggal 21 Februari 2023 kemarin. #BersamaJuara
+1629118876490551298 2023-02-24 13:59:42 +0000 &lt;aderahmafitria1&gt; Kalimat tersebutlah yang menjadi viral dan dijadikan sound video oleh warganet. Selain dengan ciri khas kalimat yang ia lontarkan, ia juga kerap kali berpenampilan ala anak kantoran seprti memakai kemeja bahkan jas saat jualan cilungnya. #BersamaJuara Ridwan Kamil
+1629118874242400257 2023-02-24 13:59:41 +0000 &lt;aderahmafitria1&gt; Tidak hanya cilung, sekarang juga ada telor gulung, bihun gulunung, dan berbagai macam minuman sachet. Hasan cilung ini terkenal karena punya ciri khas yakni ia selalu melontarkan kalimat pertanyaan: &quot;Mau beli apa teh?&quot;. #BersamaJuara Ridwan Kamil
+1629118871771942913 2023-02-24 13:59:41 +0000 &lt;aderahmafitria1&gt; Dahulu pengusaha asal Tasikmalaya ini menggunakan motor yang di modifikasi dengan gerobak dibelakangnya, namu sejak viral ia berhasil membuat toko kecil dan menambah banyak produk jualannya. #BersamaJuara Ridwan Kamil
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1629118871692247046 2023-02-24 13:59:41 +0000 &lt;Lowergazer&gt; @DaithaOK @arifgilang_ @ridwankamil Nya atuh ngusahakeun Masjid heula saacan transportasi. Eh enya poho masjidna nuju tutup.
+1629118870249426946 2023-02-24 13:59:40 +0000 &lt;AhmadKhairyDzak&gt; Makin kompak nih. Ridwan Kamil dan Rian Ernest foto shoot bareng.  Ridwan Kamil atau akrab disapa dengan nama ‘Kang Emil’ resmi bergabung dengan Parpol Golkar Januari 2023 lalu. #BersamaJuara
+1629118869490253824 2023-02-24 13:59:40 +0000 &lt;aderahmafitria1&gt; Pengusaha muda lewat cilung ini juga sudah menerima endorsement dari akun media sosialnya. Mulai dari pakaian, perawatan rambut, kaca mata, hingga teflon pun ia terima. #BersamaJuara Ridwan Kamil
+1629118867573448704 2023-02-24 13:59:40 +0000 &lt;AhmadKhairyDzak&gt; Makin Kompak di Golkar, Ridwan Kamil dan Ria Ernest Lakuin Ini Bareng-bareng! #BersamaJuara
+1629118867225350144 2023-02-24 13:59:40 +0000 &lt;aderahmafitria1&gt; Sejauh ini ia tidak hanya berjualan dan bikin konten soal cilung di Tiktok saja, Hasan cilung juga membuat YouTube, Instagram, dan media sosial lainnya. #BersamaJuara Ridwan Kamil
+1629118864935239680 2023-02-24 13:59:39 +0000 &lt;aderahmafitria1&gt; Hasan cilung ini berjualan offline dan online juga, ia menerima pesanan via WhatsApp lalu nanti pembeli datang sudah jadi tanpa perlu mengantri kembali. #BersamaJuara Ridwan Kamil
+1629118862074564608 2023-02-24 13:59:38 +0000 &lt;aderahmafitria1&gt; Pengusaha makanan ringan atau jajanan anak-anak ini yakni Aci digulung (cilung) yang bernama Hasan cilung viral di media sosial. #BersamaJuara Ridwan Kamil
+1629118859583307778 2023-02-24 13:59:38 +0000 &lt;aderahmafitria1&gt; Viral! Ridwan Kamil Jajan di Hasan Cilung, Begini Reaksinya...  https://t.co/7URp87zl3v #BersamaJuara
+1629118699742416898 2023-02-24 13:59:00 +0000 &lt;golkarpedia&gt; Dewi Asmara: Sosok Ridwan Kamil Berdampak Positif Untuk Raihan Kursi Legislatif Di Jabar #airlanggahartarto #airlanggapemersatu #airlanggauntukindonesia #partaigolkar #golkarpedia #golkarsolid #AirlanggaPresiden  https://t.co/nFGL008xcz
+1629118633271255042 2023-02-24 13:58:44 +0000 &lt;AhmadKhairyDzak&gt; &quot;Bola ada di tangan petinggi Partai Golkar. Ridwan Kamil akan cukup tahu diri membaca realitas politik yang ada,&quot; lanjutnya. #BersamaJuara
+1629118630637244417 2023-02-24 13:58:43 +0000 &lt;AhmadKhairyDzak&gt; &quot;Hasil survei ini mengirim pesan terang benderang pada Partai Golkar. Ridwan Kamil dengan elektabilitasnya yang cukup tinggi mau diolah seperti apa?&quot; jelas Karim. #BersamaJuara
+1629118625713098752 2023-02-24 13:58:42 +0000 &lt;AhmadKhairyDzak&gt; Meski demikian, keputusan terkait memajukan RK (Ridwan Kamil) atau tidak tetap berada di tangan petinggi partai. #BersamaJuara
+1629118622470926336 2023-02-24 13:58:41 +0000 &lt;AhmadKhairyDzak&gt; Pengamat Politik dari Universitas Pendidikan Indonesia (UPI) Bandung, Prof. Karim Suryadi menilai bahwa hasil survei tersebut seharusnya bisa dijadikan bahan pertimbangan Partai Golkar yang merupakan partai tempat Ridwan Kamil tergabung. #BersamaJuara
+1629118617639079936 2023-02-24 13:58:40 +0000 &lt;AhmadKhairyDzak&gt; Adapun saat ditanya apakah RK (Ridwan Kamil) akan maju sebagai capres. Beliau menyebutkan nama Airlangga Hartarto, Ketua Umum Partai Golkar. &quot;Kan saya Golkar, kan Pak Airlangga,&quot; lanjutnya. #BersamaJuara
+1629118616305127425 2023-02-24 13:58:40 +0000 &lt;AgilFil&gt; &quot;Bola ada di tangan petinggi Partai Golkar. Ridwan Kamil akan cukup tahu diri membaca realitas politik yang ada,&quot; lanjutnya. #BersamaJuara
+1629118613146996736 2023-02-24 13:58:39 +0000 &lt;AhmadKhairyDzak&gt; &quot;Saya ini kan enggak pernah minta disurvei-survei. Jadi mencermati aja apa pun yang jadi berita. Saya kerja sebaik-baiknya. Kalau masyarakat suka biasanya ada apresiasi macam-macam seperti tadi itu (hasil survei Litbang kompas),&quot; ucap Ridwan Kamil. #BersamaJuara
+1629118612131950592 2023-02-24 13:58:39 +0000 &lt;AgilFil&gt; &quot;Hasil survei ini mengirim pesan terang benderang pada Partai Golkar. Ridwan Kamil dengan elektabilitasnya yang cukup tinggi mau diolah seperti apa?&quot; jelas Karim. #BersamaJuara
+1629118609523118080 2023-02-24 13:58:38 +0000 &lt;AhmadKhairyDzak&gt; Saat dijumpai wartawan usai pelantikan Dirjen Perundang-undangan Kemenkumham yang baru, Emil (Ridwan Kamil) mengaku akan cermati setiap hasil survei yang diberitakan. Elektabilitasnya di angka 8,4 persen. #BersamaJuara
+1629118608969453568 2023-02-24 13:58:38 +0000 &lt;AgilFil&gt; Meski demikian, keputusan terkait memajukan RK (Ridwan Kamil) atau tidak tetap berada di tangan petinggi partai. #BersamaJuara
+1629118603122597890 2023-02-24 13:58:37 +0000 &lt;AgilFil&gt; Pengamat Politik dari Universitas Pendidikan Indonesia (UPI) Bandung, Prof. Karim Suryadi menilai bahwa hasil survei tersebut seharusnya bisa dijadikan bahan pertimbangan Partai Golkar yang merupakan partai tempat Ridwan Kamil tergabung. #BersamaJuara
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1629118599901372420 2023-02-24 13:58:36 +0000 &lt;AhmadKhairyDzak&gt; Gubernur Jawa Barat Ridwan Kamil komentari hasil survei Litbang Kompas yang menempatkan dirinya masuk 4 besar capres alternatif. Ia mengaku tak mau menerka-nerka hasil survei tersebut. #BersamaJuara
+1629118599473553409 2023-02-24 13:58:36 +0000 &lt;AgilFil&gt; Adapun saat ditanya apakah RK (Ridwan Kamil) akan maju sebagai capres. Beliau menyebutkan nama Airlangga Hartarto, Ketua Umum Partai Golkar. &quot;Kan saya Golkar, kan Pak Airlangga,&quot; lanjutnya. #BersamaJuara
+1629118595598008320 2023-02-24 13:58:35 +0000 &lt;AgilFil&gt; &quot;Saya ini kan enggak pernah minta disurvei-survei. Jadi mencermati aja apa pun yang jadi berita. Saya kerja sebaik-baiknya. Kalau masyarakat suka biasanya ada apresiasi macam-macam seperti tadi itu (hasil survei Litbang kompas),&quot; ucap Ridwan Kamil. #BersamaJuara
+1629118595572858880 2023-02-24 13:58:35 +0000 &lt;AhmadKhairyDzak&gt; Ridwan Kamil soal Masuk 4 Besar Survei Kompas: Capres Golkar Pak Airlangga #BersamaJuara  https://t.co/Tu1fXQjpTl
+1629118591646982152 2023-02-24 13:58:34 +0000 &lt;AgilFil&gt; Saat dijumpai wartawan usai pelantikan Dirjen Perundang-undangan Kemenkumham yang baru, Emil (Ridwan Kamil) mengaku akan cermati setiap hasil survei yang diberitakan. Elektabilitasnya di angka 8,4 persen. #BersamaJuara
+1629118587083591680 2023-02-24 13:58:33 +0000 &lt;AgilFil&gt; Gubernur Jawa Barat Ridwan Kamil komentari hasil survei Litbang Kompas yang menempatkan dirinya masuk 4 besar capres alternatif. Ia mengaku tak mau menerka-nerka hasil survei tersebut. #BersamaJuara
+1629118581643567105 2023-02-24 13:58:32 +0000 &lt;AgilFil&gt; Ridwan Kamil soal Masuk 4 Besar Survei Kompas: Capres Golkar Pak Airlangga #BersamaJuara  https://t.co/jYZ2crw7bD
+1629118187525787649 2023-02-24 13:56:58 +0000 &lt;AhmadKhairyDzak&gt; Di sisi lain, pemilih Partai Golkar yang memilih Emil, sapaan akrabnya, juga naik menjadi 13,1 persen, dari 9,5 persen pada Oktober 2022. “Ridwan Kamil dan Partai Golkar mendapatkan berkah dari penggabungan keduanya,” tulis Litbang Kompas. #BersamaJuara
+1629118183369220097 2023-02-24 13:56:57 +0000 &lt;AhmadKhairyDzak&gt; Berdasarkan hasil survei, pemilih Ridwan Kamil yang memilih Partai Golkar sebanyak 13,7 persen, naik dari 8,7 persen pada Oktober lalu, Ridwan Kamil belum bergabung dengan Partai Golkar. #BersamaJuara
+1629118180118626305 2023-02-24 13:56:56 +0000 &lt;AhmadKhairyDzak&gt; “Sosok Ridwan Kamil menaikkan suara Partai Golkar, dan massa Partai Golkar menopang suara Ridwan Kamil,” tulis Litbang Kompas dalam Harian Kompas edisi Rabu (22/2/2023). #BersamaJuara
+1629118172619247617 2023-02-24 13:56:54 +0000 &lt;AhmadKhairyDzak&gt; Hasil jajak pendapat Litbang Kompas pada Januari 2023 menunjukkan bahwa bergabungnya Gubernur Jawa Barat Ridwan Kamil ke Partai Golkar menguntungkan kedua belah pihak. #BersamaJuara
+1629118172447264768 2023-02-24 13:56:54 +0000 &lt;AgilFil&gt; Di sisi lain, pemilih Partai Golkar yang memilih Emil, sapaan akrabnya, juga naik menjadi 13,1 persen, dari 9,5 persen pada Oktober 2022. “Ridwan Kamil dan Partai Golkar mendapatkan berkah dari penggabungan keduanya,” tulis Litbang Kompas. #BersamaJuara
+1629118169238605825 2023-02-24 13:56:53 +0000 &lt;AhmadKhairyDzak&gt; Hasil Survei Litbang Kompas: Sosok Ridwan Kamil menaikkan suara Partai Golkar #BersamaJuara  https://t.co/U5oB9f5Qtc
+1629118169045663745 2023-02-24 13:56:53 +0000 &lt;AgilFil&gt; Berdasarkan hasil survei, pemilih Ridwan Kamil yang memilih Partai Golkar sebanyak 13,7 persen, naik dari 8,7 persen pada Oktober lalu, Ridwan Kamil belum bergabung dengan Partai Golkar. #BersamaJuara
+1629118165153361920 2023-02-24 13:56:52 +0000 &lt;AgilFil&gt; “Sosok Ridwan Kamil menaikkan suara Partai Golkar, dan massa Partai Golkar menopang suara Ridwan Kamil,” tulis Litbang Kompas dalam Harian Kompas edisi Rabu (22/2/2023). #BersamaJuara
+1629118160984244225 2023-02-24 13:56:51 +0000 &lt;AgilFil&gt; Hasil jajak pendapat Litbang Kompas pada Januari 2023 menunjukkan bahwa bergabungnya Gubernur Jawa Barat Ridwan Kamil ke Partai Golkar menguntungkan kedua belah pihak. #BersamaJuara
+1629118154889908224 2023-02-24 13:56:50 +0000 &lt;AgilFil&gt; Hasil Survei Litbang Kompas: Sosok Ridwan Kamil menaikkan suara Partai Golkar #BersamaJuara  https://t.co/8Nuy26G7Gu
+1629118005081948160 2023-02-24 13:56:14 +0000 &lt;RikiTrijaya&gt; @detikcom Jalanan baru rusak di kawasan elite jakarta lgs diberitakan...tuh di parung panjang, jalanan utama bertahun-tahun rusak membahayakan anak2 sekolah di diemin aja. Colek @ridwankamil , @bogorkab
+1629117798244048896 2023-02-24 13:55:25 +0000 &lt;AhmadKhairyDzak&gt; Sebelumnya Litbang Kompas merilis hasil survei tentang calon presiden (capres) alternatif selain Anies Baswedan, Ganjar Pranowo dan Prabowo Subianto. Gubernur Jawa Barat Ridwan Kamil unggul dominan di survei figur capres alternatif. #BersamaJuara
 1629117795178016768 2023-02-24 13:55:24 +0000 &lt;AhmadKhairyDzak&gt; Menduduki posisi keempat sebagai capres menurut survei, RK enggan menerka-nerka. RK (Ridwan Kamil) menyampaikan hanya bekerja yang bagus karena kerja bagus menurutnya, pasti mendapat apresiasi. #BersamaJuara
-1629117791885496322 2023-02-24 13:55:23 +0000 &lt;AhmadKhairyDzak&gt; RK (Ridwan Kamil) menyampaikan hanya bekerja sebaik-baiknya. Hasil survei tersebut menurutnya bentuk apresiasi masyarakat. #BersamaJuara
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1629117791885496322 2023-02-24 13:55:23 +0000 &lt;AhmadKhairyDzak&gt; RK (Ridwan Kamil) menyampaikan hanya bekerja sebaik-baiknya. Hasil survei tersebut menurutnya bentuk apresiasi masyarakat. #BersamaJuara
 1629117789670883328 2023-02-24 13:55:23 +0000 &lt;AgilFil&gt; Sebelumnya Litbang Kompas merilis hasil survei tentang calon presiden (capres) alternatif selain Anies Baswedan, Ganjar Pranowo dan Prabowo Subianto. Gubernur Jawa Barat Ridwan Kamil unggul dominan di survei figur capres alternatif. #BersamaJuara
 1629117787263336450 2023-02-24 13:55:22 +0000 &lt;AhmadKhairyDzak&gt; &quot;Saya ini kan nggak pernah minta di survei-survei jadi mencermati saja apapun yang menjadi berita. Saya kerja sebaik-baiknya,&quot; kata RK (Ridwan Kamil) kepada wartawan di Kantor Kemenkumham, Jaksel, Kamis (23/2/2023). #BersamaJuara
 1629117783127773193 2023-02-24 13:55:21 +0000 &lt;AgilFil&gt; Menduduki posisi keempat sebagai capres menurut survei, RK enggan menerka-nerka. RK (Ridwan Kamil) menyampaikan hanya bekerja yang bagus karena kerja bagus menurutnya, pasti mendapat apresiasi. #BersamaJuara
@@ -584,11 +712,11 @@ Requirement already satisfied: nest_asyncio in /usr/local/lib/python3.8/dist-pac
 1629117348149084160 2023-02-24 13:53:37 +0000 &lt;AhmadKhairyDzak&gt; ”Ridwan Kamil menjadi yang paling banyak disukai pada skala penilaian 6 – 10 dengan 86,1 persen,” ungkap Populi Center melalui rilis media pada 13 Februari 2023.  #BersamaJuara
 1629117344986566659 2023-02-24 13:53:37 +0000 &lt;AgilFil&gt; ”Ketika masyarakat ditanya dari sebelas tokoh yang paling diharapkan untuk menjadi wakil presiden pada tahun 2024, masyarakat paling banyak menjawab Ridwan Kamil,” bunyi rilis tersebut.  #BersamaJuara
 1629117344948838400 2023-02-24 13:53:37 +0000 &lt;AhmadKhairyDzak&gt; Selain dalam survei Litbang Kompas, nama RK (Ridwan Kamil) juga muncul dalam hasil survei Populi Center. RK masuk jajaran atas tokoh paling populer dalam survei itu. Lebih dari itu, survei tersebut memotret RK sebagai tokoh paling disukai oleh masyarakat. #BersamaJuara
+1629117339647229952 2023-02-24 13:53:35 +0000 &lt;AgilFil&gt; Tingkat kesukaan masyarakat terhadap RK (Ridwan Kamil) berada di atas Ganjar, Prabowo, dan Anies. RK juga unggul sebagai figur cawapres pada pemilu 2024 nanti. Dia merajai hasil survei tersebut dan mendapat pemilih terbanyak dengan persentase 22,4 persen. #BersamaJuara
+1629117339445895168 2023-02-24 13:53:35 +0000 &lt;AhmadKhairyDzak&gt; Sebagai capres alternatif, elektabilitas RK (Ridwan Kamil) berada pada angka 22,7 persen. Jauh lebih unggul dari Sandiaga Uno di posisi kedua dengan elektabilitas 7,3 persen dan Agus Harimurti Yudhoyono (AHY) di posisi ketiga dengan elektabilitas 5,8 persen. #BersamaJuara
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1629117339647229952 2023-02-24 13:53:35 +0000 &lt;AgilFil&gt; Tingkat kesukaan masyarakat terhadap RK (Ridwan Kamil) berada di atas Ganjar, Prabowo, dan Anies. RK juga unggul sebagai figur cawapres pada pemilu 2024 nanti. Dia merajai hasil survei tersebut dan mendapat pemilih terbanyak dengan persentase 22,4 persen. #BersamaJuara
-1629117339445895168 2023-02-24 13:53:35 +0000 &lt;AhmadKhairyDzak&gt; Sebagai capres alternatif, elektabilitas RK (Ridwan Kamil) berada pada angka 22,7 persen. Jauh lebih unggul dari Sandiaga Uno di posisi kedua dengan elektabilitas 7,3 persen dan Agus Harimurti Yudhoyono (AHY) di posisi ketiga dengan elektabilitas 5,8 persen. #BersamaJuara
-1629117336480534533 2023-02-24 13:53:35 +0000 &lt;AgilFil&gt; ”Ridwan Kamil menjadi yang paling banyak disukai pada skala penilaian 6 – 10 dengan 86,1 persen,” ungkap Populi Center melalui rilis media pada 13 Februari 2023.  #BersamaJuara
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1629117336480534533 2023-02-24 13:53:35 +0000 &lt;AgilFil&gt; ”Ridwan Kamil menjadi yang paling banyak disukai pada skala penilaian 6 – 10 dengan 86,1 persen,” ungkap Populi Center melalui rilis media pada 13 Februari 2023.  #BersamaJuara
 1629117336409219072 2023-02-24 13:53:35 +0000 &lt;AhmadKhairyDzak&gt; Dalam survei Populi Center pada 25 Januari - 2 Februari 2023, Ridwan Kamil menjadi figur paling disukai oleh masyarakat. Mantan wali kota Bandung tersebut memuncaki survei untuk calon wakil presiden (cawapres) 2024 mendatang.  #BersamaJuara
 1629117332227506176 2023-02-24 13:53:34 +0000 &lt;AhmadKhairyDzak&gt; Hasil survei Litbang Kompas pada 25 Januari - 4 Februari menempatkan Gubernur Jawa Barat Ridwan Kamil sebagai calon presiden (capres) alternatif dengan elektabilitas tertinggi.  #BersamaJuara
 1629117331996807168 2023-02-24 13:53:34 +0000 &lt;AgilFil&gt; Selain dalam survei Litbang Kompas, nama RK (Ridwan Kamil) juga muncul dalam hasil survei Populi Center. RK masuk jajaran atas tokoh paling populer dalam survei itu. Lebih dari itu, survei tersebut memotret RK sebagai tokoh paling disukai oleh masyarakat. #BersamaJuara
@@ -606,11 +734,11 @@ Requirement already satisfied: nest_asyncio in /usr/local/lib/python3.8/dist-pac
 1629116897353674752 2023-02-24 13:51:50 +0000 &lt;AgilFil&gt; Saat dijumpai wartawan usai pelantikan Dirjen Perundang-undangan Kemenkumham yang baru, Emil (Ridwan Kamil) mengaku akan cermati setiap hasil survei yang diberitakan. Elektabilitasnya di angka 8,4 persen. #BersamaJuara
 1629116893985640450 2023-02-24 13:51:49 +0000 &lt;AgilFil&gt; Gubernur Jawa Barat Ridwan Kamil komentari hasil survei Litbang Kompas yang menempatkan dirinya masuk 4 besar capres alternatif. Ia mengaku tak mau menerka-nerka hasil survei tersebut. #BersamaJuara
 1629116889472565249 2023-02-24 13:51:48 +0000 &lt;AgilFil&gt; 4 Besar Capres Survei Litbang Kompas, Ridwan Kamil: Capres Partai Golkar Airlangga Hartarto #BersamaJuara  https://t.co/uBwit75Bc5
+1629116737529720832 2023-02-24 13:51:12 +0000 &lt;MC_FatH&gt; @HermanBudiSant4 Jangan jangan Anies Baswedan - Ridwan Kamil, no one will evwr know
+1629116708589015040 2023-02-24 13:51:05 +0000 &lt;AhmadKhairyDzak&gt; Keduanya juga sudah memiliki basis pemilih kuat. Selain karena partai yang mumpuni, pemuda yang notabene pemilih terbanyak pada Pemilu 2024 juga menyukai sosok Ridwan Kamil dan Gibran. #BersamaJuara
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1629116737529720832 2023-02-24 13:51:12 +0000 &lt;MC_FatH&gt; @HermanBudiSant4 Jangan jangan Anies Baswedan - Ridwan Kamil, no one will evwr know
-1629116708589015040 2023-02-24 13:51:05 +0000 &lt;AhmadKhairyDzak&gt; Keduanya juga sudah memiliki basis pemilih kuat. Selain karena partai yang mumpuni, pemuda yang notabene pemilih terbanyak pada Pemilu 2024 juga menyukai sosok Ridwan Kamil dan Gibran. #BersamaJuara
-1629116705338445824 2023-02-24 13:51:04 +0000 &lt;AhmadKhairyDzak&gt; Hal yang sama juga berlaku bagi Gibran. Putra Presiden Jokowi itu disebutnya cocok berpasangan dengan Ridwan Kamil. Selain karena usia muda, elektabilitasnya juga sudah cukup tinggi. #BersamaJuara
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1629116705338445824 2023-02-24 13:51:04 +0000 &lt;AhmadKhairyDzak&gt; Hal yang sama juga berlaku bagi Gibran. Putra Presiden Jokowi itu disebutnya cocok berpasangan dengan Ridwan Kamil. Selain karena usia muda, elektabilitasnya juga sudah cukup tinggi. #BersamaJuara
 1629116702289203201 2023-02-24 13:51:04 +0000 &lt;AhmadKhairyDzak&gt; &quot;Dengan popularitas dan elektabilitas pribadi seperti itu, saya kira berpeluang. Apalagi ditambah Ridwan Kamil sekarang istilahnya tiketnya tidak susah, karena dia bergabung di Golkar,&quot; ucapnya. #BersamaJuara
 1629116695171198981 2023-02-24 13:51:02 +0000 &lt;AhmadKhairyDzak&gt; Terlebih lagi, ia (Ridwan Kamil) sudah berpengalaman sebagai kepala daerah, mulai dari wali kota hingga gubernur. Kang Emil juga belum lama ini bergabung dengan Golkar sebagai kendaraan politiknya. #BersamaJuara
 1629116691300098049 2023-02-24 13:51:01 +0000 &lt;AhmadKhairyDzak&gt; Untuk Ridwan Kamil, Adib menyebut peluangnya di Pilkada DKI cukup tinggi. Apalagi pria yang akrab disapa Kang Emil ini sudah dikenal masyarakat luas, bukan hanya di Jabar. #BersamaJuara
@@ -628,11 +756,11 @@ Requirement already satisfied: nest_asyncio in /usr/local/lib/python3.8/dist-pac
 1629116252399747072 2023-02-24 13:49:16 +0000 &lt;AhmadKhairyDzak&gt; “Semua proses ini akan kami laporkan secara formal kepada Menteri Dalam Negeri. Demikian update terkait situasi ini. Terima kasih,” tutup Ridwan Kamil. #BersamaJuara
 1629116249459560449 2023-02-24 13:49:16 +0000 &lt;AhmadKhairyDzak&gt; Dengan munculnya pernyataan resmi Gubernur Jawa Barat tersebut (Ridwan Kamil), maka kisruh permasalahan politik antara Lucky Hakim dengan pejabat daerah Indramayu lainnya terjawab sudah. #BersamaJuara
 1629116246330609665 2023-02-24 13:49:15 +0000 &lt;AhmadKhairyDzak&gt; “Sehingga dengan ini, niat pengunduran diri Kang Lucky Hakim akan diproses sesuai ketentuan hukum dan perundang-undangan yang berlaku. Demikian yang bisa saya sampaikan,” beber Ridwan Kamil. #BersamaJuara
+1629116242379575297 2023-02-24 13:49:14 +0000 &lt;AgilFil&gt; “Semua proses ini akan kami laporkan secara formal kepada Menteri Dalam Negeri. Demikian update terkait situasi ini. Terima kasih,” tutup Ridwan Kamil. #BersamaJuara
+1629116241490362368 2023-02-24 13:49:14 +0000 &lt;AhmadKhairyDzak&gt; Menurut Kang Emil (Ridwan Kamil), sekalipun dengan berat hati, dirinya akan memproses pengunduran diri Wakil Bupati Lucky Hakim sesuai dengan ketentuan peraturan perundang-undangan yang berlaku. #BersamaJuara
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1629116242379575297 2023-02-24 13:49:14 +0000 &lt;AgilFil&gt; “Semua proses ini akan kami laporkan secara formal kepada Menteri Dalam Negeri. Demikian update terkait situasi ini. Terima kasih,” tutup Ridwan Kamil. #BersamaJuara
-1629116241490362368 2023-02-24 13:49:14 +0000 &lt;AhmadKhairyDzak&gt; Menurut Kang Emil (Ridwan Kamil), sekalipun dengan berat hati, dirinya akan memproses pengunduran diri Wakil Bupati Lucky Hakim sesuai dengan ketentuan peraturan perundang-undangan yang berlaku. #BersamaJuara
-1629116239594541056 2023-02-24 13:49:13 +0000 &lt;AgilFil&gt; Dengan munculnya pernyataan resmi Gubernur Jawa Barat tersebut (Ridwan Kamil), maka kisruh permasalahan politik antara Lucky Hakim dengan pejabat daerah Indramayu lainnya terjawab sudah. #BersamaJuara
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1629116239594541056 2023-02-24 13:49:13 +0000 &lt;AgilFil&gt; Dengan munculnya pernyataan resmi Gubernur Jawa Barat tersebut (Ridwan Kamil), maka kisruh permasalahan politik antara Lucky Hakim dengan pejabat daerah Indramayu lainnya terjawab sudah. #BersamaJuara
 1629116238688587776 2023-02-24 13:49:13 +0000 &lt;AhmadKhairyDzak&gt; “Dengan berat hati, saya sampaikan bahwa masing-masing menyiratkan untuk menempuh jalan politiknya sendiri-sendiri. Sesuatu yang kami harus hormati sebagai hak dari masing-masing,” kata Ridwan Kamil #BersamaJuara
 1629116236184563712 2023-02-24 13:49:12 +0000 &lt;AgilFil&gt; “Sehingga dengan ini, niat pengunduran diri Kang Lucky Hakim akan diproses sesuai ketentuan hukum dan perundang-undangan yang berlaku. Demikian yang bisa saya sampaikan,” beber Ridwan Kamil. #BersamaJuara
 1629116234158710784 2023-02-24 13:49:12 +0000 &lt;AhmadKhairyDzak&gt; Gubernur Jawa Barat (Ridwan Kamil) menyatakan, setelah bertemu dengan Bupati Indramayu Nina Agustina dan Wakil Bupati Indramayu Lucky Hakim, Kang Emil berkesimpulan keduanya tetap teguh menempuh jalan politiknya masing-masing. #BersamaJuara
@@ -650,11 +778,11 @@ Requirement already satisfied: nest_asyncio in /usr/local/lib/python3.8/dist-pac
 1629115789587652609 2023-02-24 13:47:26 +0000 &lt;AhmadKhairyDzak&gt; Untuk elektabilitas Ridwan Kamil sebagai capres berada pada angka 4 persen. Namun di bawahnya ada nama Sandiaga Uno dengan elektabilitas 1,6 persen dan Andika Perkasa 1,6 persen, disus AHY 1,3 persen, dan Tri Rismaharini 1 persen.  #BersamaJuara
 1629115782105018368 2023-02-24 13:47:24 +0000 &lt;AhmadKhairyDzak&gt; &quot;Hasil survei tersebut menunjukkan bahwa Ridwan Kamil mampu mempertahankan elektabilitasnya sebagai figur yang punya peluang turut serta dalam kontestasi pilpres 2024 mendatang,&quot; papar Eren, dikutip via Antara. #BersamaJuara
 1629115778346913792 2023-02-24 13:47:23 +0000 &lt;AgilFil&gt; Di luar tiga nama yang berada di posisi teratas, angka itu menunjukkan bahwa RK (Ridwan Kamil) merupakan capres dengan elektabilitas yang cukup baik di atas nama-nama lain berada pada urutan lima sampai delapan.  #BersamaJuara
+1629115777986199552 2023-02-24 13:47:23 +0000 &lt;AhmadKhairyDzak&gt; Ridwan Kamil jauh lebih unggul dibandingkan dengan elektabilitas capres alternatif lainnya seperti Sandiaga Uno berada di posisi kedua dengan presentase 7,3 persen. #BersamaJuara
+1629115774941163521 2023-02-24 13:47:22 +0000 &lt;AgilFil&gt; Untuk elektabilitas Ridwan Kamil sebagai capres berada pada angka 4 persen. Namun di bawahnya ada nama Sandiaga Uno dengan elektabilitas 1,6 persen dan Andika Perkasa 1,6 persen, disus AHY 1,3 persen, dan Tri Rismaharini 1 persen.  #BersamaJuara
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1629115777986199552 2023-02-24 13:47:23 +0000 &lt;AhmadKhairyDzak&gt; Ridwan Kamil jauh lebih unggul dibandingkan dengan elektabilitas capres alternatif lainnya seperti Sandiaga Uno berada di posisi kedua dengan presentase 7,3 persen. #BersamaJuara
-1629115774941163521 2023-02-24 13:47:22 +0000 &lt;AgilFil&gt; Untuk elektabilitas Ridwan Kamil sebagai capres berada pada angka 4 persen. Namun di bawahnya ada nama Sandiaga Uno dengan elektabilitas 1,6 persen dan Andika Perkasa 1,6 persen, disus AHY 1,3 persen, dan Tri Rismaharini 1 persen.  #BersamaJuara
-1629115772911128577 2023-02-24 13:47:22 +0000 &lt;AhmadKhairyDzak&gt; Ridwan Kamil yang kini menjabat Gubernur Jawa Barat menempati posisi teratas sebagai capres alternatif dengan elektabilitas mencapai 22,7 persen.  #BersamaJuara
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1629115772911128577 2023-02-24 13:47:22 +0000 &lt;AhmadKhairyDzak&gt; Ridwan Kamil yang kini menjabat Gubernur Jawa Barat menempati posisi teratas sebagai capres alternatif dengan elektabilitas mencapai 22,7 persen.  #BersamaJuara
 1629115767735328768 2023-02-24 13:47:21 +0000 &lt;AhmadKhairyDzak&gt; &quot;Ada tiga sosok capres alternatif dengan elektabilitas paling tinggi. Mereka masing-masing Ridwan Kamil, Sandiaga Uno, dan Agus Harimurti Yudhoyono (AHY),&quot; kata Peneliti Litbang Kompas Eren Marsyukrilla. #BersamaJuara  #ridwankamil
 1629115764220518401 2023-02-24 13:47:20 +0000 &lt;AgilFil&gt; &quot;Hasil survei tersebut menunjukkan bahwa Ridwan Kamil mampu mempertahankan elektabilitasnya sebagai figur yang punya peluang turut serta dalam kontestasi pilpres 2024 mendatang,&quot; papar Eren, dikutip via Antara. #BersamaJuara
 1629115764082106369 2023-02-24 13:47:20 +0000 &lt;AhmadKhairyDzak&gt; &quot;Ada tiga sosok capres alternatif dengan elektabilitas paling tinggi. Mereka masing-masing Ridwan Kamil, Sandiaga Uno, dan Agus Harimurti Yudhoyono (AHY),&quot; kata Peneliti Litbang Kompas Eren Marsyukrilla. #BersamaJuara
@@ -672,10 +800,10 @@ Requirement already satisfied: nest_asyncio in /usr/local/lib/python3.8/dist-pac
 1629115307964125184 2023-02-24 13:45:31 +0000 &lt;AhmadKhairyDzak&gt; Gubernur Ridwan Kamil Restui Pengunduran Diri Lucky Hakim #BersamaJuara  https://t.co/Zadw3nzXR4
 1629115300397608961 2023-02-24 13:45:29 +0000 &lt;AgilFil&gt; Gubernur Jawa Barat, Ridwan Kamil, akhirnya merestui pengunduran diri Lucky Hakim sebagai Wakil Bupati Indramayu. Setelah bertemu dengan Bupati Indramayu, Nina Agustina, dan Lucky Hakim, Emil berkesimpulan keduanya tetap akan &#39;bercerai&#39;.  #BersamaJuara
 1629115294924034048 2023-02-24 13:45:28 +0000 &lt;AgilFil&gt; Gubernur Ridwan Kamil Restui Pengunduran Diri Lucky Hakim #BersamaJuara  https://t.co/yrdzlfl3QH
+1629115111716831232 2023-02-24 13:44:44 +0000 &lt;AhmadKhairyDzak&gt; Lebih lanjut Dave meyakini, sinergitas kinerja Airlangga sebagai arsitek pemulihan ekonomi dan figur Ridwan Kamil akan memberi dampak terhadap kemenangan Partai Golkar di Pemilu 2024. #BersamaJuara
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1629115111716831232 2023-02-24 13:44:44 +0000 &lt;AhmadKhairyDzak&gt; Lebih lanjut Dave meyakini, sinergitas kinerja Airlangga sebagai arsitek pemulihan ekonomi dan figur Ridwan Kamil akan memberi dampak terhadap kemenangan Partai Golkar di Pemilu 2024. #BersamaJuara
-1629115108218773505 2023-02-24 13:44:43 +0000 &lt;AhmadKhairyDzak&gt; &quot;Figur pak Ridwan Kamil ini memberi dampak positif yang berdampak pada elektabilitas Golkar dan Pak Airlangga,&quot; ujar Dave dalam rekaman video yang diterima KOMPAS TV, Rabu (22/2/2023) malam. #BersamaJuara
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1629115108218773505 2023-02-24 13:44:43 +0000 &lt;AhmadKhairyDzak&gt; &quot;Figur pak Ridwan Kamil ini memberi dampak positif yang berdampak pada elektabilitas Golkar dan Pak Airlangga,&quot; ujar Dave dalam rekaman video yang diterima KOMPAS TV, Rabu (22/2/2023) malam. #BersamaJuara
 1629115100945842177 2023-02-24 13:44:42 +0000 &lt;AhmadKhairyDzak&gt; Menurut Dave, dari sosialisasi yang dilakukan Ridwan Kamil kepercayaan masyarakat terhadap Golkar semakin meningkat. #BersamaJuara
 1629115099712745472 2023-02-24 13:44:41 +0000 &lt;AgilFil&gt; Lebih lanjut Dave meyakini, sinergitas kinerja Airlangga sebagai arsitek pemulihan ekonomi dan figur Ridwan Kamil akan memberi dampak terhadap kemenangan Partai Golkar di Pemilu 2024. #BersamaJuara
 1629115097238081537 2023-02-24 13:44:41 +0000 &lt;AhmadKhairyDzak&gt; Ketua DPP Partai Golkar Dave Akbarshah Fikarno menjelaskan, sejak bergabung di Golkar Ridwan Kamil langsung mensosialisasikan partai tersebut dan peran Airlangga Hartarto di kabinet Indonesia Maju kepada masyarakat. #BersamaJuara
@@ -688,11 +816,11 @@ Requirement already satisfied: nest_asyncio in /usr/local/lib/python3.8/dist-pac
 1629115067601137664 2023-02-24 13:44:34 +0000 &lt;AgilFil&gt; Ketua DPP Akui Masuknya Ridwan Kamil Beri Pengaruh ke Elektabilitas Golkar dan Airlangga #BersamaJuara  https://t.co/rCXoicvTLi
 1629114964085735425 2023-02-24 13:44:09 +0000 &lt;indranurfadila&gt; @ridwankamil Tindakannya apa  jika Guru BP tidak menindaklanjuti ?? Hanya teguran keras saja atau di pecat tanpa hormat &amp;amp; tanpa pesangon.KUMAHA ?
 1629114895672422400 2023-02-24 13:43:53 +0000 &lt;KangMaman204&gt; @papa_loren Mungkin itu clue kalau gak akan ada pemilu, karena jika Ganjar dan prabowo dipertandingkan dg @aniesbaswedan mereka bisa kalah telak. Apalagi KL dipertandingkan dg puan maharani atau Ridwan Kamil.
+1629114782765957121 2023-02-24 13:43:26 +0000 &lt;AhmadKhairyDzak&gt; “Alhamdulilah sebagai putra Jawa Barat, Kang Emil (Ridwan Kamil) adalah salah satu yang terbaik. Kita patut bangga. Namun di lain pihak kita juga harus lebih waspada bahwa kita di Partai Golkar ini tidak bisa main-main dalam politik,” pungkasnya.  #BersamaJuara
+1629114777468547072 2023-02-24 13:43:25 +0000 &lt;AhmadKhairyDzak&gt; Lebih lanjut, Dewi menilai Kang Emil (Ridwan Kamil) ini seorang Gubernur Jabar yang memiliki karya-karya dan inovasi yang sangat luar biasa, Jabar Juara, tidak kalah dengan Jawa Timur. #BersamaJuara
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1629114782765957121 2023-02-24 13:43:26 +0000 &lt;AhmadKhairyDzak&gt; “Alhamdulilah sebagai putra Jawa Barat, Kang Emil (Ridwan Kamil) adalah salah satu yang terbaik. Kita patut bangga. Namun di lain pihak kita juga harus lebih waspada bahwa kita di Partai Golkar ini tidak bisa main-main dalam politik,” pungkasnya.  #BersamaJuara
-1629114777468547072 2023-02-24 13:43:25 +0000 &lt;AhmadKhairyDzak&gt; Lebih lanjut, Dewi menilai Kang Emil (Ridwan Kamil) ini seorang Gubernur Jabar yang memiliki karya-karya dan inovasi yang sangat luar biasa, Jabar Juara, tidak kalah dengan Jawa Timur. #BersamaJuara
-1629114773613977600 2023-02-24 13:43:24 +0000 &lt;AhmadKhairyDzak&gt; Soal kehadiran Ridwan Kamil di Partai Golkar, Dewi Asmara memastikan bahwa menurut pengetahuannya, Ibunda dari Gubernur Jabar itu sejak dulu ada di Partai Golkar. “Jadi memang Kang Emil ini kembali ke rumahnya, bahkan dari 2 tahun yang lalu,” ungkap Dewi. #BersamaJuara
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1629114773613977600 2023-02-24 13:43:24 +0000 &lt;AhmadKhairyDzak&gt; Soal kehadiran Ridwan Kamil di Partai Golkar, Dewi Asmara memastikan bahwa menurut pengetahuannya, Ibunda dari Gubernur Jabar itu sejak dulu ada di Partai Golkar. “Jadi memang Kang Emil ini kembali ke rumahnya, bahkan dari 2 tahun yang lalu,” ungkap Dewi. #BersamaJuara
 1629114767465144320 2023-02-24 13:43:22 +0000 &lt;AhmadKhairyDzak&gt; Namun, Dewi Asmara menekankan agar Partai Golkar tidak terlena dan berleha-leha dengan suara pengikut Kang Emil (Ridwan Kamil) di semua platform media sosial yang disebut sekitar 30 juta tersebut. #BersamaJuara
 1629114767410597888 2023-02-24 13:43:22 +0000 &lt;AgilFil&gt; “Alhamdulilah sebagai putra Jawa Barat, Kang Emil (Ridwan Kamil) adalah salah satu yang terbaik. Kita patut bangga. Namun di lain pihak kita juga harus lebih waspada bahwa kita di Partai Golkar ini tidak bisa main-main dalam politik,” pungkasnya.  #BersamaJuara
 1629114763543465985 2023-02-24 13:43:21 +0000 &lt;AgilFil&gt; Lebih lanjut, Dewi menilai Kang Emil (Ridwan Kamil) ini seorang Gubernur Jabar yang memiliki karya-karya dan inovasi yang sangat luar biasa, Jabar Juara, tidak kalah dengan Jawa Timur. #BersamaJuara
@@ -707,12 +835,12 @@ Requirement already satisfied: nest_asyncio in /usr/local/lib/python3.8/dist-pac
 1629114741573685250 2023-02-24 13:43:16 +0000 &lt;AgilFil&gt; Ridwan Kamil Gabung, Dewi Asmara Makin Pede Partai Golkar Berjaya di Jabar #BersamaJuara  https://t.co/5vjrCJiUjO
 1629114492041953281 2023-02-24 13:42:17 +0000 &lt;royyan_drlocks&gt; @ridwankamil Alhamdulillah..semoga dengan adanya aplikasi ini bisa membuat efek jera untuk anak2 yg suka mem-bully pak @ridwankamil .Nuhun katampi
 1629114397984686084 2023-02-24 13:41:54 +0000 &lt;AhmadKhairyDzak&gt; Menanggapi hal tersebut, Direktur Eksekutive Panel Survei Indonesia (PSI), Ahmad Loksukonengatakan sebaiknya pengunduran diri Lucky segera diproses. #BersamaJuara  #RidwanKamil
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1629114394889322499 2023-02-24 13:41:53 +0000 &lt;AhmadKhairyDzak&gt; Bupati Indramayu Nina Agustina akhirnya bertemu dengan Gubernur Jawa Barat Ridwan Kamil terkait permohonan pengunduran diri Lucky Hakim dari Wakil Bupati Indramayu. #BersamaJuara
+1629114394889322499 2023-02-24 13:41:53 +0000 &lt;AhmadKhairyDzak&gt; Bupati Indramayu Nina Agustina akhirnya bertemu dengan Gubernur Jawa Barat Ridwan Kamil terkait permohonan pengunduran diri Lucky Hakim dari Wakil Bupati Indramayu. #BersamaJuara
 1629114391491915778 2023-02-24 13:41:53 +0000 &lt;AhmadKhairyDzak&gt; Kang Emil (Ridwan Kamil) Diminta Segera Proses Pengunduran Diri Wabup Indramayu #BersamaJuara  https://t.co/jkPjrh66iA
 1629114390569181185 2023-02-24 13:41:52 +0000 &lt;AgilFil&gt; Menanggapi hal tersebut, Direktur Eksekutive Panel Survei Indonesia (PSI), Ahmad Loksukonengatakan sebaiknya pengunduran diri Lucky segera diproses. #BersamaJuara  #RidwanKamil
-1629114387754815494 2023-02-24 13:41:52 +0000 &lt;AgilFil&gt; Bupati Indramayu Nina Agustina akhirnya bertemu dengan Gubernur Jawa Barat Ridwan Kamil terkait permohonan pengunduran diri Lucky Hakim dari Wakil Bupati Indramayu. #BersamaJuara
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1629114387754815494 2023-02-24 13:41:52 +0000 &lt;AgilFil&gt; Bupati Indramayu Nina Agustina akhirnya bertemu dengan Gubernur Jawa Barat Ridwan Kamil terkait permohonan pengunduran diri Lucky Hakim dari Wakil Bupati Indramayu. #BersamaJuara
 1629114382373519360 2023-02-24 13:41:50 +0000 &lt;AgilFil&gt; Kang Emil (Ridwan Kamil) Diminta Segera Proses Pengunduran Diri Wabup Indramayu #BersamaJuara  https://t.co/25iXzmev3n
 1629114181923528704 2023-02-24 13:41:03 +0000 &lt;AhmadKhairyDzak&gt; &quot;Saya tidak mau pisah dengan gubernur (Ridwan Kamil) seandainya ada hal yang lain. Gubernur ada disini,&quot; ujar Kang Uu sambil menyebutkan kembali, &quot;saya tidak mau pisah,&quot; kata Uu Ruzhanul. #BersamaJuara
 1629114178219937794 2023-02-24 13:41:02 +0000 &lt;AhmadKhairyDzak&gt; &quot;Tugas saya lumayan berat, cuman bersyukur sekarang saya masih menjabat jadi bisa banyak ke daerah melaksanakan tugas dari pa gubernur itu merupakan anugerah hari ini. Tetapi saya tetap tidak bisa memiliki rivalitas dengan gubernur (Ridwan Kamil),&quot;ujarnya. #BersamaJuara
@@ -729,12 +857,12 @@ Requirement already satisfied: nest_asyncio in /usr/local/lib/python3.8/dist-pac
 1629113918684798976 2023-02-24 13:40:00 +0000 &lt;AgilFil&gt; &quot;Di luar tiga nama yang berada di posisi teratas, angka itu menunjukkan bahwa RK (Ridwan Kamil) merupakan capres dengan elektabilitas yang cukup jauh diatas nama-nama lain yang berada pada urutan lima sampai delapan,&quot; tambahnya.  #BersamaJuara
 1629113917170683907 2023-02-24 13:39:59 +0000 &lt;AhmadKhairyDzak&gt; &quot;Hasil survei tersebut menunjukkan bahwa Ridwan Kamil mampu mempertahankan elektabilitasnya sebagai figur yang punya peluang turut serta dalam kontestasi pilpres 2024 mendatang,&quot;  #BersamaJuara
 1629113915241295872 2023-02-24 13:39:59 +0000 &lt;AgilFil&gt; Elektabilitas RK (Ridwan Kamil) sebagai capres berada pada angka 4 persen. Dibawahnya ada nama Sandiaga Uno dengan elektabilitas 1,6 persen, Andika Perkasa 1,6 persen, AHY 1,3 persen, dan Tri Rismaharini 1 persen. #BersamaJuara
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1629113913710358528 2023-02-24 13:39:59 +0000 &lt;AhmadKhairyDzak&gt; Hal itu berdasarkan survey Litbang Kompas Periode Januari-Februaru 2023. Ridwan Kamil menempati urutan pertama dengan perolehan angka 22,7 persen sebagai capres alternatif. #BersamaJuara
+1629113913710358528 2023-02-24 13:39:59 +0000 &lt;AhmadKhairyDzak&gt; Hal itu berdasarkan survey Litbang Kompas Periode Januari-Februaru 2023. Ridwan Kamil menempati urutan pertama dengan perolehan angka 22,7 persen sebagai capres alternatif. #BersamaJuara
 1629113910082281472 2023-02-24 13:39:58 +0000 &lt;AgilFil&gt; Tidak hanya masuk dalam hasil survei untuk capres alternatif, nama Ridwan Kamil juga muncul dalam hasil survei capres. Berdasar survei Litbang Kompas di periode yang sama, RK masih berada dalam delapan besar capres dengan elektabilitas tertinggi. #BersamaJuara
 1629113908308086786 2023-02-24 13:39:57 +0000 &lt;AhmadKhairyDzak&gt; Ridwan Kamil menempati posisi pertama sebagai calon presiden alternatif untuk Pilpres 2024. Selain Gubernur Jawa Barat itu, dua nama juga muncul sebagai capres alternatif, mereka adalah Sandiaga Uno dan Agus Harimurti Yudhoyono.  #BersamaJuara
-1629113902712889345 2023-02-24 13:39:56 +0000 &lt;AhmadKhairyDzak&gt; Elektabilitas Ridwan Kamil Tertinggi Sebagai Capres Alternatif #BersamaJuara  https://t.co/THmJvBqtH5
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1629113902712889345 2023-02-24 13:39:56 +0000 &lt;AhmadKhairyDzak&gt; Elektabilitas Ridwan Kamil Tertinggi Sebagai Capres Alternatif #BersamaJuara  https://t.co/THmJvBqtH5
 1629113902612217858 2023-02-24 13:39:56 +0000 &lt;AgilFil&gt; &quot;Hasil survei tersebut menunjukkan bahwa Ridwan Kamil mampu mempertahankan elektabilitasnya sebagai figur yang punya peluang turut serta dalam kontestasi pilpres 2024 mendatang,&quot;  #BersamaJuara
 1629113899462328322 2023-02-24 13:39:55 +0000 &lt;AgilFil&gt; Hal itu berdasarkan survey Litbang Kompas Periode Januari-Februaru 2023. Ridwan Kamil menempati urutan pertama dengan perolehan angka 22,7 persen sebagai capres alternatif. #BersamaJuara
 1629113894441725952 2023-02-24 13:39:54 +0000 &lt;AgilFil&gt; Ridwan Kamil menempati posisi pertama sebagai calon presiden alternatif untuk Pilpres 2024. Selain Gubernur Jawa Barat itu, dua nama juga muncul sebagai capres alternatif, mereka adalah Sandiaga Uno dan Agus Harimurti Yudhoyono.  #BersamaJuara
@@ -751,12 +879,12 @@ Requirement already satisfied: nest_asyncio in /usr/local/lib/python3.8/dist-pac
 1629113160014917632 2023-02-24 13:36:59 +0000 &lt;AgilFil&gt; Gubernur Jawa Barat Ridwan Kamil berharap Gedung Creative Center Kota Tasikmalaya dapat menjadi ruang generasi muda berkreasi. #BersamaJuara
 1629113154751062016 2023-02-24 13:36:58 +0000 &lt;AgilFil&gt; Ridwan Kamil Harap Gedung Kreatif Tasikmalaya &#39;Sibuk&#39; #BersamaJuara  https://t.co/j49HgiLA0E
 1629112837460357121 2023-02-24 13:35:42 +0000 &lt;diniHF1&gt; sipp #BersamaJuara #RidwanKamil
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1629112802270121985 2023-02-24 13:35:34 +0000 &lt;diniHF1&gt; sipp #BersamaJuara #RidwanKamil
+1629112802270121985 2023-02-24 13:35:34 +0000 &lt;diniHF1&gt; sipp #BersamaJuara #RidwanKamil
 1629112746079035392 2023-02-24 13:35:20 +0000 &lt;diniHF1&gt; alhamdulillah #BersamaJuara #RidwanKamil
 1629112630697947137 2023-02-24 13:34:53 +0000 &lt;ayyupit&gt; @anbilbil @ridwankamil Sedih emang padahal tiap hari harus bolak balik ke perbatasan untuk mengajar.  Huhuhu
-1629112609072115713 2023-02-24 13:34:48 +0000 &lt;diniHF1&gt; siap #BersamaJuara #RidwanKamil
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1629112609072115713 2023-02-24 13:34:48 +0000 &lt;diniHF1&gt; siap #BersamaJuara #RidwanKamil
 1629112570161545216 2023-02-24 13:34:38 +0000 &lt;diniHF1&gt; tunggu saja kang Dadan #BersamaJuara #RidwanKamil
 1629112336425578497 2023-02-24 13:33:43 +0000 &lt;Outstandjing&gt; @Dediy_orlando @AhmadShiddiqN @aditxtida @ridwankamil 🫡
 1629112317920043010 2023-02-24 13:33:38 +0000 &lt;nonapandi&gt; @urangbandung80 @ridwankamil @PRFMnews @RadioElshinta @dishub_jabar Makanya jam segitu jgn bepergian kak. Ikuti arahan pak Gub.
@@ -764,10 +892,10 @@ Requirement already satisfied: nest_asyncio in /usr/local/lib/python3.8/dist-pac
 1629111880844480514 2023-02-24 13:31:54 +0000 &lt;diniHF1&gt; sukses pak Tatang #BersamaJuara #RidwanKamil
 1629111632566841345 2023-02-24 13:30:55 +0000 &lt;PratamaAxz&gt; @ramawatanabee Netizen yang suka nyerang @ridwankamil terus bully Gubernur IG dll bawa-bawa keluarga udah pada ngaca belum??
 1629111271114297344 2023-02-24 13:29:29 +0000 &lt;diniHF1&gt; aamiin #BersamaJuara #RidwanKamil
+1629111243561906176 2023-02-24 13:29:22 +0000 &lt;nendragunawan&gt; @ridwankamil Gimmick doangan 🤣
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1629111243561906176 2023-02-24 13:29:22 +0000 &lt;nendragunawan&gt; @ridwankamil Gimmick doangan 🤣
-1629110922446000129 2023-02-24 13:28:05 +0000 &lt;Cecepzaenudinn&gt; Calon Presiden kebanggan orang sunda. Kang emil @ridwankamil 🫡 Hasil kerja di Jabar sangat jelas terlihat
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1629110922446000129 2023-02-24 13:28:05 +0000 &lt;Cecepzaenudinn&gt; Calon Presiden kebanggan orang sunda. Kang emil @ridwankamil 🫡 Hasil kerja di Jabar sangat jelas terlihat
 1629110895849934849 2023-02-24 13:27:59 +0000 &lt;Cecepzaenudinn&gt; @rkij_sukabumi Calon Presiden kebanggan orang sunda. Kang emil @ridwankamil 🫡 Hasil kerja di Jabar sangat jelas terlihat
 1629110870860267521 2023-02-24 13:27:53 +0000 &lt;Cecepzaenudinn&gt; Calon Presiden kebanggan orang sunda. Kang emil @ridwankamil 🫡 Hasil kerja di Jabar sangat jelas terlihat
 1629110852090753024 2023-02-24 13:27:49 +0000 &lt;Cecepzaenudinn&gt; @rkij_sukabumi Calon Presiden kebanggan orang sunda. Kang emil @ridwankamil 🫡 Hasil kerja di Jabar sangat jelas terlihat
@@ -782,10 +910,10 @@ Requirement already satisfied: nest_asyncio in /usr/local/lib/python3.8/dist-pac
 1629110559219269632 2023-02-24 13:26:39 +0000 &lt;RidwanSugarra&gt; Kami siap Mendukung @ridwankamil jadi Presiden pertama orang Jawa Barat !! Kinerja dan Prestasinya Luar biasa memimpin Jabar. Indonesia butuh Calon Presiden yg tidak ke Kiri dan Ke Kanan.
 1629110541032783872 2023-02-24 13:26:35 +0000 &lt;diniHF1&gt; iya #BersamaJuara #RidwanKamil
 1629110532249878528 2023-02-24 13:26:32 +0000 &lt;RidwanSugarra&gt; @rkij_sukabumi Kami siap Mendukung @ridwankamil jadi Presiden pertama orang Jawa Barat !! Kinerja dan Prestasinya Luar biasa memimpin Jabar. Indonesia butuh Calon Presiden yg tidak ke Kiri dan Ke Kanan.
+1629110509927809032 2023-02-24 13:26:27 +0000 &lt;RidwanSugarra&gt; Kami siap Mendukung @ridwankamil jadi Presiden pertama orang Jawa Barat !! Kinerja dan Prestasinya Luar biasa memimpin Jabar. Indonesia butuh Calon Presiden yg tidak ke Kiri dan Ke Kanan.
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1629110509927809032 2023-02-24 13:26:27 +0000 &lt;RidwanSugarra&gt; Kami siap Mendukung @ridwankamil jadi Presiden pertama orang Jawa Barat !! Kinerja dan Prestasinya Luar biasa memimpin Jabar. Indonesia butuh Calon Presiden yg tidak ke Kiri dan Ke Kanan.
-1629110491800039426 2023-02-24 13:26:23 +0000 &lt;RidwanSugarra&gt; @rkij_sukabumi Kami siap Mendukung @ridwankamil jadi Presiden pertama orang Jawa Barat !! Kinerja dan Prestasinya Luar biasa memimpin Jabar. Indonesia butuh Calon Presiden yg tidak ke Kiri dan Ke Kanan.
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1629110491800039426 2023-02-24 13:26:23 +0000 &lt;RidwanSugarra&gt; @rkij_sukabumi Kami siap Mendukung @ridwankamil jadi Presiden pertama orang Jawa Barat !! Kinerja dan Prestasinya Luar biasa memimpin Jabar. Indonesia butuh Calon Presiden yg tidak ke Kiri dan Ke Kanan.
 1629110446614781953 2023-02-24 13:26:12 +0000 &lt;RidwanSugarra&gt; Kami siap Mendukung @ridwankamil jadi Presiden pertama orang Jawa Barat !! Kinerja dan Prestasinya Luar biasa memimpin Jabar. Indonesia butuh Calon Presiden yg tidak ke Kiri dan Ke Kanan.
 1629110426737983489 2023-02-24 13:26:07 +0000 &lt;diniHF1&gt; iya #BersamaJuara #RidwanKamil
 1629110420710780929 2023-02-24 13:26:06 +0000 &lt;RidwanSugarra&gt; @rkij_sukabumi Kami siap Mendukung @ridwankamil jadi Presiden pertama orang Jawa Barat !! Kinerja dan Prestasinya Luar biasa memimpin Jabar. Indonesia butuh Calon Presiden yg tidak ke Kiri dan Ke Kanan.
@@ -801,10 +929,10 @@ Requirement already satisfied: nest_asyncio in /usr/local/lib/python3.8/dist-pac
 1629110064379482114 2023-02-24 13:24:41 +0000 &lt;diniHF1&gt; iya #BersamaJuara #RidwanKamil
 1629110045232484354 2023-02-24 13:24:36 +0000 &lt;AriefSudirrman&gt; @rkij_sukabumi Dengan berjalannya waktu, Nama @ridwankamil akan menempati Calon Presiden dari KIB.. Indonesia Juara, suara Jabar suara Ridwan Kamil yg akan mengantarkan Golkar Full senyum di Jabar
 1629110018082762752 2023-02-24 13:24:30 +0000 &lt;AriefSudirrman&gt; Dengan berjalannya waktu, Nama @ridwankamil akan menempati Calon Presiden dari KIB.. Indonesia Juara, suara Jabar suara Ridwan Kamil yg akan mengantarkan Golkar Full senyum di Jabar
+1629110002156998656 2023-02-24 13:24:26 +0000 &lt;AriefSudirrman&gt; @rkij_sukabumi Dengan berjalannya waktu, Nama @ridwankamil akan menempati Calon Presiden dari KIB.. Indonesia Juara, suara Jabar suara Ridwan Kamil yg akan mengantarkan Golkar Full senyum di Jabar
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1629110002156998656 2023-02-24 13:24:26 +0000 &lt;AriefSudirrman&gt; @rkij_sukabumi Dengan berjalannya waktu, Nama @ridwankamil akan menempati Calon Presiden dari KIB.. Indonesia Juara, suara Jabar suara Ridwan Kamil yg akan mengantarkan Golkar Full senyum di Jabar
-1629109980656959490 2023-02-24 13:24:21 +0000 &lt;AriefSudirrman&gt; Dengan berjalannya waktu, Nama @ridwankamil akan menempati Calon Presiden dari KIB.. Indonesia Juara, suara Jabar suara Ridwan Kamil yg akan mengantarkan Golkar Full senyum di Jabar
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1629109980656959490 2023-02-24 13:24:21 +0000 &lt;AriefSudirrman&gt; Dengan berjalannya waktu, Nama @ridwankamil akan menempati Calon Presiden dari KIB.. Indonesia Juara, suara Jabar suara Ridwan Kamil yg akan mengantarkan Golkar Full senyum di Jabar
 1629109977318293504 2023-02-24 13:24:20 +0000 &lt;djhaenal&gt; @ridwankamil Selain pengaduan tentunya diharapkn ada solusi kan pa yah. Nah temen saya orang bekasi dibully mulu gara2 jalannya terlalu banyak putaran balik jd bikin macet. Mohon dibantu solusinya pak.
 1629109961518379008 2023-02-24 13:24:16 +0000 &lt;AriefSudirrman&gt; @rkij_sukabumi Dengan berjalannya waktu, Nama @ridwankamil akan menempati Calon Presiden dari KIB.. Indonesia Juara, suara Jabar suara Ridwan Kamil yg akan mengantarkan Golkar Full senyum di Jabar
 1629109945861013508 2023-02-24 13:24:13 +0000 &lt;diniHF1&gt; iya #BersamaJuara #RidwanKamil
@@ -998,143 +1126,6 @@ Requirement already satisfied: nest_asyncio in /usr/local/lib/python3.8/dist-pac
 1629100003905126401 2023-02-24 12:44:42 +0000 &lt;AgilFil&gt; Pengamat politik dari Universitas Trunojoyo, Surokim Abdussalam menilai kenaikan suara Ridwan Kamil sangat mengejutkan kendati masih sejalan dengan tren politik yang cenderung ke arah anak muda. #BersamaJuara
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1629100001266909185 2023-02-24 12:44:42 +0000 &lt;AgilFil&gt; Hasilnya, Ridwan Kamil yang kini kader Golkar meraih elektabilitas 22,7 persen atau unggul lebih dari 15 persen dibanding Sandiaga Uno yang meraih 7,3 persen. #BersamaJuara
-1629099998876151808 2023-02-24 12:44:41 +0000 &lt;AgilFil&gt; Gubernur Jawa Barat, Ridwan Kamil dinilai bisa mendongkrak suara Partai Golkar di Pemilu 2024 terutama di kalangan pemilh muda. Dalam survei Litbang Kompas pada Januari hingga Februari 2023, Ridwan Kamil meraih elektabilitas tertinggi sebagai capres alternatif.  #BersamaJuara
-1629099994816053250 2023-02-24 12:44:40 +0000 &lt;AgilFil&gt; Ridwan Kamil Bisa Dimanfaatkan Dongkrak Suara Golkar di Pemilih Muda #BersamaJuara  https://t.co/wVRoeg2fv0
-1629099817564766209 2023-02-24 12:43:58 +0000 &lt;rayzapratama&gt; @ridwankamil kalo ngepin komen di instagram itu termasuk bullying bukan pak? ini teman saya @Vikarlito di instagram bapak yang kemaren dipin sampe banyak yang komen pak
-1629099815169830912 2023-02-24 12:43:57 +0000 &lt;aslamnatsir&gt; @ridwankamil Lamun saya dibully peudah reseup si ieu nu gaduh Suami kumaha pak?aya Solusi?  https://t.co/lpP9GhiSPM
-1629099698920513536 2023-02-24 12:43:30 +0000 &lt;Outstandjing&gt; @Dediy_orlando @ridwankamil @Dennysiregar7 (((myspace)))
-1629099471937343488 2023-02-24 12:42:35 +0000 &lt;JohnnyQris&gt; @ridwankamil 🙏🏾
-1629099388449726464 2023-02-24 12:42:16 +0000 &lt;AhmadKhairyDzak&gt; Sebelumnya, Gubernur Jawa Barat Ridwan Kamil telah menetapkan kepala definitif Badan Pengelola Cekungan Bandung (BP Cekban), yakni Tatang Rustandar Wiraatmadja.  #BersamaJuara
-1629099385773752325 2023-02-24 12:42:15 +0000 &lt;AhmadKhairyDzak&gt; Kepala BP Cekban Tatang Rustandar Wiraatmadja ditugaskan menjalin komunikasi dengan pemerintah kabupaten/kota terkait akselerasi pembangunan infrastruktur di Cekungan Bandung. #BersamaJuara  #RidwanKamil
-1629099381071949824 2023-02-24 12:42:14 +0000 &lt;AhmadKhairyDzak&gt; Ketimpangan pembangunan infrastruktur di daerah penyangga dilontarkan Bupati Bandung Dadan Supriatna. Untuk menjawab keresahan itu, Gubernur Jawa Barat (Jabar) Ridwan Kamil menugaskan Badan Pengelola Cekungan Bandung (BP Cekban). #BersamaJuara
-1629099378186280960 2023-02-24 12:42:13 +0000 &lt;AhmadKhairyDzak&gt; Jawab Keresahan Bupati Bandung, Ridwan Kamil Tugaskan BP Cekban Akselerasi Infrastruktur #BersamaJuara   https://t.co/3PfTetUDna
-1629099374096818177 2023-02-24 12:42:12 +0000 &lt;AgilFil&gt; Sebelumnya, Gubernur Jawa Barat Ridwan Kamil telah menetapkan kepala definitif Badan Pengelola Cekungan Bandung (BP Cekban), yakni Tatang Rustandar Wiraatmadja.  #BersamaJuara
-1629099370938527744 2023-02-24 12:42:11 +0000 &lt;AgilFil&gt; Kepala BP Cekban Tatang Rustandar Wiraatmadja ditugaskan menjalin komunikasi dengan pemerintah kabupaten/kota terkait akselerasi pembangunan infrastruktur di Cekungan Bandung. #BersamaJuara  #RidwanKamil
-1629099367272689664 2023-02-24 12:42:11 +0000 &lt;AgilFil&gt; Ketimpangan pembangunan infrastruktur di daerah penyangga dilontarkan Bupati Bandung Dadan Supriatna. Untuk menjawab keresahan itu, Gubernur Jawa Barat (Jabar) Ridwan Kamil menugaskan Badan Pengelola Cekungan Bandung (BP Cekban). #BersamaJuara
-1629099362499567616 2023-02-24 12:42:09 +0000 &lt;AgilFil&gt; Jawab Keresahan Bupati Bandung, Ridwan Kamil Tugaskan BP Cekban Akselerasi Infrastruktur #BersamaJuara   https://t.co/SV5ChEkXFT
-1629099317821861890 2023-02-24 12:41:59 +0000 &lt;Dediy_orlando&gt; @ridwankamil Lamun dibullyna ku BuzzerRp jiga si @Dennysiregar7 + SJW tanpa Kontribusi+Followersna jiga @Outstandjing kumaha pak?Asli maranehna sarua pisan eweuh kontribusi diajak debat di My Space ge wanina ngan Monolog di Twitter 🤣🤣🤣
-1629099265221095424 2023-02-24 12:41:46 +0000 &lt;Outstandjing&gt; @ardianrm @hyvaikal @ridwankamil @ochidd ☕
-1629099118579834880 2023-02-24 12:41:11 +0000 &lt;ardianrm&gt; @hyvaikal @ridwankamil @Outstandjing Hehe @ochidd
-1629099037273260032 2023-02-24 12:40:52 +0000 &lt;AhmadKhairyDzak&gt; &quot;Pak Gubernur (Ridwan Kamil) sudah mengamanatkan kepada Kepala BP Cekban dalam waktu dekat berkomunikasi dengan semua kepala daerah untuk membicarakan akselerasi infrastruktur di Cekungan Bandung,&quot; ujar Sumasna, Kamis (23/2/2023). #BersamaJuara
-1629099034962194433 2023-02-24 12:40:51 +0000 &lt;AhmadKhairyDzak&gt; Kepala Bappeda Jabar Sumasna mengatakan sekitar dua pekan lalu Gubernur Ridwan Kamil telah menetapkan kepala definitif Badan Pengelola Cekungan Bandung (BP Cekban), yakni Tatang Rustandar Wiraatmadja.  #BersamaJuara
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1629098989277818884 2023-02-24 12:40:40 +0000 &lt;Outstandjing&gt; @Dediy_orlando @hyvaikal @ridwankamil 🫡
-1629098938287681536 2023-02-24 12:40:28 +0000 &lt;alannalla&gt; @ridwankamil haha eta terpidana kasus suap milu gunting pita kapasitasna sebagai naon?
-1629098925046243333 2023-02-24 12:40:25 +0000 &lt;AhmadKhairyDzak&gt; Ridwan Kamil Pilih Tatang RW Jadi Kepala BP  Cekungan Bandung #BersamaJuara  https://t.co/Kmt717u2GE
-1629098887318491142 2023-02-24 12:40:16 +0000 &lt;AgilFil&gt; &quot;Pak Gubernur (Ridwan Kamil) sudah mengamanatkan kepada Kepala BP Cekban dalam waktu dekat berkomunikasi dengan semua kepala daerah untuk membicarakan akselerasi infrastruktur di Cekungan Bandung,&quot; ujar Sumasna, Kamis (23/2/2023). #BersamaJuara
-1629098884151795714 2023-02-24 12:40:15 +0000 &lt;AgilFil&gt; Kepala Bappeda Jabar Sumasna mengatakan sekitar dua pekan lalu Gubernur Ridwan Kamil telah menetapkan kepala definitif Badan Pengelola Cekungan Bandung (BP Cekban), yakni Tatang Rustandar Wiraatmadja.  #BersamaJuara
-1629098881387732992 2023-02-24 12:40:15 +0000 &lt;AgilFil&gt; Ridwan Kamil Pilih Tatang RW Jadi Kepala BP  Cekungan Bandung #BersamaJuara  https://t.co/bBQKbwHlel
-1629098839897669635 2023-02-24 12:40:05 +0000 &lt;Dediy_orlando&gt; @hyvaikal @ridwankamil @Outstandjing Teu perlu teu wajib jeung keur naon🤣
-1629098548385169408 2023-02-24 12:38:55 +0000 &lt;Outstandjing&gt; @PratamaAxz @hyvaikal @ridwankamil ☕🙏
-1629098386040451072 2023-02-24 12:38:17 +0000 &lt;PratamaAxz&gt; @hyvaikal @ridwankamil @Outstandjing Halah si Outanjing aja kerjaannya cuman Framming terus ngulang-ngulang template meh Followersna nyerang @ridwankamil emang pernah minta maaf?ulah playing Victim woy
-1629098251520704514 2023-02-24 12:37:45 +0000 &lt;Outstandjing&gt; @DaithaOK @hyvaikal @ridwankamil 👍
-1629098222798123010 2023-02-24 12:37:38 +0000 &lt;Outstandjing&gt; @AdietRahmayadi @hyvaikal @ridwankamil 👍
-1629098062802219008 2023-02-24 12:37:00 +0000 &lt;DaithaOK&gt; @arifgilang_ @ridwankamil Keur digawean jeung eta lain jiga Odading nu 2 menit langsung jadi
-1629097971659997190 2023-02-24 12:36:38 +0000 &lt;DaithaOK&gt; @hyvaikal @ridwankamil @Outstandjing Teu Wajib rek naon oge ka si Imam nu teu penting kitu
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1629097650678013952 2023-02-24 12:35:21 +0000 &lt;Outstandjing&gt; @hyvaikal @ridwankamil 🙏
-1629097620546408449 2023-02-24 12:35:14 +0000 &lt;AdietRahmayadi&gt; @janetez69 @ridwankamil susah malah diserang balik sama buzzerrp hahahaha
-1629097339746127874 2023-02-24 12:34:07 +0000 &lt;AdietRahmayadi&gt; @hyvaikal @ridwankamil @Outstandjing asa teu kudu
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1629095501319786497 2023-02-24 12:26:49 +0000 &lt;lxmw058&gt; @txtdaribandung Syukurlah, emak gw maksa terus pengen ke al jabbar, padahal gw anti Ridwan Kamil 🤣
-1629095268993073152 2023-02-24 12:25:53 +0000 &lt;Ibas&gt; @ridwankamil Kalo sekolah yang terancam kena gusur, bisa ikut melapor nggak ya?
-1629095036196634625 2023-02-24 12:24:58 +0000 &lt;nenasibaikhati&gt; @ridwankamil Nah..yg serius ditindak tu yg begini.Bukan Sgala perintilan atribut bela diumum2kan agar dipatuhi dipake+di sanksi kalo ga make..ada yg ngejekin BECANDA fisik bisa2nya leumpeung flat krn yg diejek diem aja.Begitu bereaksi marah membela diri dibilang gitu aja marah temen becanda🤡
-1629094464101957633 2023-02-24 12:22:42 +0000 &lt;WDSTN90s&gt; @DancingDeerJB @giraffetowernft @thePapipreneur @aheryawan @ridwankamil @aniesbaswedan pa menang pa
-1629093722179911682 2023-02-24 12:19:45 +0000 &lt;janetez69&gt; @ridwankamil Kalo sudah tuek gini kena bully buzzerRp, boleh lapor ga, kang? heuheu
-1629093610804191232 2023-02-24 12:19:18 +0000 &lt;jabarprovgoid&gt; 2022, @bappedajabar Terima 54 Ribu Usulan  @ridwankamil @PaUuRuzhanul @SWangsaatmaja   #jabarjuara #indonesiajuara  https://t.co/Fic9mPSlZR
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1629093290254671872 2023-02-24 12:18:02 +0000 &lt;smkncihampelas&gt; SMKN 1 Cihampelas mengucapkan terima kasih atas dedikasi Dedi Supandhi,  https://t.co/cTNDAZOVUW,  https://t.co/R9UNK3WwRB untuk kemajuan pendidikan provinsi Jawa Barat. @cadisdik6 @disdik_jabar @ridwankamil  https://t.co/7zng24ycQq
-1629093134708903937 2023-02-24 12:17:25 +0000 &lt;Rahmat6913&gt; @ridwankamil Amengan atuh Pa Gub ka SMPN 55 Kota Bandung, sakola anu diresmikeun ku Bapa..
-1629092740838617088 2023-02-24 12:15:51 +0000 &lt;suryamu27516904&gt; @ridwankamil Mang maman kutap ketap MANTAP
-1629092723973320706 2023-02-24 12:15:47 +0000 &lt;hyvaikal&gt; @ridwankamil Pakgub dah minta maaf sama Pak @Outstandjing blm?  https://t.co/oEHAZdaRu6
-1629092643065204737 2023-02-24 12:15:27 +0000 &lt;SuhermanAminsy1&gt; @ridwankamil Kayaknya semakin komplit ne jabar, siap siap terima study banding dari daerah seindonesia
-1629092482989580289 2023-02-24 12:14:49 +0000 &lt;arifgilang_&gt; @ridwankamil (((dulu))) jigana masih da kang, mun transport jabarnya masih gtu gtu aja mah. :))
-1629092163257528320 2023-02-24 12:13:33 +0000 &lt;bpsdacilcis&gt; Halo sahabat!  Berikut adalah Update Info Data Debit, Tinggi Muka Air (TMA) dan Curah Hujan di lingkungan UPTD PSDA Wilayah Sungai Ciliwung Cisadane: @ridwankamil @PaUuRuzhanul @humasJabar @dinassda_jabar @BPBDJabar&#39;  https://t.co/0pG6Avas96
-1629091024630091777 2023-02-24 12:09:01 +0000 &lt;detikerr&gt; @ridwankamil Tidak ada manfaat pertemuan gubernur dgn bupati utk rakyat Indramayu. Sudah jelas Lucky Hakim punya niat baik, sementara bupati banyak ingkar janji. Jgn jadi Wapres, jika maslah Indramayu tdk beres. @ninagustina1708 @perludem
-1629090797990866945 2023-02-24 12:08:07 +0000 &lt;FadiaNurin&gt; &quot;Semoga menjadi perhatian dan sampai jumpa lagi di tanggal 13 Maret, seminggu sebelum Ramadan tiba,&quot; kata Ridwan Kamil menambahkan.  #BersamaJuara
-1629090794601865217 2023-02-24 12:08:07 +0000 &lt;FadiaNurin&gt; &quot;Setelah dua bulan dibuka dengan antusiasme jamaah yang luar biasa dan dinamika. Agar bulan Ramadan kita bisa beribadah di sana dengan tenang, tertib dan bersih maka penutupan sementara ini dilakukan dengan berbagai pertimbangan,&quot; kata Ridwan Kamil. #BersamaJuara
-1629090791682621441 2023-02-24 12:08:06 +0000 &lt;FadiaNurin&gt; Ridwan Kamil menjelaskan penutupan sementara itu bertujuan untuk penyempurnaan, perbaikan dan penataan ketertiban. Sekadar diketahui, sudah dua bulan Masjid Raya Al Jabbar dibuka untuk umum.  #BersamaJuara
-1629090786771087360 2023-02-24 12:08:05 +0000 &lt;FadiaNurin&gt; &quot;Masjid Raya Al Jabbar akan ditutup sementara sesuai jadwal, dari Senin 27 Februari-13 Maret,&quot; tulis Ridwan Kamil dalam unggahan pribadinya  #BersamaJuara
-1629090783377907712 2023-02-24 12:08:04 +0000 &lt;FadiaNurin&gt; Ridwan Kamil melalui unggahan Instagram pribadinya mengumumkan penutupan sementara Masjid Raya Al Jabbar. Rencananya masjid ini ditutup sementara dari 27 Februari hingga 13 Maret.  #BersamaJuara
-1629090780869726208 2023-02-24 12:08:03 +0000 &lt;FadiaNurin&gt; Masjid Raya Al Jabbar di Gedebage, Kota Bandung bakal ditutup sementara menjelang Ramadan. Gubernur Jabar Ridwan Kamil menyebut pihaknya bakal memperbaiki dan melakukan penataan terlebih dahulu. #BersamaJuara
-1629090777401036802 2023-02-24 12:08:03 +0000 &lt;FadiaNurin&gt; Ridwan Kamil: Masjid Al Jabbar Akan Ditutup Sementara  #BersamaJuara  https://t.co/gglm2NivRn
-1629090588070146048 2023-02-24 12:07:17 +0000 &lt;FadiaNurin&gt; Dalam video yang diunggahnya, Ridwan Kamil menertibkan PKL yang berjualan di area masjid. Ia juga meminta para pengunjung yang sedang makan di area suci masjid untuk pindah. #BersamaJuara
-1629090585041842176 2023-02-24 12:07:17 +0000 &lt;FadiaNurin&gt; &quot;Semoga menjadi perhatian dan sampai jumpa lagi di tanggal 13 Maret, seminggu sebelum Ramadhan tiba,&quot; katanya (Ridwan Kamil). #BersamaJuara
-1629090580830773250 2023-02-24 12:07:16 +0000 &lt;FadiaNurin&gt; Ia (Ridwan Kamil) mengatakan penutupan sementara ini dilakukan agar di bulan Ramadhan masyarakat bisa beribadah di sana dengan tenang, tertib, dan bersih. Maka, penutupan sementara ini harus dilakukan dengan berbagai pertimbangan. #BersamaJuara
-1629090577026531329 2023-02-24 12:07:15 +0000 &lt;FadiaNurin&gt; &quot;Menyambut Bulan Suci Ramadan, Masjid Raya Al Jabbar akan ditutup sementara sesuai jadwal dari Senin 27 Februari-13 Maret, untuk penyempurnaan, perbaikan dan penataan ketertiban setelah dua bulan dibuka dengan antusiasme jamaah yg luar biasa ...,&quot; kata Ridwan Kamil #BersamaJuara
-1629090572622528512 2023-02-24 12:07:14 +0000 &lt;FadiaNurin&gt; Gubernur Jawa Barat Ridwan Kamil menyatakan Masjid Raya Al Jabbar di Gedebage, Kota Bandung, akan ditutup sementara pada 27 Februari - 13 Maret 2023. Hal ini dikatakannya setelah melakukan inspeksi penertiban di Masjid Raya Al Jabbar. #BersamaJuara
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1629090569988501506 2023-02-24 12:07:13 +0000 &lt;FadiaNurin&gt; Ridwan Kamil Akhirnya Menutup Masjid Al Jabbar Hingga 13 Maret Setelah Melakukan Inspeksi #BersamaJuara  https://t.co/D8KgHg3PXw
-1629090402832887810 2023-02-24 12:06:33 +0000 &lt;FadiaNurin&gt; Ketika ditanyakan, adakah kerusakan fasilitas, Ridwan Kamil mengatakan, sementara saat ini lebih pada kapasitas. &quot;Saya lebih senang banyak dinamika karena ramai daripada sepi,&quot; ucap Ridwan Kamil. #BersamaJuara
-1629090399896866817 2023-02-24 12:06:33 +0000 &lt;FadiaNurin&gt; &quot;Tolong disampaikan niatnya memang sudah jadwal evaluasi dan mau beres-beres, bersihin karpet dan lain-lain. Agar saat Ramdan sekitar tanggal 20 Maret, sudah betul-betul nyaman beribadah. Dua minggu,&quot; kata Ridwan Kamil. #BersamaJuara
-1629090395559952385 2023-02-24 12:06:31 +0000 &lt;FadiaNurin&gt; Ridwan Kamil pun meminta agar penutupan tersebut tidak dinilai dadakan. Penutupan masjid sementara memang sudah direncanaka sebelumnya, bukan karena hasil monitoringnya. #BersamaJuara
-1629090392196141056 2023-02-24 12:06:31 +0000 &lt;FadiaNurin&gt; &quot;Karena saya monitor juga PKL itu paling warga lokalnya hanya 5 persen. Sisanya saya wawancara ada yang dari Garut, dari mana, dan modusnya ya macam-macam,&quot; ujar Ridwan Kamil. #BersamaJuara
-1629090389075296258 2023-02-24 12:06:30 +0000 &lt;FadiaNurin&gt; &quot;Makanya hari ini ada pengetatan keamanan dimasifkan ada bantuan dari TNI. Mulai Senin selama dua minggu, kita akan beres-beres lagi mengevaluasi mana saja yang berhasil dan kurang,&quot; ujar (Ridwan Kamil) melanjutkan. #BersamaJuara
-1629090385523015681 2023-02-24 12:06:29 +0000 &lt;FadiaNurin&gt; &quot;Kita lihat cara masyarakat merespons Al Jabbar. Makanya saya tidak bereaksi macam-macam karena memang berproses. Kebetulan menjelang Ramadan kita ingin khusyuk, tidak banyak gangguan, enggak terhalangi mau ibadah, ...,&quot; tutur Ridwan Kamil. #BersamaJuara
-1629090382058500097 2023-02-24 12:06:28 +0000 &lt;FadiaNurin&gt; Dikatakan Ridwan Kamil, dari awal Al Jabbar ini diberi waktu dua bulan di rapat pertama untuk mengetahui perkembangannya. Untuk diketahui, masjid terbesar di Jabar itu diresmikan pada 30 Desember 2022 lalu. #BersamaJuara
-1629090379239936002 2023-02-24 12:06:28 +0000 &lt;FadiaNurin&gt; &quot;(Bapak kayak yang kesal?) enggak kesel. Biasa,&quot; ucap Ridwan Kamil pada awak media di Gedung Sate, Kota Bandung, Jumat, 24 Februari 2023.  #BersamaJuara
-1629090376308121600 2023-02-24 12:06:27 +0000 &lt;FadiaNurin&gt; Gubernur Jawa Barat Ridwan Kamil melakukan inspeksi mendadak di Masjid Raya Al Jabbar. Dia terlihat tampak kesal dengan kondisi masjid yang saat itu terlihat semrawut. #BersamaJuara
-1629090373208539138 2023-02-24 12:06:26 +0000 &lt;FadiaNurin&gt; Penutupan Masjid Al Jabbar, Murni Jadwal Evaluasi #BersamaJuara  #RidwanKamil  https://t.co/qZZfjNOzVQ
-1629090251393073154 2023-02-24 12:05:57 +0000 &lt;detik_jabar&gt; Ridwan Kamil Ungkap Fakta di Balik Status Garut KLB Difteri  https://t.co/YPXGULO1uG
-1629090056978964480 2023-02-24 12:05:11 +0000 &lt;FadiaNurin&gt; Bahkan, dalam survei Populi Center 25 Januari s.d. 2 Februari 2023 Ridwan Kamil juga menjadi figur paling disukai oleh masyarakat. Mantan Wali Kota Bandung tersebut berada di puncak hasil survei untuk posisi cawapres. #BersamaJuara
-1629090052486864898 2023-02-24 12:05:10 +0000 &lt;FadiaNurin&gt; Sebelumnya, hasil survei Litbang Kompas pada tanggal 25 Januari sampai dengan 4 Februari 2023 menyebutkan Gubernur Jawa Barat Ridwan Kamil sebagai capres alternatif dengan elektabilitas tertinggi.  #BersamaJuara
-1629090049982894081 2023-02-24 12:05:09 +0000 &lt;FadiaNurin&gt; &quot;Dia (Ridwan Kamil) punya kesempatan lebih besar dari yang lain,&quot; kata Ujang Komarudin saat dikonfirmasi wartawan menanggapi hasil survei calon presiden (capres) alternatif, Jumat.  #BersamaJuara
-1629090046619033601 2023-02-24 12:05:08 +0000 &lt;FadiaNurin&gt; Pakar politik dari Universitas Al Azhar Indonesia Ujang Komarudin menilai Ridwan Kamil memiliki kesempatan untuk maju bertarung pada Pemilihan Umum Presiden (Pilpres) 2024.  #BersamaJuara
-1629090043733377024 2023-02-24 12:05:08 +0000 &lt;FadiaNurin&gt; Pakar politik menilai Ridwan Kamil punya kesempatan maju pada pilpres #BersamaJuara  https://t.co/kMomBFIPoc
-1629089841492414466 2023-02-24 12:04:19 +0000 &lt;FadiaNurin&gt; &quot;..., percayalah pada pemerintah. Karena pemerintah melakukan hal itu untuk melindungi nyawa warganya. Ini jadi catatan kita cek lagi zona mana yang belum melakukan vaksin khusus di usia balita,&quot; jelasnya (Ridwan Kamil). #BersamaJuara
-1629089838912905217 2023-02-24 12:04:19 +0000 &lt;FadiaNurin&gt; Emil (Ridwan Kamil) pun meminta masyarakat percaya terhadap pemerintah, khususnya menyangkut kesehatan. #BersamaJuara
-1629089835897196551 2023-02-24 12:04:18 +0000 &lt;FadiaNurin&gt; Fakta lainnya, Emil (Ridwan Kamil) menemukan ada tokoh masyarakat di desa tersebut yang melarang vaksin.  &quot;Diteliti lagi ada faktor tokoh lokal katanya yang mengeluarkan fatwa melarang vaksin,&quot; ucapnya. #BersamaJuara
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1629089830746587138 2023-02-24 12:04:17 +0000 &lt;FadiaNurin&gt; Gubernur Jawa Barat Ridwan Kamil menemukan sejumlah fakta terkait kasus tujuh orang meninggal di Garut karena difteri. Salah satunya, warga yang meninggal karena difteri, sebelumnya tidak melakukan vaksinasi. #BersamaJuara
-1629089827789631488 2023-02-24 12:04:16 +0000 &lt;FadiaNurin&gt; Garut KLB Difteri, Ridwan Kamil Temukan Tokoh Masyarakat yang Larang Vaksin #BersamaJuara  https://t.co/zMUVmQHCEA
-1629089491464986624 2023-02-24 12:02:56 +0000 &lt;FadiaNurin&gt; “Terapkan sport science. Tetapi tidak hanya ke satu dua cabor saja melainkan untuk keseluruhan cabor. Saya yakin dengan begitu olahraga di Jawa Barat akan unggul,” jelasnya (Ridwan Kamil). #BersamaJuara
-1629089488311029761 2023-02-24 12:02:55 +0000 &lt;FadiaNurin&gt; “Kepada jajaran pengurus untuk menerapkan yg menjadi filosopi sunda yaitu silih asah, silih asih, silih asuh. Jangan menerapkan sistem bos di KONI tapi pimpinan. Jadiakan keberadaan di KONI ini Sebagai pengabdian dan dedikasi untuk organisasi,” ungkap Ridwan Kamil. #BersamaJuara
-1629089485630877696 2023-02-24 12:02:55 +0000 &lt;FadiaNurin&gt; Lebih lanjut Kang Emil menuturkan, dalam kepengurusan KONI Jabar diharapkan semua jajaran pengurus untuk menerapkan filosopi sunda yaitu silih asal silih asih dan silih asuh. #BersamaJuara  #RidwanKamil
-1629089483152031746 2023-02-24 12:02:54 +0000 &lt;FadiaNurin&gt; Selain itu, pada pertemuan tersebut Ridwan Kamil membuat tag line baru untuk olahraga Jabar yaitu Jabar Hattrick Juara. Dengan harapan semangat Jabar Juara bisa membawa para atlet dan pelatih yang berjuang pada multievent PON XXI/2024 dan kembali meraih juara. #BersamaJuara
-1629089480358633475 2023-02-24 12:02:53 +0000 &lt;FadiaNurin&gt; Apalagi menurut Kang Emil (Ridwan Kamil), dalam waktu dekat Jawa Barat akan menghadapi tantangan yang cukup berat, yakni target meraih Hattrick Juara pada PON XXI/2024 di Aceh-Sumut. #BersamaJuara
-1629089477728796673 2023-02-24 12:02:53 +0000 &lt;FadiaNurin&gt; Kang Emil (Ridwan Kamil) sapaan akrab Gubernur Jabar, mengajak Pengurus KONI Jawa Barat periode 2022-2026 untuk bersama-sama menyatukan visi dan misi Jabar Juara. #BersamaJuara
-1629089266503651329 2023-02-24 12:02:02 +0000 &lt;madraf13&gt; @infobdg NT BANG @ridwankamil
-1629088901557280768 2023-02-24 12:00:35 +0000 &lt;sherilynslvn&gt; ridwan kamil once said:
-1629088774776061954 2023-02-24 12:00:05 +0000 &lt;DaithaOK&gt; @janetez69 @abu_waras Oke tuh tapi lebih pas @ridwankamil yang jadi Presiden nya atau kemungkinan mereka malah saling bertarung di 2024 tapi wajar aja namanya Politik itu dinamis
-1629088764134928388 2023-02-24 12:00:03 +0000 &lt;inewsdotid&gt; Ridwan Kamil tutup sementara Masjid Raya Al Jabbar selama 2 pekan, ada apa?  https://t.co/DXR6osEgcf
-1629088624582205442 2023-02-24 11:59:29 +0000 &lt;detikerr&gt; @ninagustina1708 dari partai mana sih ?   Kok tega amat sebagai wanita (feminist) menghambat  Lucky Hakim yg cinta dan mau bekerja sungguh2 utk rakyat Indramayu. Siapa sih kamu sebenarnya ? (pahlawan atau penghianat rakyat) ?  @ridwankamil @kotaindramayu @KPK_RI @PDI_Perjuangan
-1629088259551928320 2023-02-24 11:58:02 +0000 &lt;janetez69&gt; @abu_waras Menurutku Anies itu cucoknya sama Ridwan Kamil. Chemistry nya nyambung.
-1629088252421623813 2023-02-24 11:58:01 +0000 &lt;FadiaNurin&gt; ‘Kepada pengurus KONI, agar menerapkan filosopi sunda yaitu silih asah, silih asih, silih asuh. Jangan menerapkan sistem bos di KONI tapi pimpinan. Jadi keberadaan KONI ini sebagai pengabdian dan dedikasi untuk organisasi,’ ucap Ridwan Kamil. #BersamaJuara
-1629088249993121795 2023-02-24 11:58:00 +0000 &lt;FadiaNurin&gt; Pada kesempatan itu, ia (Ridwan Kamil) membuat tag line baru untuk olahrgaa Jabar yaitu “Jabar Hattrick Juara”. #BersamaJuara
-1629088247321362432 2023-02-24 11:57:59 +0000 &lt;FadiaNurin&gt; ‘Kita dua kali berturut-turut juara umum di era modern. Jadi yang pertama saya berpesan untuk merangkul semua elemen cabang olahraga dan berkolaborasi agar semuanya tercapai. Kemudian visi misi harus sama dengan pemerintah yaitu Jabar Juara,’ kata Ridwan Kamil. #BersamaJuara
-1629088244544704512 2023-02-24 11:57:59 +0000 &lt;FadiaNurin&gt; Ridwan Kamil mengajak pengurus KONI Jabar menyatukan visi dan misi bersama Pemerintah Provinsi (Pemprov) Jabar, khususnya menghadapi tantangan berat mambawa Jabar “hattrick” pada PON XXI tahun 2024 di Sumut-Aceh. #BersamaJuara
-1629088241570959360 2023-02-24 11:57:58 +0000 &lt;FadiaNurin&gt; Gubernur Jawa Barat, Ridwan Kamil akhirnya mau menerima audiensi pengurus KONI Jawa Barat periode 2022-2026 pimpinan Dr. H M. Budiana di Ruang Edukasi Masjid Raya Al-Jabbar, Jl. Cimencrang, Gede Bage Kota Bandung, Kamis 23 Februari 2023. #BersamaJuara
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1629088238886592512 2023-02-24 11:57:57 +0000 &lt;FadiaNurin&gt; Akhirnya Gubernur (Ridwan Kamil) Mau Ketemu Ketum KONI Jabar #BersamaJuara   https://t.co/KZJkkaOb7Q
-1629087633057124353 2023-02-24 11:55:33 +0000 &lt;kozirama&gt; @terehliyeur @ridwankamil Bhaique
-1629087267175424003 2023-02-24 11:54:06 +0000 &lt;FadiaNurin&gt; Gubernur Jawa Barat Ridwan Kamil penataan dan pemeliharaan Kawasan dan Masjid Raya Al Jabbar bertujuan untuk menciptakan kenyamanan beribadah dan menghadirkan pelayanan yang baik menjelang Bulan Suci Ramadhan. #BersamaJuara
-1629087259915096065 2023-02-24 11:54:04 +0000 &lt;FadiaNurin&gt; Selama 2 Pekan, Kawasan dan Masjid Raya Al Jabbar Ditutup Sementara #BersamaJuara  #RidwanKamil   https://t.co/e1EPfxxcC4
-1629086920524566534 2023-02-24 11:52:43 +0000 &lt;IAS_TC_Depok&gt; Situasi arus lalu lintas Kota Depok dari IAS-TC. Bagi pengguna jalan harap selalu patuhi peraturan rambu lalu lintas dan marka jalan @IdrisAShomad @ridwankamil @ImamBHartono @Dishub_Dalops @Dishub_Dpk @pemkotdepok    Jumat, 2023 02 24 18:35:30  https://t.co/8MRe59LaSh
-1629086592299311106 2023-02-24 11:51:25 +0000 &lt;Dediy_orlando&gt; @randiazhar88 @ridwankamil @SwjAmbassador @disparbud_jabar @humasjabar @westjavagov_ @SukabumiiFess @sukabumitoday @PemkotSukabumi Asa jiga di Gasibu nya
-1629086412183310336 2023-02-24 11:50:42 +0000 &lt;smkgerbi&gt; PANEN KARYA KEGIATAN P5 DENGAN TEMA KEARIFAN LOKAL SMKN 1 GEGERBITUNG support by X DKV 2  @ridwankamil  @NonongWinarni  @cadisdik5  @aderusliana  #kearifanlokal  #panenkarya  #P5  https://t.co/RtCzhueGrD
-1629086376682749954 2023-02-24 11:50:33 +0000 &lt;FadiaNurin&gt; &quot;Pak Gubernur (Ridwan Kamil) sudah mengamanatkan kepada Kepala BP Cekban dalam waktu dekat berkomunikasi dengan semua kepala daerah untuk membicarakan akselerasi infrastruktur di Cekungan Bandung,&quot; ujar Sumasna. #BersamaJuara
-1629086367404949505 2023-02-24 11:50:31 +0000 &lt;FadiaNurin&gt; Sumasna mengklaim Ridwan Kamil sudah memberi amanah kepada Kepala BP Cekban untuk berkomunikasi dengan kepala daerah soal pembangunan infrastruktur di sekitaran Cekungan Bandung. #BersamaJuara
-1629086353278513152 2023-02-24 11:50:28 +0000 &lt;FadiaNurin&gt; Kepala Bappeda Jabar Sumasna, menyebut Ridwan Kamil sudah menetapkan kepala definitif Badan Pengelola Cekungan Bandung, yakni Tatang Rustandar Wiraatmadja, sekitar dua pekan lalu. Sosok ini sudah tak asing dengan masalah tata ruang dan perencanaan perkotaan. #BersamaJuara
-1629086344759873536 2023-02-24 11:50:26 +0000 &lt;FadiaNurin&gt; Menindaklanjuti aspirasi soal masalah kemacetan ini, Gubernur Jawa Barat, Ridwan Kamil, sudah menunjuk Kepala Badan Pengelola Cekungan Bandung (BP Cekban) untuk ikut mengurai masalah ini. #BersamaJuara
-1629086336266424320 2023-02-24 11:50:24 +0000 &lt;FadiaNurin&gt; Sepekan terakhir, kemacetan di sekitaran Bojongsoang menjadi isu yang mengemuka. Bupati Bandung, Dadang Supriatna, berharap pembangunan fly over Bojongsoang bisa segera direncanakan. #BersamaJuara  #RidwanKamil Ridwan Kamil
-1629086330704773122 2023-02-24 11:50:22 +0000 &lt;FadiaNurin&gt; Gubernur Jawa Barat (Ridwan Kamil) sudah memberi amanat kepada Kepala Badan Pengelola Cekungan Bandung ( BP Cekban), Tatang RW, untuk berkomunikasi dengan kepala daerah di Cekungan Bandung, salah satunya soal isu kemacetan di Bojongsoang. #BersamaJuara
-1629086314573496320 2023-02-24 11:50:19 +0000 &lt;FadiaNurin&gt; Mantan Pejabat Pemkab Bandung Ini Ditunjuk jadi Kepala Badan Pengelola Cekungan Bandung, Ini Amanat Kang Emil (Ridwan Kamil) #BersamaJuara   https://t.co/psKSLkBna3
-1629086112621924353 2023-02-24 11:49:30 +0000 &lt;SayatokisWaw&gt; @ridwankamil Haturnuhun Bapa Miwah Bu Cinta parantos sumping ka Kota Banjar ....
-1629085899157020674 2023-02-24 11:48:39 +0000 &lt;randiazhar88&gt; @Don_Alayzz @ridwankamil @SwjAmbassador @disparbud_jabar @humasjabar @westjavagov_ @SukabumiiFess @sukabumitoday @PemkotSukabumi Gasken
-1629085431370227712 2023-02-24 11:46:48 +0000 &lt;inilahkorancom&gt; Bupati Bandung Minta Pemprov Bangun Flyover Bojongsoang, Ini Kata Ridwan Kamil... |  https://t.co/K6nztZxErM
-1629085308909412354 2023-02-24 11:46:19 +0000 &lt;jabarekspres&gt; Gubernur Jawa Barat (Jabar) Ridwan Kamil mengumumkan penutupan sementara Masjid Raya Al Jabbar, Kecamatan Gedebage, Kota Bandung.  #mesjid #aljabar #mesjidaljabar #penutupansementara #ridwankamil #infojabar  https://t.co/FlADoaUB0n
-1629085170769985536 2023-02-24 11:45:46 +0000 &lt;DaithaOK&gt; @tratas_id @ridwankamil Kesini @bimautamajabar kalau iyah itu jalan Provinsi
-1629084804015861760 2023-02-24 11:44:18 +0000 &lt;bima6ciayumaja&gt; Selamat sore #SobatBima6 di wilayah #Ciayumaja menemani waktu bersantai, mimin mau menginformasikan ada pemeliharaan jalan yaitu kegiatan pekerjaan #PerawatanDamija di ruas jalan Cikamurang-Bantarwaru  https://t.co/pS7JgoBvCo.111+500 @bimautamajabar @ridwankamil #dbmprjuara  https://t.co/kdZtezHwne
-</pre></div>
-</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -1175,7 +1166,7 @@ Requirement already satisfied: nest_asyncio in /usr/local/lib/python3.8/dist-pac
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-3504bc60-7f78-4b66-8c62-277c3d45adcc">
+  <div id="df-84838b97-7bb8-49ed-ba8e-5f2d30f832f8">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1221,13 +1212,13 @@ Requirement already satisfied: nest_asyncio in /usr/local/lib/python3.8/dist-pac
   <tbody>
     <tr>
       <th>0</th>
-      <td>1629117798244048896</td>
-      <td>1629117778086219776</td>
+      <td>1629119751812440065</td>
+      <td>1629119732040486912</td>
       <td>1.677247e+12</td>
-      <td>2023-02-24 13:55:25</td>
+      <td>2023-02-24 14:03:11</td>
       <td>+0000</td>
       <td></td>
-      <td>Sebelumnya Litbang Kompas merilis hasil survei...</td>
+      <td>‘Kepada pengurus KONI, agar menerapkan filosop...</td>
       <td>in</td>
       <td>[bersamajuara]</td>
       <td>[]</td>
@@ -1245,13 +1236,13 @@ Requirement already satisfied: nest_asyncio in /usr/local/lib/python3.8/dist-pac
     </tr>
     <tr>
       <th>1</th>
-      <td>1629117795178016768</td>
-      <td>1629117778086219776</td>
+      <td>1629119749300031488</td>
+      <td>1629119732040486912</td>
       <td>1.677247e+12</td>
-      <td>2023-02-24 13:55:24</td>
+      <td>2023-02-24 14:03:10</td>
       <td>+0000</td>
       <td></td>
-      <td>Menduduki posisi keempat sebagai capres menuru...</td>
+      <td>Pada kesempatan itu, ia (Ridwan Kamil) membuat...</td>
       <td>in</td>
       <td>[bersamajuara]</td>
       <td>[]</td>
@@ -1269,13 +1260,13 @@ Requirement already satisfied: nest_asyncio in /usr/local/lib/python3.8/dist-pac
     </tr>
     <tr>
       <th>2</th>
-      <td>1629117791885496322</td>
-      <td>1629117778086219776</td>
+      <td>1629119746456326145</td>
+      <td>1629119732040486912</td>
       <td>1.677247e+12</td>
-      <td>2023-02-24 13:55:23</td>
+      <td>2023-02-24 14:03:09</td>
       <td>+0000</td>
       <td></td>
-      <td>RK (Ridwan Kamil) menyampaikan hanya bekerja s...</td>
+      <td>‘Kita dua kali berturut-turut juara umum di er...</td>
       <td>in</td>
       <td>[bersamajuara]</td>
       <td>[]</td>
@@ -1293,13 +1284,13 @@ Requirement already satisfied: nest_asyncio in /usr/local/lib/python3.8/dist-pac
     </tr>
     <tr>
       <th>3</th>
-      <td>1629117789670883328</td>
-      <td>1629117766614781952</td>
+      <td>1629119738428395520</td>
+      <td>1629119732040486912</td>
       <td>1.677247e+12</td>
-      <td>2023-02-24 13:55:23</td>
+      <td>2023-02-24 14:03:07</td>
       <td>+0000</td>
       <td></td>
-      <td>Sebelumnya Litbang Kompas merilis hasil survei...</td>
+      <td>Ridwan Kamil mengajak pengurus KONI Jabar meny...</td>
       <td>in</td>
       <td>[bersamajuara]</td>
       <td>[]</td>
@@ -1317,13 +1308,13 @@ Requirement already satisfied: nest_asyncio in /usr/local/lib/python3.8/dist-pac
     </tr>
     <tr>
       <th>4</th>
-      <td>1629117787263336450</td>
-      <td>1629117778086219776</td>
+      <td>1629119736654225408</td>
+      <td>1629119717347823618</td>
       <td>1.677247e+12</td>
-      <td>2023-02-24 13:55:22</td>
+      <td>2023-02-24 14:03:07</td>
       <td>+0000</td>
       <td></td>
-      <td>"Saya ini kan nggak pernah minta di survei-sur...</td>
+      <td>‘Kepada pengurus KONI, agar menerapkan filosop...</td>
       <td>in</td>
       <td>[bersamajuara]</td>
       <td>[]</td>
@@ -1364,40 +1355,16 @@ Requirement already satisfied: nest_asyncio in /usr/local/lib/python3.8/dist-pac
       <td>...</td>
     </tr>
     <tr>
-      <th>506</th>
-      <td>1629085899157020674</td>
-      <td>1628604681084882944</td>
-      <td>1.677239e+12</td>
-      <td>2023-02-24 11:48:39</td>
+      <th>496</th>
+      <td>1629100014030180354</td>
+      <td>1629100009189965824</td>
+      <td>1.677243e+12</td>
+      <td>2023-02-24 12:44:45</td>
       <td>+0000</td>
       <td></td>
-      <td>@Don_Alayzz @ridwankamil @SwjAmbassador @dispa...</td>
-      <td>ht</td>
-      <td>[]</td>
-      <td>[]</td>
-      <td>...</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>[{'screen_name': 'Don_Alayzz', 'name': 'Don_Al...</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>507</th>
-      <td>1629085431370227712</td>
-      <td>1629085431370227712</td>
-      <td>1.677239e+12</td>
-      <td>2023-02-24 11:46:48</td>
-      <td>+0000</td>
-      <td></td>
-      <td>Bupati Bandung Minta Pemprov Bangun Flyover Bo...</td>
+      <td>Gubernur Jawa Barat, Ridwan Kamil dinilai bisa...</td>
       <td>in</td>
-      <td>[]</td>
+      <td>[bersamajuara]</td>
       <td>[]</td>
       <td>...</td>
       <td></td>
@@ -1412,16 +1379,16 @@ Requirement already satisfied: nest_asyncio in /usr/local/lib/python3.8/dist-pac
       <td></td>
     </tr>
     <tr>
-      <th>508</th>
-      <td>1629085308909412354</td>
-      <td>1629085308909412354</td>
-      <td>1.677239e+12</td>
-      <td>2023-02-24 11:46:19</td>
+      <th>497</th>
+      <td>1629100012130164737</td>
+      <td>1629099994816053250</td>
+      <td>1.677243e+12</td>
+      <td>2023-02-24 12:44:44</td>
       <td>+0000</td>
       <td></td>
-      <td>Gubernur Jawa Barat (Jabar) Ridwan Kamil mengu...</td>
+      <td>Selain itu, latar belakang profesi, keluarga, ...</td>
       <td>in</td>
-      <td>[mesjid, aljabar, mesjidaljabar, penutupanseme...</td>
+      <td>[bersamajuara]</td>
       <td>[]</td>
       <td>...</td>
       <td></td>
@@ -1436,16 +1403,16 @@ Requirement already satisfied: nest_asyncio in /usr/local/lib/python3.8/dist-pac
       <td></td>
     </tr>
     <tr>
-      <th>509</th>
-      <td>1629085170769985536</td>
-      <td>1629083112214003713</td>
-      <td>1.677239e+12</td>
-      <td>2023-02-24 11:45:46</td>
+      <th>498</th>
+      <td>1629100009189965824</td>
+      <td>1629100009189965824</td>
+      <td>1.677243e+12</td>
+      <td>2023-02-24 12:44:44</td>
       <td>+0000</td>
       <td></td>
-      <td>@tratas_id @ridwankamil Kesini @bimautamajabar...</td>
+      <td>Ridwan Kamil Bisa Dimanfaatkan Dongkrak Suara ...</td>
       <td>in</td>
-      <td>[]</td>
+      <td>[bersamajuara]</td>
       <td>[]</td>
       <td>...</td>
       <td></td>
@@ -1453,23 +1420,47 @@ Requirement already satisfied: nest_asyncio in /usr/local/lib/python3.8/dist-pac
       <td></td>
       <td></td>
       <td></td>
-      <td>[{'screen_name': 'tratas_id', 'name': 'tratas'...</td>
+      <td>[]</td>
       <td></td>
       <td></td>
       <td></td>
       <td></td>
     </tr>
     <tr>
-      <th>510</th>
-      <td>1629084804015861760</td>
-      <td>1629084804015861760</td>
-      <td>1.677239e+12</td>
-      <td>2023-02-24 11:44:18</td>
+      <th>499</th>
+      <td>1629100007759679491</td>
+      <td>1629099994816053250</td>
+      <td>1.677243e+12</td>
+      <td>2023-02-24 12:44:43</td>
       <td>+0000</td>
       <td></td>
-      <td>Selamat sore #SobatBima6 di wilayah #Ciayumaja...</td>
+      <td>Ridwan Kamil yang bergabung dengan Partai Golk...</td>
       <td>in</td>
-      <td>[sobatbima6, ciayumaja, perawatandamija, dbmpr...</td>
+      <td>[bersamajuara]</td>
+      <td>[]</td>
+      <td>...</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>500</th>
+      <td>1629100003905126401</td>
+      <td>1629099994816053250</td>
+      <td>1.677243e+12</td>
+      <td>2023-02-24 12:44:42</td>
+      <td>+0000</td>
+      <td></td>
+      <td>Pengamat politik dari Universitas Trunojoyo, S...</td>
+      <td>in</td>
+      <td>[bersamajuara]</td>
       <td>[]</td>
       <td>...</td>
       <td></td>
@@ -1485,9 +1476,9 @@ Requirement already satisfied: nest_asyncio in /usr/local/lib/python3.8/dist-pac
     </tr>
   </tbody>
 </table>
-<p>511 rows × 38 columns</p>
+<p>501 rows × 38 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-3504bc60-7f78-4b66-8c62-277c3d45adcc')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-84838b97-7bb8-49ed-ba8e-5f2d30f832f8')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1538,12 +1529,12 @@ Requirement already satisfied: nest_asyncio in /usr/local/lib/python3.8/dist-pac
 
       <script>
         const buttonEl =
-          document.querySelector('#df-3504bc60-7f78-4b66-8c62-277c3d45adcc button.colab-df-convert');
+          document.querySelector('#df-84838b97-7bb8-49ed-ba8e-5f2d30f832f8 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-3504bc60-7f78-4b66-8c62-277c3d45adcc');
+          const element = document.querySelector('#df-84838b97-7bb8-49ed-ba8e-5f2d30f832f8');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1580,7 +1571,7 @@ Requirement already satisfied: nest_asyncio in /usr/local/lib/python3.8/dist-pac
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-2388c537-c99d-4e27-bc95-590f9a763d7e">
+  <div id="df-5f5c82f4-bb0d-4cca-8b54-538b0c7cccb4">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1627,13 +1618,13 @@ Requirement already satisfied: nest_asyncio in /usr/local/lib/python3.8/dist-pac
     <tr>
       <th>0</th>
       <td>0</td>
-      <td>1629117798244048896</td>
-      <td>1629117778086219776</td>
+      <td>1629119751812440065</td>
+      <td>1629119732040486912</td>
       <td>1.677247e+12</td>
-      <td>2023-02-24 13:55:25</td>
+      <td>2023-02-24 14:03:11</td>
       <td>0</td>
       <td>NaN</td>
-      <td>Sebelumnya Litbang Kompas merilis hasil survei...</td>
+      <td>‘Kepada pengurus KONI, agar menerapkan filosop...</td>
       <td>in</td>
       <td>['bersamajuara']</td>
       <td>...</td>
@@ -1651,13 +1642,13 @@ Requirement already satisfied: nest_asyncio in /usr/local/lib/python3.8/dist-pac
     <tr>
       <th>1</th>
       <td>1</td>
-      <td>1629117795178016768</td>
-      <td>1629117778086219776</td>
+      <td>1629119749300031488</td>
+      <td>1629119732040486912</td>
       <td>1.677247e+12</td>
-      <td>2023-02-24 13:55:24</td>
+      <td>2023-02-24 14:03:10</td>
       <td>0</td>
       <td>NaN</td>
-      <td>Menduduki posisi keempat sebagai capres menuru...</td>
+      <td>Pada kesempatan itu, ia (Ridwan Kamil) membuat...</td>
       <td>in</td>
       <td>['bersamajuara']</td>
       <td>...</td>
@@ -1675,13 +1666,13 @@ Requirement already satisfied: nest_asyncio in /usr/local/lib/python3.8/dist-pac
     <tr>
       <th>2</th>
       <td>2</td>
-      <td>1629117791885496322</td>
-      <td>1629117778086219776</td>
+      <td>1629119746456326145</td>
+      <td>1629119732040486912</td>
       <td>1.677247e+12</td>
-      <td>2023-02-24 13:55:23</td>
+      <td>2023-02-24 14:03:09</td>
       <td>0</td>
       <td>NaN</td>
-      <td>RK (Ridwan Kamil) menyampaikan hanya bekerja s...</td>
+      <td>‘Kita dua kali berturut-turut juara umum di er...</td>
       <td>in</td>
       <td>['bersamajuara']</td>
       <td>...</td>
@@ -1699,13 +1690,13 @@ Requirement already satisfied: nest_asyncio in /usr/local/lib/python3.8/dist-pac
     <tr>
       <th>3</th>
       <td>3</td>
-      <td>1629117789670883328</td>
-      <td>1629117766614781952</td>
+      <td>1629119738428395520</td>
+      <td>1629119732040486912</td>
       <td>1.677247e+12</td>
-      <td>2023-02-24 13:55:23</td>
+      <td>2023-02-24 14:03:07</td>
       <td>0</td>
       <td>NaN</td>
-      <td>Sebelumnya Litbang Kompas merilis hasil survei...</td>
+      <td>Ridwan Kamil mengajak pengurus KONI Jabar meny...</td>
       <td>in</td>
       <td>['bersamajuara']</td>
       <td>...</td>
@@ -1723,13 +1714,13 @@ Requirement already satisfied: nest_asyncio in /usr/local/lib/python3.8/dist-pac
     <tr>
       <th>4</th>
       <td>4</td>
-      <td>1629117787263336450</td>
-      <td>1629117778086219776</td>
+      <td>1629119736654225408</td>
+      <td>1629119717347823618</td>
       <td>1.677247e+12</td>
-      <td>2023-02-24 13:55:22</td>
+      <td>2023-02-24 14:03:07</td>
       <td>0</td>
       <td>NaN</td>
-      <td>"Saya ini kan nggak pernah minta di survei-sur...</td>
+      <td>‘Kepada pengurus KONI, agar menerapkan filosop...</td>
       <td>in</td>
       <td>['bersamajuara']</td>
       <td>...</td>
@@ -1769,41 +1760,17 @@ Requirement already satisfied: nest_asyncio in /usr/local/lib/python3.8/dist-pac
       <td>...</td>
     </tr>
     <tr>
-      <th>506</th>
-      <td>506</td>
-      <td>1629085899157020674</td>
-      <td>1628604681084882944</td>
-      <td>1.677239e+12</td>
-      <td>2023-02-24 11:48:39</td>
+      <th>496</th>
+      <td>496</td>
+      <td>1629100014030180354</td>
+      <td>1629100009189965824</td>
+      <td>1.677243e+12</td>
+      <td>2023-02-24 12:44:45</td>
       <td>0</td>
       <td>NaN</td>
-      <td>@Don_Alayzz @ridwankamil @SwjAmbassador @dispa...</td>
-      <td>ht</td>
-      <td>[]</td>
-      <td>...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>[{'screen_name': 'Don_Alayzz', 'name': 'Don_Al...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>507</th>
-      <td>507</td>
-      <td>1629085431370227712</td>
-      <td>1629085431370227712</td>
-      <td>1.677239e+12</td>
-      <td>2023-02-24 11:46:48</td>
-      <td>0</td>
-      <td>NaN</td>
-      <td>Bupati Bandung Minta Pemprov Bangun Flyover Bo...</td>
+      <td>Gubernur Jawa Barat, Ridwan Kamil dinilai bisa...</td>
       <td>in</td>
-      <td>[]</td>
+      <td>['bersamajuara']</td>
       <td>...</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -1817,17 +1784,17 @@ Requirement already satisfied: nest_asyncio in /usr/local/lib/python3.8/dist-pac
       <td>NaN</td>
     </tr>
     <tr>
-      <th>508</th>
-      <td>508</td>
-      <td>1629085308909412354</td>
-      <td>1629085308909412354</td>
-      <td>1.677239e+12</td>
-      <td>2023-02-24 11:46:19</td>
+      <th>497</th>
+      <td>497</td>
+      <td>1629100012130164737</td>
+      <td>1629099994816053250</td>
+      <td>1.677243e+12</td>
+      <td>2023-02-24 12:44:44</td>
       <td>0</td>
       <td>NaN</td>
-      <td>Gubernur Jawa Barat (Jabar) Ridwan Kamil mengu...</td>
+      <td>Selain itu, latar belakang profesi, keluarga, ...</td>
       <td>in</td>
-      <td>['mesjid', 'aljabar', 'mesjidaljabar', 'penutu...</td>
+      <td>['bersamajuara']</td>
       <td>...</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -1841,41 +1808,65 @@ Requirement already satisfied: nest_asyncio in /usr/local/lib/python3.8/dist-pac
       <td>NaN</td>
     </tr>
     <tr>
-      <th>509</th>
-      <td>509</td>
-      <td>1629085170769985536</td>
-      <td>1629083112214003713</td>
-      <td>1.677239e+12</td>
-      <td>2023-02-24 11:45:46</td>
+      <th>498</th>
+      <td>498</td>
+      <td>1629100009189965824</td>
+      <td>1629100009189965824</td>
+      <td>1.677243e+12</td>
+      <td>2023-02-24 12:44:44</td>
       <td>0</td>
       <td>NaN</td>
-      <td>@tratas_id @ridwankamil Kesini @bimautamajabar...</td>
+      <td>Ridwan Kamil Bisa Dimanfaatkan Dongkrak Suara ...</td>
       <td>in</td>
-      <td>[]</td>
+      <td>['bersamajuara']</td>
       <td>...</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>[{'screen_name': 'tratas_id', 'name': 'tratas'...</td>
+      <td>[]</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
     </tr>
     <tr>
-      <th>510</th>
-      <td>510</td>
-      <td>1629084804015861760</td>
-      <td>1629084804015861760</td>
-      <td>1.677239e+12</td>
-      <td>2023-02-24 11:44:18</td>
+      <th>499</th>
+      <td>499</td>
+      <td>1629100007759679491</td>
+      <td>1629099994816053250</td>
+      <td>1.677243e+12</td>
+      <td>2023-02-24 12:44:43</td>
       <td>0</td>
       <td>NaN</td>
-      <td>Selamat sore #SobatBima6 di wilayah #Ciayumaja...</td>
+      <td>Ridwan Kamil yang bergabung dengan Partai Golk...</td>
       <td>in</td>
-      <td>['sobatbima6', 'ciayumaja', 'perawatandamija',...</td>
+      <td>['bersamajuara']</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>[]</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>500</th>
+      <td>500</td>
+      <td>1629100003905126401</td>
+      <td>1629099994816053250</td>
+      <td>1.677243e+12</td>
+      <td>2023-02-24 12:44:42</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>Pengamat politik dari Universitas Trunojoyo, S...</td>
+      <td>in</td>
+      <td>['bersamajuara']</td>
       <td>...</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -1890,9 +1881,9 @@ Requirement already satisfied: nest_asyncio in /usr/local/lib/python3.8/dist-pac
     </tr>
   </tbody>
 </table>
-<p>511 rows × 39 columns</p>
+<p>501 rows × 39 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-2388c537-c99d-4e27-bc95-590f9a763d7e')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-5f5c82f4-bb0d-4cca-8b54-538b0c7cccb4')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1943,12 +1934,12 @@ Requirement already satisfied: nest_asyncio in /usr/local/lib/python3.8/dist-pac
 
       <script>
         const buttonEl =
-          document.querySelector('#df-2388c537-c99d-4e27-bc95-590f9a763d7e button.colab-df-convert');
+          document.querySelector('#df-5f5c82f4-bb0d-4cca-8b54-538b0c7cccb4 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-2388c537-c99d-4e27-bc95-590f9a763d7e');
+          const element = document.querySelector('#df-5f5c82f4-bb0d-4cca-8b54-538b0c7cccb4');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
