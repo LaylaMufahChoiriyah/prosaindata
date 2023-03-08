@@ -63,7 +63,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'Tugas/scrapping_berita_online';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="&lt;no title&gt;" href="getdata_postgresql_elephantsql.html" />
+    <link rel="next" title="GET DATA SEPAL WIDTH POSTGRESQL ELEPHANTSQL" href="getdata_postgresql_elephantsql.html" />
     <link rel="prev" title="SCRAPPING PTA" href="scrapping_PTA.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -160,6 +160,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="scrapping_twitter.html">SCRAPPING TWITTER</a></li>
 <li class="toctree-l1"><a class="reference internal" href="scrapping_PTA.html">SCRAPPING PTA</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">SCRAPPING BERITA ONLINE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getdata_postgresql_elephantsql.html">GET DATA SEPAL WIDTH POSTGRESQL ELEPHANTSQL</a></li>
 </ul>
 
     </div>
@@ -416,16 +417,16 @@ document.write(`
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/
 Requirement already satisfied: requests in /usr/local/lib/python3.8/dist-packages (2.25.1)
-Requirement already satisfied: idna&lt;3,&gt;=2.5 in /usr/local/lib/python3.8/dist-packages (from requests) (2.10)
-Requirement already satisfied: certifi&gt;=2017.4.17 in /usr/local/lib/python3.8/dist-packages (from requests) (2022.12.7)
-Requirement already satisfied: chardet&lt;5,&gt;=3.0.2 in /usr/local/lib/python3.8/dist-packages (from requests) (4.0.0)
 Requirement already satisfied: urllib3&lt;1.27,&gt;=1.21.1 in /usr/local/lib/python3.8/dist-packages (from requests) (1.26.14)
+Requirement already satisfied: chardet&lt;5,&gt;=3.0.2 in /usr/local/lib/python3.8/dist-packages (from requests) (4.0.0)
+Requirement already satisfied: certifi&gt;=2017.4.17 in /usr/local/lib/python3.8/dist-packages (from requests) (2022.12.7)
+Requirement already satisfied: idna&lt;3,&gt;=2.5 in /usr/local/lib/python3.8/dist-packages (from requests) (2.10)
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/
 Requirement already satisfied: html5lib in /usr/local/lib/python3.8/dist-packages (1.0.1)
-Requirement already satisfied: six&gt;=1.9 in /usr/local/lib/python3.8/dist-packages (from html5lib) (1.15.0)
 Requirement already satisfied: webencodings in /usr/local/lib/python3.8/dist-packages (from html5lib) (0.5.1)
+Requirement already satisfied: six&gt;=1.9 in /usr/local/lib/python3.8/dist-packages (from html5lib) (1.15.0)
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/
@@ -583,7 +584,7 @@ Requirement already satisfied: beautifulsoup4 in /usr/local/lib/python3.8/dist-p
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-bbdc0bfd-59c5-405f-af99-8a51f1cdaf0d">
+  <div id="df-661675b7-3f3b-4913-a64b-0de894e223e4">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -732,7 +733,7 @@ Requirement already satisfied: beautifulsoup4 in /usr/local/lib/python3.8/dist-p
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-bbdc0bfd-59c5-405f-af99-8a51f1cdaf0d')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-661675b7-3f3b-4913-a64b-0de894e223e4')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -783,12 +784,12 @@ Requirement already satisfied: beautifulsoup4 in /usr/local/lib/python3.8/dist-p
 
       <script>
         const buttonEl =
-          document.querySelector('#df-bbdc0bfd-59c5-405f-af99-8a51f1cdaf0d button.colab-df-convert');
+          document.querySelector('#df-661675b7-3f3b-4913-a64b-0de894e223e4 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-bbdc0bfd-59c5-405f-af99-8a51f1cdaf0d');
+          const element = document.querySelector('#df-661675b7-3f3b-4913-a64b-0de894e223e4');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -854,7 +855,7 @@ Requirement already satisfied: beautifulsoup4 in /usr/local/lib/python3.8/dist-p
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">&lt;no title&gt;</p>
+        <p class="prev-next-title">GET DATA SEPAL WIDTH POSTGRESQL ELEPHANTSQL</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
