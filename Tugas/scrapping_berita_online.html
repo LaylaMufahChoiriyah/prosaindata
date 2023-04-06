@@ -18,12 +18,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -37,8 +37,8 @@
     <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d" />
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -161,6 +161,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="scrapping_PTA.html">SCRAPPING PTA</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">SCRAPPING BERITA ONLINE</a></li>
 <li class="toctree-l1"><a class="reference internal" href="getdata_postgresql_elephantsql.html">GET DATA SEPAL WIDTH POSTGRESQL ELEPHANTSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="UTS_PSD.html">UTS PSD</a></li>
 </ul>
 
     </div>
@@ -416,22 +417,23 @@ document.write(`
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/
-Requirement already satisfied: requests in /usr/local/lib/python3.8/dist-packages (2.25.1)
-Requirement already satisfied: urllib3&lt;1.27,&gt;=1.21.1 in /usr/local/lib/python3.8/dist-packages (from requests) (1.26.14)
-Requirement already satisfied: chardet&lt;5,&gt;=3.0.2 in /usr/local/lib/python3.8/dist-packages (from requests) (4.0.0)
-Requirement already satisfied: certifi&gt;=2017.4.17 in /usr/local/lib/python3.8/dist-packages (from requests) (2022.12.7)
-Requirement already satisfied: idna&lt;3,&gt;=2.5 in /usr/local/lib/python3.8/dist-packages (from requests) (2.10)
+Requirement already satisfied: requests in /usr/local/lib/python3.9/dist-packages (2.27.1)
+Requirement already satisfied: certifi&gt;=2017.4.17 in /usr/local/lib/python3.9/dist-packages (from requests) (2022.12.7)
+Requirement already satisfied: urllib3&lt;1.27,&gt;=1.21.1 in /usr/local/lib/python3.9/dist-packages (from requests) (1.26.15)
+Requirement already satisfied: idna&lt;4,&gt;=2.5 in /usr/local/lib/python3.9/dist-packages (from requests) (3.4)
+Requirement already satisfied: charset-normalizer~=2.0.0 in /usr/local/lib/python3.9/dist-packages (from requests) (2.0.12)
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/
-Requirement already satisfied: html5lib in /usr/local/lib/python3.8/dist-packages (1.0.1)
-Requirement already satisfied: webencodings in /usr/local/lib/python3.8/dist-packages (from html5lib) (0.5.1)
-Requirement already satisfied: six&gt;=1.9 in /usr/local/lib/python3.8/dist-packages (from html5lib) (1.15.0)
+Requirement already satisfied: html5lib in /usr/local/lib/python3.9/dist-packages (1.1)
+Requirement already satisfied: six&gt;=1.9 in /usr/local/lib/python3.9/dist-packages (from html5lib) (1.16.0)
+Requirement already satisfied: webencodings in /usr/local/lib/python3.9/dist-packages (from html5lib) (0.5.1)
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/
-Requirement already satisfied: bs4 in /usr/local/lib/python3.8/dist-packages (0.0.1)
-Requirement already satisfied: beautifulsoup4 in /usr/local/lib/python3.8/dist-packages (from bs4) (4.6.3)
+Requirement already satisfied: bs4 in /usr/local/lib/python3.9/dist-packages (0.0.1)
+Requirement already satisfied: beautifulsoup4 in /usr/local/lib/python3.9/dist-packages (from bs4) (4.11.2)
+Requirement already satisfied: soupsieve&gt;1.2 in /usr/local/lib/python3.9/dist-packages (from beautifulsoup4-&gt;bs4) (2.4)
 </pre></div>
 </div>
 </div>
@@ -499,64 +501,64 @@ Requirement already satisfied: beautifulsoup4 in /usr/local/lib/python3.8/dist-p
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>sedang mengambil konten dengan judul &#39;Transformasi Digital Bantu UMKM Dongkrak Omzet...&#39;
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>sedang mengambil konten dengan judul &#39;Pure Storage Luncurkan Penyimpanan FlashBlade//E, 20 Sen per Giga...&#39;
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>sedang mengambil konten dengan judul &#39;Video Conference Neat Hadirkan Pertemuan Virtual Terasa Nyata...&#39;
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>sedang mengambil konten dengan judul &#39;Biznet Ingin Sediakan Akses yang Merata di Tanah Air...&#39;
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>sedang mengambil konten dengan judul &#39;Handphone Samsung Harga Rp 2 Jutaan Miliki Durasi Baterai 2 Hari   ...&#39;
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>sedang mengambil konten dengan judul &#39;Pemerintah Siapkan Enam Langkah Tingkatkan Keadilan Digital untuk Masyarakat...&#39;
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>sedang mengambil konten dengan judul &#39;Ponsel Reno8 T 5G Tampil dengan Layar Lengkung Plus Fitur Pintar...&#39;
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>sedang mengambil konten dengan judul &#39;Meriahkan HUT Ke-3, Aplikasi PINTU Gelar Trading Competition ...&#39;
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>sedang mengambil konten dengan judul &#39;Peminat Platform Video Pendek SnackVideo Meningkat Drastis...&#39;
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>sedang mengambil konten dengan judul &#39;Profesi Bidang IT Terkait Cybersecurity Diburu Perusahaan...&#39;
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>sedang mengambil konten dengan judul &#39;Aset Kripto Kesulitan Dapat Momentum di Tengah Pasar Sideways...&#39;
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>sedang mengambil konten dengan judul &#39;IBM Hadirkan Dua Fitur Inovatif untuk Pengalaman Digital Turnamen Masters...&#39;
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>sedang mengambil konten dengan judul &#39;APJII: Terjadi Peningkatan Penetrasi Internet di Indonesia...&#39;
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>sedang mengambil konten dengan judul &#39;Indodax Luncurkan Fitur Baru  Mudahkan Investor Beli Kripto di Indonesia...&#39;
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>sedang mengambil konten dengan judul &#39;Smartfren Tambah 1.000 BTS baru di Jawa Timur...&#39;
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>sedang mengambil konten dengan judul &#39;Teknologi Kecerdasan Buatan Makin Berkembang, Perlu Kejelian dalam Pemanfaatannya...&#39;
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>sedang mengambil konten dengan judul &#39;Dapat Pendanaan US$2,2 Juta, Emerge Group Siap Kembangkan Ekosistem eSport...&#39;
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>sedang mengambil konten dengan judul &#39;Noice hadirkan kurasi konten Ramadan dalam laman tematik ‘FWB-Friends With Barokah’  ...&#39;
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>sedang mengambil konten dengan judul &#39;Cara Mematikan Laptop di Windows...&#39;
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>sedang mengambil konten dengan judul &#39;XL Axiata Luncurkan e-SIM...&#39;
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>sedang mengambil konten dengan judul &#39;APJII dan Telkomsat Kerja Sama Percepat Transformasi Digital ...&#39;
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>sedang mengambil konten dengan judul &#39;Pengapalan Perangkat Layar Lipat akan Capai 48,1 Juta Unit pada 2027...&#39;
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>sedang mengambil konten dengan judul &#39;Kini Televisi Seri Mini LED Hadir dengan Layar Besar 98 Inci ...&#39;
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>sedang mengambil konten dengan judul &#39;Nickname Mobile Legends Nama ML Keren...&#39;
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>sedang mengambil konten dengan judul &#39;Aplikasi Nusaprospect Bantu Maksimalkan Produktivitas Sales Perusahaan...&#39;
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>sedang mengambil konten dengan judul &#39;UR Festival 2023, Festival Gadget Lifestyle dan IoT Terbesar di Indonesia ...&#39;
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>sedang mengambil konten dengan judul &#39;Tren ChatGPT dari Perspektif Neurosains, Menguntungkan atau Merugikan?  ...&#39;
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>sedang mengambil konten dengan judul &#39;Perangkat Keras dan Perangkat Lunak untuk Multimedia...&#39;
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>sedang mengambil konten dengan judul &#39;Teknologi AI Berpotensi Picu Serangan Siber...&#39;
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>sedang mengambil konten dengan judul &#39;ROG Ally Bakal Jadi Pesaing Steam Deck...&#39;
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>sedang mengambil konten dengan judul &#39;Catat! Taiwan Berani Rekrut 6 Ribu Pegawai Meski Permintaan Chip Melorot...&#39;
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>sedang mengambil konten dengan judul &#39;Kabel UTP Adalah: Pengertian, Jenis, Fungsi, Warna, dan Kategori...&#39;
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>sedang mengambil konten dengan judul &#39;Fortinet: Adopsi Digital Tingkatkan Tren Serangan Siber...&#39;
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>sedang mengambil konten dengan judul &#39;Blibli Gelar GASABAR (Gas Ambil Rejeki) Ramadan, Ada Diskon Produk Elektronik...&#39;
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>sedang mengambil konten dengan judul &#39;Amerika Serikat Akan Terbitkan RUU Larangan TikTok Pekan Ini...&#39;
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>sedang mengambil konten dengan judul &#39;Sambut Society 5.0, G2Academy Perkenalkan Kurikulum Digital Terintegrasi...&#39;
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>sedang mengambil konten dengan judul &#39;Aplikasi PINTU Luncurkan Community Badges untuk Transaksi NFT...&#39;
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>sedang mengambil konten dengan judul &#39;35 Tahun Berkiprah, Lintasarta Layani Kebutuhan ICT Ribuan Pelanggan...&#39;
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>sedang mengambil konten dengan judul &#39;Pakar: Serangan Siber Banyak Incar Gamer Muda...&#39;
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>sedang mengambil konten dengan judul &#39;Instant Pot Bantu Atasi Keterbatasan Waktu Memasak di Bulan Puasa...&#39;
 </pre></div>
 </div>
 </div>
@@ -584,7 +586,7 @@ Requirement already satisfied: beautifulsoup4 in /usr/local/lib/python3.8/dist-p
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-661675b7-3f3b-4913-a64b-0de894e223e4">
+  <div id="df-faf1c4eb-9998-4c3e-92fe-78f5a14ca407">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -613,127 +615,127 @@ Requirement already satisfied: beautifulsoup4 in /usr/local/lib/python3.8/dist-p
     <tr>
       <th>0</th>
       <td>0</td>
-      <td>Transformasi Digital Bantu UMKM Dongkrak Omzet</td>
-      <td>None Ketua Asosiasi Sales Nasional Indonesia ...</td>
+      <td>Pure Storage Luncurkan Penyimpanan FlashBlade/...</td>
+      <td>None “Hal ini merupakan kabar yang menggembir...</td>
     </tr>
     <tr>
       <th>1</th>
       <td>1</td>
-      <td>Video Conference Neat Hadirkan Pertemuan Virtu...</td>
-      <td>None None None  “Kami mengkhususkan diri pada...</td>
+      <td>Biznet Ingin Sediakan Akses yang Merata di Tan...</td>
+      <td>PERUSAHAAN penyedia layanan internet fiber Bi...</td>
     </tr>
     <tr>
       <th>2</th>
       <td>2</td>
-      <td>Handphone Samsung Harga Rp 2 Jutaan Miliki Dur...</td>
-      <td>None None None None None None “Jaringan 4G de...</td>
+      <td>Pemerintah Siapkan Enam Langkah Tingkatkan Kea...</td>
+      <td>None None None None “Pada 2022, 40 persen dar...</td>
     </tr>
     <tr>
       <th>3</th>
       <td>3</td>
-      <td>Ponsel Reno8 T 5G Tampil dengan Layar Lengkung...</td>
-      <td>None Perangkat ini meluncur dengan kamera por...</td>
+      <td>Meriahkan HUT Ke-3, Aplikasi PINTU Gelar Tradi...</td>
+      <td>None None None None PINTU Dapat Kepercayaan d...</td>
     </tr>
     <tr>
       <th>4</th>
       <td>4</td>
-      <td>Peminat Platform Video Pendek SnackVideo Menin...</td>
-      <td>None Studi tersebut menyebutkan bahwa SnackVi...</td>
+      <td>Profesi Bidang IT Terkait Cybersecurity Diburu...</td>
+      <td>None Angka tersebut diperkirakan akan terus m...</td>
     </tr>
     <tr>
       <th>5</th>
       <td>5</td>
-      <td>Aset Kripto Kesulitan Dapat Momentum di Tengah...</td>
-      <td>None Dikutip dari analisis pasar Pintu Academ...</td>
+      <td>IBM Hadirkan Dua Fitur Inovatif untuk Pengalam...</td>
+      <td>None Memperluas fitur MyGroup yang populer ya...</td>
     </tr>
     <tr>
       <th>6</th>
       <td>6</td>
-      <td>APJII: Terjadi Peningkatan Penetrasi Internet ...</td>
-      <td>BERDASARKAN survei Asosiasi Penyelenggara Jas...</td>
+      <td>Indodax Luncurkan Fitur Baru  Mudahkan Investo...</td>
+      <td>Indodax meluncurkan sejumlah fitur terbaru di...</td>
     </tr>
     <tr>
       <th>7</th>
       <td>7</td>
-      <td>Smartfren Tambah 1.000 BTS baru di Jawa Timur</td>
-      <td>OPERATOR seluler Smartfren melakukan perluasa...</td>
+      <td>Teknologi Kecerdasan Buatan Makin Berkembang, ...</td>
+      <td>None None None None Namun, lanjut Nurlana, ke...</td>
     </tr>
     <tr>
       <th>8</th>
       <td>8</td>
-      <td>Dapat Pendanaan US$2,2 Juta, Emerge Group Siap...</td>
-      <td>None None "Emerge Group telah terbukti menjad...</td>
+      <td>Noice hadirkan kurasi konten Ramadan dalam lam...</td>
+      <td>None Di tahun ini, Noice mengemas berbagai pr...</td>
     </tr>
     <tr>
       <th>9</th>
       <td>9</td>
-      <td>Cara Mematikan Laptop di Windows</td>
-      <td>PERNAHKAH kamu mengalami situasi mematikan la...</td>
+      <td>XL Axiata Luncurkan e-SIM</td>
+      <td>OPERATOR seluler XL Axiata mengumumkan pelunc...</td>
     </tr>
     <tr>
       <th>10</th>
       <td>10</td>
-      <td>APJII dan Telkomsat Kerja Sama Percepat Transf...</td>
-      <td>KONDISI geografis Indonesia yang terdiri dari...</td>
+      <td>Pengapalan Perangkat Layar Lipat akan Capai 48...</td>
+      <td>PONSEL layar lipat telah beredar di pasar sel...</td>
     </tr>
     <tr>
       <th>11</th>
       <td>11</td>
-      <td>Kini Televisi Seri Mini LED Hadir dengan Layar...</td>
-      <td>None Pada laporan tersebut menunjukkan bahwa,...</td>
+      <td>Nickname Mobile Legends Nama ML Keren</td>
+      <td>MOBILE Legends kini menjadi salah satu permai...</td>
     </tr>
     <tr>
       <th>12</th>
       <td>12</td>
-      <td>Aplikasi Nusaprospect Bantu Maksimalkan Produk...</td>
-      <td>None Penerapan sistem marketing yang buruk di...</td>
+      <td>UR Festival 2023, Festival Gadget Lifestyle da...</td>
+      <td>None Berlangsung di Mall Kota Kasablanka, Jak...</td>
     </tr>
     <tr>
       <th>13</th>
       <td>13</td>
-      <td>Tren ChatGPT dari Perspektif Neurosains, Mengu...</td>
-      <td>None Teknologi ini disebut mampu membantu man...</td>
+      <td>Perangkat Keras dan Perangkat Lunak untuk Mult...</td>
+      <td>None Kali ini kita akan mempelajari tentang a...</td>
     </tr>
     <tr>
       <th>14</th>
       <td>14</td>
-      <td>Teknologi AI Berpotensi Picu Serangan Siber</td>
-      <td>PERUSAHAAN keamanan siber Kaspersky mengungka...</td>
+      <td>ROG Ally Bakal Jadi Pesaing Steam Deck</td>
+      <td>ASUS sangat rajin meramaikan momen April Mop ...</td>
     </tr>
     <tr>
       <th>15</th>
       <td>15</td>
-      <td>Catat! Taiwan Berani Rekrut 6 Ribu Pegawai Mes...</td>
-      <td>None None None “TSMC merekrut secara luas dar...</td>
+      <td>Kabel UTP Adalah: Pengertian, Jenis, Fungsi, W...</td>
+      <td>None None 1. Jingga. Kabel warna jingga memil...</td>
     </tr>
     <tr>
       <th>16</th>
       <td>16</td>
-      <td>Fortinet: Adopsi Digital Tingkatkan Tren Seran...</td>
-      <td>TRANSFORMASI digital mendorong pelaku bisnis ...</td>
+      <td>Blibli Gelar GASABAR (Gas Ambil Rejeki) Ramada...</td>
+      <td>None Program yang dinamakan GASABAR (Gas Ambi...</td>
     </tr>
     <tr>
       <th>17</th>
       <td>17</td>
-      <td>Amerika Serikat Akan Terbitkan RUU Larangan Ti...</td>
-      <td>Dua senator Amerika Serikat (AS) berencana me...</td>
+      <td>Sambut Society 5.0, G2Academy Perkenalkan Kuri...</td>
+      <td>None Kurikulum itu menyediakan materi yang be...</td>
     </tr>
     <tr>
       <th>18</th>
       <td>18</td>
-      <td>Aplikasi PINTU Luncurkan Community Badges untu...</td>
-      <td>None None Jonathan Hartono, Head of Community...</td>
+      <td>35 Tahun Berkiprah, Lintasarta Layani Kebutuha...</td>
+      <td>None None "Lintasarta mengalami berbagai fase...</td>
     </tr>
     <tr>
       <th>19</th>
       <td>19</td>
-      <td>Pakar: Serangan Siber Banyak Incar Gamer Muda</td>
-      <td>None None None None None Untuk Indonesia khus...</td>
+      <td>Instant Pot Bantu Atasi Keterbatasan Waktu Mem...</td>
+      <td>BULAN Ramadan sedikit banyak memang mengubah ...</td>
     </tr>
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-661675b7-3f3b-4913-a64b-0de894e223e4')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-faf1c4eb-9998-4c3e-92fe-78f5a14ca407')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -784,12 +786,12 @@ Requirement already satisfied: beautifulsoup4 in /usr/local/lib/python3.8/dist-p
 
       <script>
         const buttonEl =
-          document.querySelector('#df-661675b7-3f3b-4913-a64b-0de894e223e4 button.colab-df-convert');
+          document.querySelector('#df-faf1c4eb-9998-4c3e-92fe-78f5a14ca407 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-661675b7-3f3b-4913-a64b-0de894e223e4');
+          const element = document.querySelector('#df-faf1c4eb-9998-4c3e-92fe-78f5a14ca407');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -839,7 +841,10 @@ Requirement already satisfied: beautifulsoup4 in /usr/local/lib/python3.8/dist-p
               
               
                 <footer class="bd-footer-article">
-                  <!-- Previous / next buttons -->
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="scrapping_PTA.html"
@@ -859,7 +864,10 @@ Requirement already satisfied: beautifulsoup4 in /usr/local/lib/python3.8/dist-p
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
+</div></div>
+  
 </div>
+
                 </footer>
               
             </div>
@@ -883,7 +891,7 @@ Requirement already satisfied: beautifulsoup4 in /usr/local/lib/python3.8/dist-p
             
           </div>
           <footer class="bd-footer-content">
-            <div class="bd-footer-content__inner">
+            
 <div class="bd-footer-content__inner container">
   
   <div class="footer-item">
@@ -913,7 +921,7 @@ By Layla Mufah Choiriyah - 200411100052
     
   </div>
   
-</div></div>
+</div>
           </footer>
         
 
@@ -922,8 +930,8 @@ By Layla Mufah Choiriyah - 200411100052
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
 
   <footer class="bd-footer">
   </footer>
