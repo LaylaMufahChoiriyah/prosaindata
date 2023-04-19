@@ -1,0 +1,1191 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PAGERANK &#8212; Proyek Sains Data</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Tugas/Tugas_Pagerank';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="UTS PSD" href="UTS_PSD.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Welcome to your Jupyter Book
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="scrapping_twitter.html">SCRAPPING TWITTER</a></li>
+<li class="toctree-l1"><a class="reference internal" href="scrapping_PTA.html">SCRAPPING PTA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="scrapping_berita_online.html">SCRAPPING BERITA ONLINE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getdata_postgresql_elephantsql.html">GET DATA SEPAL WIDTH POSTGRESQL ELEPHANTSQL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="UTS_PSD.html">UTS PSD</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">PAGERANK</a></li>
+
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://colab.research.google.com/github/LaylaMufahChoiriyah/prosaindata/blob/gh-pages/_sources/Tugas/Tugas_Pagerank.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onColab"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="../_static/images/logo_colab.png">
+  </span>
+<span class="btn__text-container">Colab</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/LaylaMufahChoiriyah/prosaindata" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/LaylaMufahChoiriyah/prosaindata/issues/new?title=Issue%20on%20page%20%2FTugas/Tugas_Pagerank.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/Tugas/Tugas_Pagerank.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>PAGERANK</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">PAGERANK</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#perhitungan-manual-pagerank">Perhitungan Manual Pagerank</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menghitung-pagerank-dengan-networkx">Menghitung Pagerank Dengan Networkx</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#implementasi-ulang-dari-github">IMPLEMENTASI ULANG DARI GITHUB</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#import-library">Import Library</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menentukan-tipe-dokumen">Menentukan Tipe Dokumen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tokenisasi-file">Tokenisasi File</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#read-dokumen">Read Dokumen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#membuat-list-kalimat-dari-dokumen">Membuat List Kalimat Dari Dokumen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#perhitungan-untuk-menghasilkan-term-document-matrix-td-matrix-pada-dokumen">Perhitungan Untuk Menghasilkan Term-document Matrix (TD Matrix) Pada Dokumen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menampilkan-hasil-graph">Menampilkan Hasil Graph</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#membuat-peringkat-setiap-kalimat-dengan-menggunakan-textrank">Membuat Peringkat Setiap Kalimat Dengan Menggunakan Textrank</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#finding-important-sentances-and-genrating-summary">Finding Important Sentances and Genrating Summary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menggabungkan-kalimat-penting-ke-dalam-file-baru">Menggabungkan Kalimat Penting Ke Dalam File Baru</a></li>
+</ul>
+</li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <div class="tex2jax_ignore mathjax_ignore section" id="pagerank">
+<h1>PAGERANK<a class="headerlink" href="#pagerank" title="Permalink to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>pip<span class="w"> </span>install<span class="w"> </span>networkx
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/
+Requirement already satisfied: networkx in /usr/local/lib/python3.9/dist-packages (3.1)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">networkx</span> <span class="k">as</span> <span class="nn">nx</span> 
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Membuat objek graf berarah</span>
+<span class="n">G</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">DiGraph</span><span class="p">()</span>
+
+<span class="c1">#menambahkan node</span>
+<span class="n">nodes</span> <span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="p">]</span>
+<span class="n">G</span><span class="o">.</span><span class="n">add_nodes_from</span><span class="p">(</span><span class="n">nodes</span><span class="p">)</span>
+
+<span class="c1"># Menambahkan edge</span>
+<span class="n">edges</span> <span class="o">=</span> <span class="p">([(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">),(</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">),(</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">),(</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">),(</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">),(</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">),(</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">),(</span><span class="mi">5</span><span class="p">,</span><span class="mi">7</span><span class="p">),(</span><span class="mi">6</span><span class="p">,</span><span class="mi">8</span><span class="p">),(</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">),(</span><span class="mi">7</span><span class="p">,</span><span class="mi">9</span><span class="p">)])</span>
+<span class="n">G</span><span class="o">.</span><span class="n">add_edges_from</span><span class="p">(</span><span class="n">edges</span><span class="p">)</span>
+
+<span class="c1"># Menggambar graf</span>
+<span class="n">pos</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">spring_layout</span><span class="p">(</span><span class="n">G</span><span class="p">)</span>
+
+<span class="c1">#menggambar nodes </span>
+<span class="n">nx</span><span class="o">.</span><span class="n">draw_networkx_nodes</span><span class="p">(</span><span class="n">G</span><span class="p">,</span> <span class="n">pos</span><span class="p">)</span>
+
+<span class="c1">#memberi label angka </span>
+<span class="n">nx</span><span class="o">.</span><span class="n">draw_networkx_labels</span><span class="p">(</span><span class="n">G</span><span class="p">,</span> <span class="n">pos</span><span class="p">)</span>
+
+<span class="c1">#memberi sisi pada nodes </span>
+<span class="n">nx</span><span class="o">.</span><span class="n">draw_networkx_edges</span><span class="p">(</span><span class="n">G</span><span class="p">,</span> <span class="n">pos</span><span class="p">,</span> <span class="n">arrows</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1">#menampilkan graf</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s1">&#39;off&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/8f97b539282d04959f949ce8793d676eba93ea7e1f6aa86857aae7cf591b9227.png" src="../_images/8f97b539282d04959f949ce8793d676eba93ea7e1f6aa86857aae7cf591b9227.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># menghitung nilai pagerank </span>
+<span class="kn">from</span> <span class="nn">networkx.algorithms.link_analysis.pagerank_alg</span> <span class="kn">import</span> <span class="n">pagerank</span>
+<span class="n">pagerank</span><span class="p">(</span><span class="n">G</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{1: 0.04459405395680528,
+ 2: 0.06354672444154197,
+ 3: 0.0986093946345129,
+ 4: 0.14736544684478242,
+ 5: 0.10722441435444047,
+ 6: 0.15279444985180948,
+ 7: 0.09016408945417428,
+ 8: 0.21278772537436325,
+ 9: 0.08291370108756974}
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="perhitungan-manual-pagerank">
+<h2>Perhitungan Manual Pagerank<a class="headerlink" href="#perhitungan-manual-pagerank" title="Permalink to this heading">#</a></h2>
+<p><img alt="Screenshot (13618).png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAnwAAAB5CAYAAACjv/zMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAhdEVYdENyZWF0aW9uIFRpbWUAMjAyMzowNDoxOSAxOToxODoyM7ssd8EAAG13SURBVHhe7d0LoG1TvT/wiRS9kEJI5V2uE0oef69Ibh2RCiHKm5LowXHodTzyFqEH5ZWLkzxK9yqUSF6VCKV7i1KJ3h6hMP/zM/b5bdNsrbXX2nutffY+Z3yPaa295pjjPX7jO36/3xhznrJCkZGRkZGRkZGRMcdi3lmfGRkZGRkZGRkZcygy4cvIyMjIyMjImMORCV9GRkZGRkZGxhyOTPgyMjIyMjIyMuZw5E0bGZMKTz31VPFU+VTxrPmelf5+9NFHi+9///vFj3/842K11VYrNt544+JZz3pWoVvPO29ez6iHf/7zn8Uvf/nL4pZbbikWWGCB4i9/+Uuqr//5n/8pll122WK//fYr3vzmN+d6y8gYBZ544oni4YcfLv71r38V8803XxpDzWnV7/PMM88zrvnnnz+Nx0A8414T5B5Z98gjj6S4oJmGcRtjN9Iwpp/73Oem30A8cW8k1MOSFzfffHPxspe9rHjLW94yK0RrPPbYYymvyvf85z+/+Mc//lHceOONxdlnnV1MO2hakjnyBd3kI6N/yIQvY1KgLgx9J1QIoauuuqq49NJLixe/+MXF+973viSMMnEZQtQZgUtYX3nllcVPfvKT4rbbbkv1iPhNnTq1+PCHP1y87nWvS2EhC+GMjJFhfBkrf//734sLLrggXX/9618TKXre856XCBOQQxZbjz/+ePrbM69+9auLddddt3jFK15RLL300sXKK69cvOQlL0n3PReyK9Lw7A033FCcfPLJafwuv/zyxUILLTScBhJoUffAAw+kv5Gtly3zsmL99dYvXrrkS4vll1t+OA33It5WqOhqUT41dB/BvOLKK4ovnf6lYokllig++tGPFiuttNKskE8j4rvvvvuKiy66qPjud7+biN2OO+6Y0r377ruLww49rLjhxhuK4447rnjDG95QPO/5z5NY23xk9B/zfbLCrO8ZGRMahArhSqOn25555pnFNddcU/z6178uFl988SRAV1hhhWescudmKL/LZPCiF70oTTKE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" /></p>
+<p>Keterangan :</p>
+<p>d = 0,85</p>
+<p>N = banyak node</p>
+<p>PR = node yang terhubung dengan node yang dituju</p>
+<p>NumLinks = banyak node yang keluar dari PR</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># menghitung PageRank secara manual</span>
+<span class="n">d</span> <span class="o">=</span> <span class="mf">0.85</span> <span class="c1"># faktor dampak</span>
+<span class="n">N</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">G</span><span class="o">.</span><span class="n">nodes</span><span class="p">())</span> <span class="c1"># jumlah node</span>
+<span class="n">pr</span> <span class="o">=</span> <span class="p">{</span><span class="n">node</span><span class="p">:</span> <span class="mi">1</span><span class="o">/</span><span class="n">N</span> <span class="k">for</span> <span class="n">node</span> <span class="ow">in</span> <span class="n">G</span><span class="o">.</span><span class="n">nodes</span><span class="p">()}</span> <span class="c1"># nilai awal PageRank</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100</span><span class="p">):</span> <span class="c1"># melakukan iterasi hingga konvergen</span>
+    <span class="n">new_pr</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="k">for</span> <span class="n">node</span> <span class="ow">in</span> <span class="n">G</span><span class="o">.</span><span class="n">nodes</span><span class="p">():</span>
+        <span class="n">in_nodes</span> <span class="o">=</span> <span class="p">[</span><span class="n">n</span> <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">G</span><span class="o">.</span><span class="n">predecessors</span><span class="p">(</span><span class="n">node</span><span class="p">)]</span> <span class="c1"># node yang mengarah ke node ini</span>
+        <span class="n">in_pr</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">([</span><span class="n">pr</span><span class="p">[</span><span class="n">n</span><span class="p">]</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">G</span><span class="o">.</span><span class="n">successors</span><span class="p">(</span><span class="n">n</span><span class="p">)))</span> <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">in_nodes</span><span class="p">])</span> <span class="k">if</span> <span class="n">in_nodes</span> <span class="k">else</span> <span class="mi">0</span> <span class="c1"># PageRank dari node yang mengarah ke node ini</span>
+        <span class="n">new_pr</span><span class="p">[</span><span class="n">node</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">d</span><span class="p">)</span><span class="o">/</span><span class="n">N</span> <span class="o">+</span> <span class="n">d</span><span class="o">*</span><span class="n">in_pr</span> <span class="c1"># menghitung nilai PageRank baru untuk node ini</span>
+    <span class="n">pr</span> <span class="o">=</span> <span class="n">new_pr</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hitung Manual&quot;</span><span class="p">,</span> <span class="n">pr</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Hitung Manual {1: 0.01666666666666667, 2: 0.023750000000000004, 3: 0.036854166666666674, 4: 0.05507604166666667, 5: 0.04007398437500001, 6: 0.057105427734375006, 7: 0.03369811002604167, 8: 0.07952797700195313, 9: 0.03098836342773438}
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="menghitung-pagerank-dengan-networkx">
+<h2>Menghitung Pagerank Dengan Networkx<a class="headerlink" href="#menghitung-pagerank-dengan-networkx" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># mencari nilai betweenness centrality</span>
+<span class="n">nx</span><span class="o">.</span><span class="n">betweenness_centrality</span><span class="p">(</span><span class="n">G</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{1: 0.0,
+ 2: 0.017857142857142856,
+ 3: 0.10714285714285714,
+ 4: 0.26785714285714285,
+ 5: 0.14285714285714285,
+ 6: 0.08035714285714285,
+ 7: 0.09821428571428571,
+ 8: 0.0,
+ 9: 0.0}
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="implementasi-ulang-dari-github">
+<h1>IMPLEMENTASI ULANG DARI GITHUB<a class="headerlink" href="#implementasi-ulang-dari-github" title="Permalink to this heading">#</a></h1>
+<p><a class="reference external" href="https://github.com/Shakunni/Extractive-Text-Summarization/blob/master/extractive_summarizer.ipynb">Shakunni/Extractive-Text-Summarization</a></p>
+<div class="section" id="import-library">
+<h2>Import Library<a class="headerlink" href="#import-library" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">google.colab</span> <span class="kn">import</span> <span class="n">drive</span>
+<span class="n">drive</span><span class="o">.</span><span class="n">mount</span><span class="p">(</span><span class="s1">&#39;/content/drive&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="ne">KeyboardInterrupt</span>Traceback (most recent call last)
+<span class="nn">&lt;ipython-input-7-d5df0069828e&gt;</span> in <span class="ni">&lt;cell line: 2&gt;</span><span class="nt">()</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="kn">from</span> <span class="nn">google.colab</span> <span class="kn">import</span> <span class="n">drive</span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">drive</span><span class="o">.</span><span class="n">mount</span><span class="p">(</span><span class="s1">&#39;/content/drive&#39;</span><span class="p">)</span>
+
+<span class="nn">/usr/local/lib/python3.9/dist-packages/google/colab/drive.py</span> in <span class="ni">mount</span><span class="nt">(mountpoint, force_remount, timeout_ms, readonly)</span>
+<span class="g g-Whitespace">    </span><span class="mi">101</span> <span class="k">def</span> <span class="nf">mount</span><span class="p">(</span><span class="n">mountpoint</span><span class="p">,</span> <span class="n">force_remount</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">timeout_ms</span><span class="o">=</span><span class="mi">120000</span><span class="p">,</span> <span class="n">readonly</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+<span class="g g-Whitespace">    </span><span class="mi">102</span><span class="w">   </span><span class="sd">&quot;&quot;&quot;Mount your Google Drive at the specified mountpoint path.&quot;&quot;&quot;</span>
+<span class="ne">--&gt; </span><span class="mi">103</span>   <span class="k">return</span> <span class="n">_mount</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">104</span>       <span class="n">mountpoint</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">105</span>       <span class="n">force_remount</span><span class="o">=</span><span class="n">force_remount</span><span class="p">,</span>
+
+<span class="nn">/usr/local/lib/python3.9/dist-packages/google/colab/drive.py</span> in <span class="ni">_mount</span><span class="nt">(mountpoint, force_remount, timeout_ms, ephemeral, readonly)</span>
+<span class="g g-Whitespace">    </span><span class="mi">130</span>   <span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">131</span>   <span class="k">if</span> <span class="n">ephemeral</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">132</span>     <span class="n">_message</span><span class="o">.</span><span class="n">blocking_request</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">133</span>         <span class="s1">&#39;request_auth&#39;</span><span class="p">,</span> <span class="n">request</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;authType&#39;</span><span class="p">:</span> <span class="s1">&#39;dfs_ephemeral&#39;</span><span class="p">},</span> <span class="n">timeout_sec</span><span class="o">=</span><span class="kc">None</span>
+<span class="g g-Whitespace">    </span><span class="mi">134</span>     <span class="p">)</span>
+
+<span class="nn">/usr/local/lib/python3.9/dist-packages/google/colab/_message.py</span> in <span class="ni">blocking_request</span><span class="nt">(request_type, request, timeout_sec, parent)</span>
+<span class="g g-Whitespace">    </span><span class="mi">174</span>       <span class="n">request_type</span><span class="p">,</span> <span class="n">request</span><span class="p">,</span> <span class="n">parent</span><span class="o">=</span><span class="n">parent</span><span class="p">,</span> <span class="n">expect_reply</span><span class="o">=</span><span class="kc">True</span>
+<span class="g g-Whitespace">    </span><span class="mi">175</span>   <span class="p">)</span>
+<span class="ne">--&gt; </span><span class="mi">176</span>   <span class="k">return</span> <span class="n">read_reply_from_input</span><span class="p">(</span><span class="n">request_id</span><span class="p">,</span> <span class="n">timeout_sec</span><span class="p">)</span>
+
+<span class="nn">/usr/local/lib/python3.9/dist-packages/google/colab/_message.py</span> in <span class="ni">read_reply_from_input</span><span class="nt">(message_id, timeout_sec)</span>
+<span class="g g-Whitespace">     </span><span class="mi">94</span>     <span class="n">reply</span> <span class="o">=</span> <span class="n">_read_next_input_message</span><span class="p">()</span>
+<span class="g g-Whitespace">     </span><span class="mi">95</span>     <span class="k">if</span> <span class="n">reply</span> <span class="o">==</span> <span class="n">_NOT_READY</span> <span class="ow">or</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">reply</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span>
+<span class="ne">---&gt; </span><span class="mi">96</span>       <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.025</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">97</span>       <span class="k">continue</span>
+<span class="g g-Whitespace">     </span><span class="mi">98</span>     <span class="k">if</span> <span class="p">(</span>
+
+<span class="ne">KeyboardInterrupt</span>: 
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#install library yang digunakan dalam meringkas dokumen</span>
+<span class="o">!</span>pip<span class="w"> </span>install<span class="w"> </span>PyPDF2<span class="w">  </span>
+<span class="o">!</span>pip<span class="w"> </span>install<span class="w"> </span>docx2txt<span class="w"> </span>
+<span class="o">!</span>pip<span class="w"> </span>install<span class="w"> </span>matplotlib
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/
+Requirement already satisfied: PyPDF2 in /usr/local/lib/python3.9/dist-packages (3.0.1)
+Requirement already satisfied: typing_extensions&gt;=3.10.0.0 in /usr/local/lib/python3.9/dist-packages (from PyPDF2) (4.5.0)
+Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/
+Requirement already satisfied: docx2txt in /usr/local/lib/python3.9/dist-packages (0.8)
+Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/
+Requirement already satisfied: matplotlib in /usr/local/lib/python3.9/dist-packages (3.7.1)
+Requirement already satisfied: cycler&gt;=0.10 in /usr/local/lib/python3.9/dist-packages (from matplotlib) (0.11.0)
+Requirement already satisfied: numpy&gt;=1.20 in /usr/local/lib/python3.9/dist-packages (from matplotlib) (1.22.4)
+Requirement already satisfied: importlib-resources&gt;=3.2.0 in /usr/local/lib/python3.9/dist-packages (from matplotlib) (5.12.0)
+Requirement already satisfied: python-dateutil&gt;=2.7 in /usr/local/lib/python3.9/dist-packages (from matplotlib) (2.8.2)
+Requirement already satisfied: fonttools&gt;=4.22.0 in /usr/local/lib/python3.9/dist-packages (from matplotlib) (4.39.3)
+Requirement already satisfied: pillow&gt;=6.2.0 in /usr/local/lib/python3.9/dist-packages (from matplotlib) (8.4.0)
+Requirement already satisfied: packaging&gt;=20.0 in /usr/local/lib/python3.9/dist-packages (from matplotlib) (23.0)
+Requirement already satisfied: kiwisolver&gt;=1.0.1 in /usr/local/lib/python3.9/dist-packages (from matplotlib) (1.4.4)
+Requirement already satisfied: contourpy&gt;=1.0.1 in /usr/local/lib/python3.9/dist-packages (from matplotlib) (1.0.7)
+Requirement already satisfied: pyparsing&gt;=2.3.1 in /usr/local/lib/python3.9/dist-packages (from matplotlib) (3.0.9)
+Requirement already satisfied: zipp&gt;=3.1.0 in /usr/local/lib/python3.9/dist-packages (from importlib-resources&gt;=3.2.0-&gt;matplotlib) (3.15.0)
+Requirement already satisfied: six&gt;=1.5 in /usr/local/lib/python3.9/dist-packages (from python-dateutil&gt;=2.7-&gt;matplotlib) (1.16.0)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">PyPDF2</span>
+<span class="kn">import</span> <span class="nn">docx2txt</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline 
+<span class="kn">import</span> <span class="nn">networkx</span> <span class="k">as</span> <span class="nn">nx</span>
+<span class="kn">from</span> <span class="nn">nltk.tokenize.punkt</span> <span class="kn">import</span> <span class="n">PunktSentenceTokenizer</span>
+<span class="kn">from</span> <span class="nn">sklearn.feature_extraction.text</span> <span class="kn">import</span> <span class="n">TfidfTransformer</span><span class="p">,</span> <span class="n">CountVectorizer</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="menentukan-tipe-dokumen">
+<h2>Menentukan Tipe Dokumen<a class="headerlink" href="#menentukan-tipe-dokumen" title="Permalink to this heading">#</a></h2>
+<p>Menentukan tipe dokumen yang akan dibaca, apakah dalam format .txt atau .pdf, atau tidak valid.</p>
+<p>Jika tipe dokumen yang dibaca adalah dalam format .txt, maka fungsi akan membuka file dan membaca isi dari file tersebut menggunakan fungsi open() dan read().
+Jika tipe dokumen yang dibaca adalah dalam format .pdf, maka fungsi akan membuka file, membaca halaman pertama dari file tersebut menggunakan PyPDF2, dan mengekstrak teks dari halaman tersebut.</p>
+<p>Jika tipe dokumen yang dibaca tidak valid, fungsi akan mencetak pesan kesalahan dan mengembalikan string kosong.</p>
+<p>Setelah fungsi berhasil membaca isi dokumen, maka isi dokumen tersebut akan dijadikan sebagai output dari fungsi readDoc(name).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># we are going to show an example of how the method is working</span>
+<span class="c1"># first let&#39;s take the document as an input</span>
+<span class="k">def</span> <span class="nf">readDoc</span><span class="p">():</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Please input a file name: &#39;</span><span class="p">)</span> 
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;You have asked for the document </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">name</span><span class="p">))</span>
+
+    <span class="c1"># now read the type of document</span>
+    <span class="k">if</span> <span class="n">name</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;.txt&#39;</span><span class="p">):</span>
+        <span class="n">choice</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">elif</span> <span class="n">name</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;.pdf&#39;</span><span class="p">):</span>
+        <span class="n">choice</span> <span class="o">=</span> <span class="mi">2</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">choice</span> <span class="o">=</span> <span class="mi">3</span>
+        <span class="c1"># print(name)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">choice</span><span class="p">)</span>
+    <span class="c1"># Case 1: if it is a .txt file</span>
+        
+    <span class="k">if</span> <span class="n">choice</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
+        <span class="n">document</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+        <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+            
+    <span class="c1"># Case 2: if it is a .pdf file</span>
+    <span class="k">elif</span> <span class="n">choice</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+        <span class="n">pdfFileObj</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">)</span>
+        <span class="n">pdfReader</span> <span class="o">=</span> <span class="n">PyPDF2</span><span class="o">.</span><span class="n">PdfFileReader</span><span class="p">(</span><span class="n">pdfFileObj</span><span class="p">)</span>
+        <span class="n">pageObj</span> <span class="o">=</span> <span class="n">pdfReader</span><span class="o">.</span><span class="n">getPage</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+        <span class="n">document</span> <span class="o">=</span> <span class="n">pageObj</span><span class="o">.</span><span class="n">extractText</span><span class="p">()</span>
+        <span class="n">pdfFileObj</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+    
+    <span class="c1"># Case 3: none of the format</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Failed to load a valid file&#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Returning an empty string&#39;</span><span class="p">)</span>
+        <span class="n">document</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+    
+    <span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">document</span><span class="p">))</span>
+    <span class="k">return</span> <span class="n">document</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="tokenisasi-file">
+<h2>Tokenisasi File<a class="headerlink" href="#tokenisasi-file" title="Permalink to this heading">#</a></h2>
+<p>Membuat sebuah objek doc_tokenizer dari kelas PunktSentenceTokenizer. Kelas ini merupakan bagian dari library nltk dan digunakan untuk memecah teks menjadi kalimat-kalimat.</p>
+<p>Memecah teks dokumen menjadi kalimat-kalimat menggunakan method tokenize() dari objek doc_tokenizer. Method ini akan mengembalikan sebuah list yang berisi semua kalimat dalam dokumen.</p>
+<p>Setelah fungsi berhasil memecah dokumen menjadi kalimat-kalimat, maka list kalimat tersebut akan dijadikan sebagai output dari fungsi tokenize(document).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># the function used for tokenizing the sentences</span>
+<span class="c1"># tokenization of a sentence: &#39;&#39;&#39;provided in cell() above&#39;&#39;&#39;</span>
+
+<span class="k">def</span> <span class="nf">tokenize</span><span class="p">(</span><span class="n">document</span><span class="p">):</span>
+    <span class="c1"># We are tokenizing using the PunktSentenceTokenizer</span>
+    <span class="c1"># we call an instance of this class as sentence_tokenizer</span>
+    <span class="n">doc_tokenizer</span> <span class="o">=</span> <span class="n">PunktSentenceTokenizer</span><span class="p">()</span>
+    
+    <span class="c1"># tokenize() method: takes our document as input and returns a list of all the sentences in the document</span>
+    
+    <span class="c1"># sentences is a list containing each sentence of the document as an element</span>
+    <span class="n">sentences_list</span> <span class="o">=</span> <span class="n">doc_tokenizer</span><span class="o">.</span><span class="n">tokenize</span><span class="p">(</span><span class="n">document</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">sentences_list</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="read-dokumen">
+<h2>Read Dokumen<a class="headerlink" href="#read-dokumen" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># reading a file and </span>
+<span class="c1"># printing the size of the file</span>
+<span class="n">document</span> <span class="o">=</span> <span class="n">readDoc</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The length of the file is:&#39;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">document</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Please input a file name: story1.txt
+You have asked for the document story1.txt
+1
+</pre></div>
+</div>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">FileNotFoundError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
+<span class="nn">&lt;ipython-input-11-3d2a36d056b4&gt;</span> in <span class="ni">&lt;cell line: 3&gt;</span><span class="nt">()</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># reading a file and</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="c1"># printing the size of the file</span>
+<span class="ne">----&gt; </span><span class="mi">3</span> <span class="n">document</span> <span class="o">=</span> <span class="n">readDoc</span><span class="p">()</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The length of the file is:&#39;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">document</span><span class="p">))</span>
+
+<span class="nn">&lt;ipython-input-9-4da83aee54d1&gt;</span> in <span class="ni">readDoc</span><span class="nt">()</span>
+<span class="g g-Whitespace">     </span><span class="mi">17</span> 
+<span class="g g-Whitespace">     </span><span class="mi">18</span>     <span class="k">if</span> <span class="n">choice</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+<span class="ne">---&gt; </span><span class="mi">19</span>         <span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">20</span>         <span class="n">document</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+<span class="g g-Whitespace">     </span><span class="mi">21</span>         <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
+<span class="ne">FileNotFoundError</span>: [Errno 2] No such file or directory: &#39;story1.txt&#39;
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="membuat-list-kalimat-dari-dokumen">
+<h2>Membuat List Kalimat Dari Dokumen<a class="headerlink" href="#membuat-list-kalimat-dari-dokumen" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># we want to tokenize the document for further processing</span>
+<span class="c1"># tokenizing the sentence means that we are creating a list of all the sentences of the document.</span>
+<span class="c1"># Need of tokenizing the document: Initially the document is in just a string format.</span>
+<span class="c1"># if we want to process the document, we need to store it in a data structure.</span>
+<span class="c1"># Tokenization of document into words is also possible, but we will go with the tokenizing with the sentences</span>
+<span class="c1"># Since we want to choose the most relevant sentences, we need to generate tokens of sentences only</span>
+<span class="n">sentences_list</span> <span class="o">=</span> <span class="n">tokenize</span><span class="p">(</span><span class="n">document</span><span class="p">)</span>
+
+<span class="c1"># let us print the size of memory used by the list sentences</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The size of the list in Bytes is: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">getsizeof</span><span class="p">(</span><span class="n">sentences_list</span><span class="p">)))</span>
+
+<span class="c1"># the size of one of the element of the list</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The size of the item 0 in Bytes is: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">getsizeof</span><span class="p">(</span><span class="n">sentences_list</span><span class="p">[</span><span class="mi">0</span><span class="p">])))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># let us see the data type of sentences_list</span>
+<span class="c1"># It will be list</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">sentences_list</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># let us analyse the elements of the sentences</span>
+<span class="c1"># len() method applies on the list and provides the number of elements in the list</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The size of the list &quot;sentences&quot; is: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">sentences_list</span><span class="p">)))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># print the elements of the list</span>
+<span class="c1"># If the input document is long, which on realistically will be wrong, we would not like to print the entire document</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">sentences_list</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="perhitungan-untuk-menghasilkan-term-document-matrix-td-matrix-pada-dokumen">
+<h2>Perhitungan Untuk Menghasilkan Term-document Matrix (TD Matrix) Pada Dokumen<a class="headerlink" href="#perhitungan-untuk-menghasilkan-term-document-matrix-td-matrix-pada-dokumen" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Convert a collection of text documents to a matrix of token counts</span>
+<span class="c1"># fit_transform method of CountVectorizer() class </span>
+<span class="c1"># Learn the vocabulary dictionary and return term-document matrix. </span>
+<span class="c1"># I/p: An iterable which yields either str, unicode or file objects.</span>
+<span class="c1"># O/p: The term-document matrix named cv_matrix</span>
+<span class="n">cv</span> <span class="o">=</span> <span class="n">CountVectorizer</span><span class="p">()</span>
+<span class="n">cv_matrix</span> <span class="o">=</span> <span class="n">cv</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">sentences_list</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># a demo of what CountVectorizer().fit_transform(text) does</span>
+<span class="n">cv_demo</span> <span class="o">=</span> <span class="n">CountVectorizer</span><span class="p">()</span> <span class="c1"># a demo object of class CountVectorizer</span>
+
+<span class="c1"># I have repeated the words to make a non-ambiguous array of the document text matrix </span>
+
+<span class="n">text_demo</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Ashish is good, you are bad&quot;</span><span class="p">,</span> <span class="s2">&quot;I am not bad&quot;</span><span class="p">]</span> 
+<span class="n">res_demo</span> <span class="o">=</span> <span class="n">cv_demo</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">text_demo</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Result demo array is </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">res_demo</span><span class="o">.</span><span class="n">toarray</span><span class="p">()))</span>
+
+<span class="c1"># Result is 2-d matrix containing document text matrix</span>
+<span class="c1"># Notice that in the second row, there is 2.</span>
+<span class="c1"># also, bad is repeated twice in that sentence.</span>
+<span class="c1"># so we can infer that 2 is corresponding to the word &#39;bad&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Feature list: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">cv_demo</span><span class="o">.</span><span class="n">get_feature_names_out</span><span class="p">()))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># printing the cv_matrix type</span>
+<span class="c1"># and how it is being stored in memory?</span>
+<span class="c1"># it is stored in the compressed row format</span>
+<span class="c1"># compressed row format: </span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The data type of bow matrix </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">cv_matrix</span><span class="p">)))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Shape of the matrix </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">cv_matrix</span><span class="o">.</span><span class="n">get_shape</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Size of the matrix is: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">getsizeof</span><span class="p">(</span><span class="n">cv_matrix</span><span class="p">)))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">cv</span><span class="o">.</span><span class="n">get_feature_names_out</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">cv_matrix</span><span class="o">.</span><span class="n">toarray</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Tnormalized: document-term matrix normalized (value 0-1) according to the TF-IDF</span>
+<span class="c1"># TF(Term Frequency): the no. of times a term(a word here) appears in the current document(single sentence here)</span>
+<span class="c1"># IDF(Inverse Document Frequency): the no. of times a term(a word here) appears in the entire corpus</span>
+<span class="c1"># Corpus: set of all sentences</span>
+
+<span class="n">normal_matrix</span> <span class="o">=</span> <span class="n">TfidfTransformer</span><span class="p">()</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">cv_matrix</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">normal_matrix</span><span class="o">.</span><span class="n">toarray</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">normal_matrix</span><span class="o">.</span><span class="n">T</span><span class="o">.</span><span class="n">toarray</span><span class="p">)</span>
+<span class="n">res_graph</span> <span class="o">=</span> <span class="n">normal_matrix</span> <span class="o">*</span> <span class="n">normal_matrix</span><span class="o">.</span><span class="n">T</span>
+<span class="c1"># plt.spy(res_graph)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="menampilkan-hasil-graph">
+<h2>Menampilkan Hasil Graph<a class="headerlink" href="#menampilkan-hasil-graph" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># drawing a graph to proceed for the textrank algorithm</span>
+<span class="c1"># nx_graph is a graph developed using the networkx library</span>
+<span class="c1"># each node represents a sentence</span>
+<span class="c1"># an edge represents that they have words in common</span>
+<span class="c1"># the edge weight is the number of words that are common in both of the sentences(nodes)</span>
+<span class="c1"># nx.draw() method is used to draw the graph created</span>
+
+<span class="n">nx_graph</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">from_scipy_sparse_array</span><span class="p">(</span><span class="n">res_graph</span><span class="p">)</span>
+<span class="n">nx</span><span class="o">.</span><span class="n">draw_circular</span><span class="p">(</span><span class="n">nx_graph</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Number of edges </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">nx_graph</span><span class="o">.</span><span class="n">number_of_edges</span><span class="p">()))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Number of vertices </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">nx_graph</span><span class="o">.</span><span class="n">number_of_nodes</span><span class="p">()))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The memory used by the graph in Bytes is: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">getsizeof</span><span class="p">(</span><span class="n">nx_graph</span><span class="p">)))</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="membuat-peringkat-setiap-kalimat-dengan-menggunakan-textrank">
+<h2>Membuat Peringkat Setiap Kalimat Dengan Menggunakan Textrank<a class="headerlink" href="#membuat-peringkat-setiap-kalimat-dengan-menggunakan-textrank" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># ranks is a dictionary with key=node(sentences) and value=textrank (the rank of each of the sentences)</span>
+<span class="n">ranks</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">pagerank</span><span class="p">(</span><span class="n">nx_graph</span><span class="p">)</span>
+
+<span class="c1"># analyse the data type of ranks</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">ranks</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The size used by the dictionary in Bytes is: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">getsizeof</span><span class="p">(</span><span class="n">ranks</span><span class="p">)))</span>
+
+<span class="c1"># print the dictionary</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">ranks</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">ranks</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="finding-important-sentances-and-genrating-summary">
+<h2>Finding Important Sentances and Genrating Summary<a class="headerlink" href="#finding-important-sentances-and-genrating-summary" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># enumerate method: returns an enumerate object</span>
+<span class="c1"># Use of list Comprehensions</span>
+<span class="c1"># O/p: sentence_array is the sorted(descending order w.r.t. score value) 2-d array of ranks[sentence] and sentence </span>
+<span class="c1"># For example, if there are two sentences: S1 (with a score of S1 = s1) and S2 with score s2, with s2&gt;s1</span>
+<span class="c1"># then sentence_array is [[s2, S2], [s1, S1]]</span>
+<span class="n">sentence_array</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(((</span><span class="n">ranks</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">s</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">s</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">sentences_list</span><span class="p">)),</span> <span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">sentence_array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">sentence_array</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># as sentence_array is in descending order wrt score value</span>
+<span class="c1"># fmax is the largest score value(the score of first element)</span>
+<span class="c1"># fmin is the smallest score value(the score of last element)</span>
+
+<span class="n">rank_max</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">sentence_array</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span>
+<span class="n">rank_min</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">sentence_array</span><span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">sentence_array</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># print the largest and smallest value of scores of the sentence</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">rank_max</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">rank_min</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Normalization of the scores</span>
+<span class="c1"># so that it comes out in the range 0-1</span>
+<span class="c1"># fmax becomes 1</span>
+<span class="c1"># fmin becomes 0</span>
+<span class="c1"># store the normalized values in the list temp_array</span>
+
+<span class="n">temp_array</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="c1"># if all sentences have equal ranks, means they are all the same</span>
+<span class="c1"># taking any sentence will give the summary, say the first sentence</span>
+<span class="n">flag</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">if</span> <span class="n">rank_max</span> <span class="o">-</span> <span class="n">rank_min</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="n">temp_array</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+    <span class="n">flag</span> <span class="o">=</span> <span class="mi">1</span>
+
+<span class="c1"># If the sentence has different ranks</span>
+<span class="k">if</span> <span class="n">flag</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">sentence_array</span><span class="p">)):</span>
+        <span class="n">temp_array</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="nb">float</span><span class="p">(</span><span class="n">sentence_array</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span> <span class="o">-</span> <span class="n">rank_min</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="n">rank_max</span> <span class="o">-</span> <span class="n">rank_min</span><span class="p">))</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">temp_array</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Calculation of threshold:</span>
+<span class="c1"># We take the mean value of normalized scores</span>
+<span class="c1"># any sentence with the normalized score 0.2 more than the mean value is considered to be </span>
+<span class="n">threshold</span> <span class="o">=</span> <span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">temp_array</span><span class="p">)</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">temp_array</span><span class="p">))</span> <span class="o">+</span> <span class="mf">0.2</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Separate out the sentences that satiasfy the criteria of having a score above the threshold</span>
+<span class="n">sentence_list</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">temp_array</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">temp_array</span><span class="p">)):</span>
+        <span class="k">if</span> <span class="n">temp_array</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">threshold</span><span class="p">:</span>
+                <span class="n">sentence_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">sentence_array</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">1</span><span class="p">])</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">sentence_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">sentence_array</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">model</span> <span class="o">=</span> <span class="n">sentence_list</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="menggabungkan-kalimat-penting-ke-dalam-file-baru">
+<h2>Menggabungkan Kalimat Penting Ke Dalam File Baru<a class="headerlink" href="#menggabungkan-kalimat-penting-ke-dalam-file-baru" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># print(sentence_list)</span>
+<span class="n">summary</span> <span class="o">=</span> <span class="s2">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">sentence_list</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">summary</span><span class="p">)</span>
+<span class="c1"># save the data in another file, names sum.txt</span>
+<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;final3.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;a+&#39;</span><span class="p">)</span>
+<span class="c1">#print(type(f))</span>
+<span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">summary</span><span class="p">)</span>
+<span class="n">f</span><span class="o">.</span><span class="n">close</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">lines</span> <span class="ow">in</span> <span class="n">sentence_list</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">lines</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./Tugas"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="UTS_PSD.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">UTS PSD</p>
+      </div>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">PAGERANK</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#perhitungan-manual-pagerank">Perhitungan Manual Pagerank</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menghitung-pagerank-dengan-networkx">Menghitung Pagerank Dengan Networkx</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#implementasi-ulang-dari-github">IMPLEMENTASI ULANG DARI GITHUB</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#import-library">Import Library</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menentukan-tipe-dokumen">Menentukan Tipe Dokumen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tokenisasi-file">Tokenisasi File</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#read-dokumen">Read Dokumen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#membuat-list-kalimat-dari-dokumen">Membuat List Kalimat Dari Dokumen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#perhitungan-untuk-menghasilkan-term-document-matrix-td-matrix-pada-dokumen">Perhitungan Untuk Menghasilkan Term-document Matrix (TD Matrix) Pada Dokumen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menampilkan-hasil-graph">Menampilkan Hasil Graph</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#membuat-peringkat-setiap-kalimat-dengan-menggunakan-textrank">Membuat Peringkat Setiap Kalimat Dengan Menggunakan Textrank</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#finding-important-sentances-and-genrating-summary">Finding Important Sentances and Genrating Summary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menggabungkan-kalimat-penting-ke-dalam-file-baru">Menggabungkan Kalimat Penting Ke Dalam File Baru</a></li>
+</ul>
+</li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Layla Mufah Choiriyah - 200411100052
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
