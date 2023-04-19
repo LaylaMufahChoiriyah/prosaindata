@@ -419,6 +419,17 @@ document.write(`
                   
   <div class="tex2jax_ignore mathjax_ignore section" id="pagerank">
 <h1>PAGERANK<a class="headerlink" href="#pagerank" title="Permalink to this heading">#</a></h1>
+<p>Pagerank adalah algoritma yang digunakan dalam analisis jaringan dan pengurutan halaman web. Algoritma Pagerank mengukur kepentingan relatif dari setiap halaman web dalam suatu jaringan dengan menganalisis jumlah dan kualitas tautan masuk ke halaman tersebut dari halaman web lain dalam jaringan.</p>
+<p>Buat graph berarah dengan networkx(minimal 9 node)</p>
+<blockquote>
+<div><p>Langkahnya sebagai berikut :</p>
+<ul class="simple">
+<li><p>Import library networkx</p></li>
+<li><p>Buat struktur grafik kosong. Digraph untuk graph berarah dan Graph untuk graph tidak berarah</p></li>
+<li><p>Mendeklarasikan node yang saling terhubung sesuai yang dibuat</p></li>
+<li><p>menampilkan graph beserta nama nodenya masing-masing</p></li>
+</ul>
+</div></blockquote>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>pip<span class="w"> </span>install<span class="w"> </span>networkx
@@ -472,29 +483,7 @@ Requirement already satisfied: networkx in /usr/local/lib/python3.9/dist-package
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/8f97b539282d04959f949ce8793d676eba93ea7e1f6aa86857aae7cf591b9227.png" src="../_images/8f97b539282d04959f949ce8793d676eba93ea7e1f6aa86857aae7cf591b9227.png" />
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># menghitung nilai pagerank </span>
-<span class="kn">from</span> <span class="nn">networkx.algorithms.link_analysis.pagerank_alg</span> <span class="kn">import</span> <span class="n">pagerank</span>
-<span class="n">pagerank</span><span class="p">(</span><span class="n">G</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{1: 0.04459405395680528,
- 2: 0.06354672444154197,
- 3: 0.0986093946345129,
- 4: 0.14736544684478242,
- 5: 0.10722441435444047,
- 6: 0.15279444985180948,
- 7: 0.09016408945417428,
- 8: 0.21278772537436325,
- 9: 0.08291370108756974}
-</pre></div>
-</div>
+<img alt="../_images/5bd668412d624dbb93b04a438d02cd4111f84959773ddcefb1ad5eb618bad0e8.png" src="../_images/5bd668412d624dbb93b04a438d02cd4111f84959773ddcefb1ad5eb618bad0e8.png" />
 </div>
 </div>
 <div class="section" id="perhitungan-manual-pagerank">
@@ -535,21 +524,42 @@ Requirement already satisfied: networkx in /usr/local/lib/python3.9/dist-package
 <h2>Menghitung Pagerank Dengan Networkx<a class="headerlink" href="#menghitung-pagerank-dengan-networkx" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># mencari nilai betweenness centrality</span>
-<span class="n">nx</span><span class="o">.</span><span class="n">betweenness_centrality</span><span class="p">(</span><span class="n">G</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># menghitung pagerank menggunakan NetworkX</span>
+<span class="n">pagerank</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">pagerank</span><span class="p">(</span><span class="n">G</span><span class="p">)</span>
+
+<span class="c1"># menampilkan hasil pagerank</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hasil Pagerank:&quot;</span><span class="p">)</span>
+
+<span class="c1">#for node, pr in pagerank.items():</span>
+    <span class="c1">#print(f&quot;Node {node}: {pr:.4f}&quot;)</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">pagerank</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">pagerank</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{1: 0.0,
- 2: 0.017857142857142856,
- 3: 0.10714285714285714,
- 4: 0.26785714285714285,
- 5: 0.14285714285714285,
- 6: 0.08035714285714285,
- 7: 0.09821428571428571,
- 8: 0.0,
- 9: 0.0}
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Hasil Pagerank:
+1 0.04459405395680528
+2 0.06354672444154197
+3 0.0986093946345129
+4 0.14736544684478242
+5 0.10722441435444047
+6 0.15279444985180948
+7 0.09016408945417428
+8 0.21278772537436325
+9 0.08291370108756974
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">sorted</span><span class="p">(</span><span class="n">pagerank</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="n">pagerank</span><span class="o">.</span><span class="n">get</span><span class="p">,</span> <span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[8, 6, 4, 5, 3, 7, 9, 2, 1]
 </pre></div>
 </div>
 </div>
@@ -607,7 +617,7 @@ Requirement already satisfied: networkx in /usr/local/lib/python3.9/dist-package
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#install library yang digunakan dalam meringkas dokumen</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># install library yang digunakan dalam meringkas dokumen</span>
 <span class="o">!</span>pip<span class="w"> </span>install<span class="w"> </span>PyPDF2<span class="w">  </span>
 <span class="o">!</span>pip<span class="w"> </span>install<span class="w"> </span>docx2txt<span class="w"> </span>
 <span class="o">!</span>pip<span class="w"> </span>install<span class="w"> </span>matplotlib
@@ -616,22 +626,35 @@ Requirement already satisfied: networkx in /usr/local/lib/python3.9/dist-package
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/
-Requirement already satisfied: PyPDF2 in /usr/local/lib/python3.9/dist-packages (3.0.1)
-Requirement already satisfied: typing_extensions&gt;=3.10.0.0 in /usr/local/lib/python3.9/dist-packages (from PyPDF2) (4.5.0)
+Collecting PyPDF2
+  Downloading pypdf2-3.0.1-py3-none-any.whl (232 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">232.6/232.6 kB</span> <span class=" -Color -Color-Red">5.5 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
+?25hRequirement already satisfied: typing_extensions&gt;=3.10.0.0 in /usr/local/lib/python3.9/dist-packages (from PyPDF2) (4.5.0)
+Installing collected packages: PyPDF2
+Successfully installed PyPDF2-3.0.1
 Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/
-Requirement already satisfied: docx2txt in /usr/local/lib/python3.9/dist-packages (0.8)
+Collecting docx2txt
+  Downloading docx2txt-0.8.tar.gz (2.8 kB)
+  Preparing metadata (setup.py) ... ?25l?25hdone
+Building wheels for collected packages: docx2txt
+  Building wheel for docx2txt (setup.py) ... ?25l?25hdone
+  Created wheel for docx2txt: filename=docx2txt-0.8-py3-none-any.whl size=3977 sha256=dc6ffc429a4198e520b4132f12eefb157b326fbb8edc0b21bd862c1d6f3185f4
+  Stored in directory: /root/.cache/pip/wheels/40/75/01/e6c444034338bde9c7947d3467807f889123465c2371e77418
+Successfully built docx2txt
+Installing collected packages: docx2txt
+Successfully installed docx2txt-0.8
 Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/
 Requirement already satisfied: matplotlib in /usr/local/lib/python3.9/dist-packages (3.7.1)
-Requirement already satisfied: cycler&gt;=0.10 in /usr/local/lib/python3.9/dist-packages (from matplotlib) (0.11.0)
-Requirement already satisfied: numpy&gt;=1.20 in /usr/local/lib/python3.9/dist-packages (from matplotlib) (1.22.4)
 Requirement already satisfied: importlib-resources&gt;=3.2.0 in /usr/local/lib/python3.9/dist-packages (from matplotlib) (5.12.0)
-Requirement already satisfied: python-dateutil&gt;=2.7 in /usr/local/lib/python3.9/dist-packages (from matplotlib) (2.8.2)
-Requirement already satisfied: fonttools&gt;=4.22.0 in /usr/local/lib/python3.9/dist-packages (from matplotlib) (4.39.3)
 Requirement already satisfied: pillow&gt;=6.2.0 in /usr/local/lib/python3.9/dist-packages (from matplotlib) (8.4.0)
 Requirement already satisfied: packaging&gt;=20.0 in /usr/local/lib/python3.9/dist-packages (from matplotlib) (23.0)
+Requirement already satisfied: cycler&gt;=0.10 in /usr/local/lib/python3.9/dist-packages (from matplotlib) (0.11.0)
 Requirement already satisfied: kiwisolver&gt;=1.0.1 in /usr/local/lib/python3.9/dist-packages (from matplotlib) (1.4.4)
-Requirement already satisfied: contourpy&gt;=1.0.1 in /usr/local/lib/python3.9/dist-packages (from matplotlib) (1.0.7)
+Requirement already satisfied: fonttools&gt;=4.22.0 in /usr/local/lib/python3.9/dist-packages (from matplotlib) (4.39.3)
 Requirement already satisfied: pyparsing&gt;=2.3.1 in /usr/local/lib/python3.9/dist-packages (from matplotlib) (3.0.9)
+Requirement already satisfied: contourpy&gt;=1.0.1 in /usr/local/lib/python3.9/dist-packages (from matplotlib) (1.0.7)
+Requirement already satisfied: python-dateutil&gt;=2.7 in /usr/local/lib/python3.9/dist-packages (from matplotlib) (2.8.2)
+Requirement already satisfied: numpy&gt;=1.20 in /usr/local/lib/python3.9/dist-packages (from matplotlib) (1.22.4)
 Requirement already satisfied: zipp&gt;=3.1.0 in /usr/local/lib/python3.9/dist-packages (from importlib-resources&gt;=3.2.0-&gt;matplotlib) (3.15.0)
 Requirement already satisfied: six&gt;=1.5 in /usr/local/lib/python3.9/dist-packages (from python-dateutil&gt;=2.7-&gt;matplotlib) (1.16.0)
 </pre></div>
@@ -640,14 +663,29 @@ Requirement already satisfied: six&gt;=1.5 in /usr/local/lib/python3.9/dist-pack
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Library numpy membantu bekerja dengan array: pembuatan dan manipulasi array</span>
+<span class="c1"># Implementasi ini menggunakan array untuk menyimpan matriks yang dihasilkan sebagai array 2-D</span>
+<span class="c1"># PyPDF2 adalah library yang digunakan untuk membaca file PDF</span>
+<span class="c1"># docx2txt adalah library yang digunakan untuk membaca dokumen Word</span>
+<span class="c1"># sys library digunakan untuk mencetak ukuran struktur data yang digunakan dalam program</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">PyPDF2</span>
 <span class="kn">import</span> <span class="nn">docx2txt</span>
 <span class="kn">import</span> <span class="nn">sys</span>
+
+<span class="c1"># perpustakaan networkx membantu dalam bekerja dengan grafik ...</span>
+<span class="c1"># dan kemudian melakukan algoritma PageRank ...</span>
+<span class="kn">import</span> <span class="nn">networkx</span> <span class="k">as</span> <span class="nn">nx</span>
+
+<span class="c1"># matplotlib adalah library yang digunakan untuk memvisualisasikan data dengan menggambar grafik input matriks</span>
+<span class="c1"># %matplotlib inline adalah perintah yang digunakan untuk menampilkan grafik di notebook jupyter</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="o">%</span><span class="k">matplotlib</span> inline 
-<span class="kn">import</span> <span class="nn">networkx</span> <span class="k">as</span> <span class="nn">nx</span>
+
+<span class="c1"># PunktSentenceTokenizer digunakan untuk melakukan tokenisasi kalimat</span>
 <span class="kn">from</span> <span class="nn">nltk.tokenize.punkt</span> <span class="kn">import</span> <span class="n">PunktSentenceTokenizer</span>
+
+<span class="c1"># TfidfTransformer, CountVectorizer digunakan untuk menentukan TF-IDF</span>
 <span class="kn">from</span> <span class="nn">sklearn.feature_extraction.text</span> <span class="kn">import</span> <span class="n">TfidfTransformer</span><span class="p">,</span> <span class="n">CountVectorizer</span>
 </pre></div>
 </div>
@@ -663,9 +701,7 @@ Jika tipe dokumen yang dibaca adalah dalam format .pdf, maka fungsi akan membuka
 <p>Setelah fungsi berhasil membaca isi dokumen, maka isi dokumen tersebut akan dijadikan sebagai output dari fungsi readDoc(name).</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># we are going to show an example of how the method is working</span>
-<span class="c1"># first let&#39;s take the document as an input</span>
-<span class="k">def</span> <span class="nf">readDoc</span><span class="p">():</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">readDoc</span><span class="p">():</span>
     <span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Please input a file name: &#39;</span><span class="p">)</span> 
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;You have asked for the document </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">name</span><span class="p">))</span>
 
@@ -713,10 +749,7 @@ Jika tipe dokumen yang dibaca adalah dalam format .pdf, maka fungsi akan membuka
 <p>Setelah fungsi berhasil memecah dokumen menjadi kalimat-kalimat, maka list kalimat tersebut akan dijadikan sebagai output dari fungsi tokenize(document).</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># the function used for tokenizing the sentences</span>
-<span class="c1"># tokenization of a sentence: &#39;&#39;&#39;provided in cell() above&#39;&#39;&#39;</span>
-
-<span class="k">def</span> <span class="nf">tokenize</span><span class="p">(</span><span class="n">document</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">tokenize</span><span class="p">(</span><span class="n">document</span><span class="p">):</span>
     <span class="c1"># We are tokenizing using the PunktSentenceTokenizer</span>
     <span class="c1"># we call an instance of this class as sentence_tokenizer</span>
     <span class="n">doc_tokenizer</span> <span class="o">=</span> <span class="n">PunktSentenceTokenizer</span><span class="p">()</span>
@@ -740,32 +773,6 @@ Jika tipe dokumen yang dibaca adalah dalam format .pdf, maka fungsi akan membuka
 <span class="n">document</span> <span class="o">=</span> <span class="n">readDoc</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The length of the file is:&#39;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">document</span><span class="p">))</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Please input a file name: story1.txt
-You have asked for the document story1.txt
-1
-</pre></div>
-</div>
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">FileNotFoundError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
-<span class="nn">&lt;ipython-input-11-3d2a36d056b4&gt;</span> in <span class="ni">&lt;cell line: 3&gt;</span><span class="nt">()</span>
-<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># reading a file and</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="c1"># printing the size of the file</span>
-<span class="ne">----&gt; </span><span class="mi">3</span> <span class="n">document</span> <span class="o">=</span> <span class="n">readDoc</span><span class="p">()</span>
-<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The length of the file is:&#39;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
-<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">document</span><span class="p">))</span>
-
-<span class="nn">&lt;ipython-input-9-4da83aee54d1&gt;</span> in <span class="ni">readDoc</span><span class="nt">()</span>
-<span class="g g-Whitespace">     </span><span class="mi">17</span> 
-<span class="g g-Whitespace">     </span><span class="mi">18</span>     <span class="k">if</span> <span class="n">choice</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
-<span class="ne">---&gt; </span><span class="mi">19</span>         <span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
-<span class="g g-Whitespace">     </span><span class="mi">20</span>         <span class="n">document</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
-<span class="g g-Whitespace">     </span><span class="mi">21</span>         <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-
-<span class="ne">FileNotFoundError</span>: [Errno 2] No such file or directory: &#39;story1.txt&#39;
 </pre></div>
 </div>
 </div>
