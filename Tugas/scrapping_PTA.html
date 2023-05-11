@@ -527,95 +527,67 @@ Requirement already satisfied: soupsieve&gt;1.2 in /usr/local/lib/python3.10/dis
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="ne">KeyboardInterrupt</span>Traceback (most recent call last)
 <span class="nn">&lt;ipython-input-5-0fd2b51338b0&gt;</span> in <span class="ni">&lt;cell line: 12&gt;</span><span class="nt">()</span>
-<span class="g g-Whitespace">     </span><span class="mi">24</span> 
 <span class="g g-Whitespace">     </span><span class="mi">25</span>     <span class="k">for</span> <span class="n">article_row</span> <span class="ow">in</span> <span class="n">table_pages</span><span class="o">.</span><span class="n">findAll</span><span class="p">(</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="n">attrs</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;class&quot;</span><span class="p">:</span><span class="s2">&quot;gray button&quot;</span><span class="p">}):</span>
-<span class="ne">---&gt; </span><span class="mi">26</span>         <span class="n">r_article_row</span> <span class="o">=</span> <span class="n">request_header_url</span><span class="p">(</span><span class="s2">&quot;Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:15.0) Gecko/20100101 Firefox/15.0.1&quot;</span><span class="p">,</span> <span class="n">article_row</span><span class="p">[</span><span class="s2">&quot;href&quot;</span><span class="p">])</span>
-<span class="g g-Whitespace">     </span><span class="mi">27</span>         <span class="n">soup_article_row</span> <span class="o">=</span> <span class="n">parse_website</span><span class="p">(</span><span class="n">r_article_row</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">26</span>         <span class="n">r_article_row</span> <span class="o">=</span> <span class="n">request_header_url</span><span class="p">(</span><span class="s2">&quot;Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:15.0) Gecko/20100101 Firefox/15.0.1&quot;</span><span class="p">,</span> <span class="n">article_row</span><span class="p">[</span><span class="s2">&quot;href&quot;</span><span class="p">])</span>
+<span class="ne">---&gt; </span><span class="mi">27</span>         <span class="n">soup_article_row</span> <span class="o">=</span> <span class="n">parse_website</span><span class="p">(</span><span class="n">r_article_row</span><span class="p">)</span>
 <span class="g g-Whitespace">     </span><span class="mi">28</span>         <span class="n">prettify_web_structure</span><span class="p">(</span><span class="n">soup_article_row</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">29</span>         <span class="n">table_article_row</span> <span class="o">=</span> <span class="n">get_content_table</span><span class="p">(</span><span class="n">soup_article_row</span><span class="p">,</span> <span class="s2">&quot;li&quot;</span><span class="p">,</span> <span class="p">{</span><span class="s2">&quot;data-id&quot;</span><span class="p">:</span><span class="s2">&quot;id-1&quot;</span><span class="p">,</span> <span class="s2">&quot;data-cat&quot;</span><span class="p">:</span><span class="s2">&quot;#luxury&quot;</span><span class="p">})</span>
 
-<span class="nn">&lt;ipython-input-4-e6e6f38faca4&gt;</span> in <span class="ni">request_header_url</span><span class="nt">(header, url_website)</span>
-<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="k">def</span> <span class="nf">request_header_url</span><span class="p">(</span><span class="n">header</span><span class="p">,</span> <span class="n">url_website</span><span class="p">):</span>
-<span class="g g-Whitespace">      </span><span class="mi">5</span>     <span class="n">headers</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;User-Agent&#39;</span><span class="p">:</span> <span class="n">header</span><span class="p">}</span>
-<span class="ne">----&gt; </span><span class="mi">6</span>     <span class="k">return</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="n">url_website</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
-<span class="g g-Whitespace">      </span><span class="mi">7</span> 
+<span class="nn">&lt;ipython-input-4-e6e6f38faca4&gt;</span> in <span class="ni">parse_website</span><span class="nt">(request)</span>
 <span class="g g-Whitespace">      </span><span class="mi">8</span> <span class="k">def</span> <span class="nf">parse_website</span><span class="p">(</span><span class="n">request</span><span class="p">):</span>
+<span class="g g-Whitespace">      </span><span class="mi">9</span><span class="w">     </span><span class="sd">&quot;&quot;&quot;Use html5lib library to parse&quot;&quot;&quot;</span>
+<span class="ne">---&gt; </span><span class="mi">10</span>     <span class="k">return</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">content</span><span class="p">,</span> <span class="s1">&#39;html5lib&#39;</span><span class="p">)</span> <span class="c1"># If this line causes an error, run &#39;pip install html5lib&#39; or install html5lib</span>
+<span class="g g-Whitespace">     </span><span class="mi">11</span> 
+<span class="g g-Whitespace">     </span><span class="mi">12</span> <span class="k">def</span> <span class="nf">prettify_web_structure</span><span class="p">(</span><span class="n">parsed_page</span><span class="p">):</span>
 
-<span class="nn">/usr/local/lib/python3.10/dist-packages/requests/api.py</span> in <span class="ni">get</span><span class="nt">(url, params, **kwargs)</span>
-<span class="g g-Whitespace">     </span><span class="mi">73</span>     <span class="s2">&quot;&quot;&quot;</span>
-<span class="g g-Whitespace">     </span><span class="mi">74</span><span class="s2"> </span>
-<span class="ne">---&gt; </span><span class="mi">75</span><span class="s2">     return request(&#39;get&#39;, url, params=params, **kwargs)</span>
-<span class="g g-Whitespace">     </span><span class="mi">76</span><span class="s2"> </span>
-<span class="g g-Whitespace">     </span><span class="mi">77</span><span class="s2"> </span>
+<span class="nn">/usr/local/lib/python3.10/dist-packages/bs4/__init__.py</span> in <span class="ni">__init__</span><span class="nt">(self, markup, features, builder, parse_only, from_encoding, exclude_encodings, element_classes, **kwargs)</span>
+<span class="g g-Whitespace">    </span><span class="mi">331</span>             <span class="bp">self</span><span class="o">.</span><span class="n">builder</span><span class="o">.</span><span class="n">initialize_soup</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">332</span>             <span class="k">try</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">333</span>                 <span class="bp">self</span><span class="o">.</span><span class="n">_feed</span><span class="p">()</span>
+<span class="g g-Whitespace">    </span><span class="mi">334</span>                 <span class="n">success</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="g g-Whitespace">    </span><span class="mi">335</span>                 <span class="k">break</span>
 
-<span class="nn">/usr/local/lib/python3.10/dist-packages/requests/api.py</span> in <span class="ni">request</span><span class="nt">(method, url, **kwargs)</span>
-<span class="g g-Whitespace">     </span><span class="mi">59</span><span class="s2">     # cases, and look like a memory leak in others.</span>
-<span class="g g-Whitespace">     </span><span class="mi">60</span><span class="s2">     with sessions.Session() as session:</span>
-<span class="ne">---&gt; </span><span class="mi">61</span><span class="s2">         return session.request(method=method, url=url, **kwargs)</span>
-<span class="g g-Whitespace">     </span><span class="mi">62</span><span class="s2"> </span>
-<span class="g g-Whitespace">     </span><span class="mi">63</span><span class="s2"> </span>
+<span class="nn">/usr/local/lib/python3.10/dist-packages/bs4/__init__.py</span> in <span class="ni">_feed</span><span class="nt">(self)</span>
+<span class="g g-Whitespace">    </span><span class="mi">450</span>         <span class="bp">self</span><span class="o">.</span><span class="n">builder</span><span class="o">.</span><span class="n">reset</span><span class="p">()</span>
+<span class="g g-Whitespace">    </span><span class="mi">451</span> 
+<span class="ne">--&gt; </span><span class="mi">452</span>         <span class="bp">self</span><span class="o">.</span><span class="n">builder</span><span class="o">.</span><span class="n">feed</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">markup</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">453</span>         <span class="c1"># Close out any unfinished strings and close all the open tags.</span>
+<span class="g g-Whitespace">    </span><span class="mi">454</span>         <span class="bp">self</span><span class="o">.</span><span class="n">endData</span><span class="p">()</span>
 
-<span class="nn">/usr/local/lib/python3.10/dist-packages/requests/sessions.py</span> in <span class="ni">request</span><span class="nt">(self, method, url, params, data, headers, cookies, files, auth, timeout, allow_redirects, proxies, hooks, stream, verify, cert, json)</span>
-<span class="g g-Whitespace">    </span><span class="mi">527</span><span class="s2">         }</span>
-<span class="g g-Whitespace">    </span><span class="mi">528</span><span class="s2">         send_kwargs.update(settings)</span>
-<span class="ne">--&gt; </span><span class="mi">529</span><span class="s2">         resp = self.send(prep, **send_kwargs)</span>
-<span class="g g-Whitespace">    </span><span class="mi">530</span><span class="s2"> </span>
-<span class="g g-Whitespace">    </span><span class="mi">531</span><span class="s2">         return resp</span>
+<span class="nn">/usr/local/lib/python3.10/dist-packages/bs4/builder/_html5lib.py</span> in <span class="ni">feed</span><span class="nt">(self, markup)</span>
+<span class="g g-Whitespace">     </span><span class="mi">97</span>             <span class="k">else</span><span class="p">:</span>
+<span class="g g-Whitespace">     </span><span class="mi">98</span>                 <span class="n">extra_kwargs</span><span class="p">[</span><span class="s1">&#39;encoding&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">user_specified_encoding</span>
+<span class="ne">---&gt; </span><span class="mi">99</span>         <span class="n">doc</span> <span class="o">=</span> <span class="n">parser</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">markup</span><span class="p">,</span> <span class="o">**</span><span class="n">extra_kwargs</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">100</span> 
+<span class="g g-Whitespace">    </span><span class="mi">101</span>         <span class="c1"># Set the character encoding detected by the tokenizer.</span>
 
-<span class="nn">/usr/local/lib/python3.10/dist-packages/requests/sessions.py</span> in <span class="ni">send</span><span class="nt">(self, request, **kwargs)</span>
-<span class="g g-Whitespace">    </span><span class="mi">643</span><span class="s2"> </span>
-<span class="g g-Whitespace">    </span><span class="mi">644</span><span class="s2">         # Send the request</span>
-<span class="ne">--&gt; </span><span class="mi">645</span><span class="s2">         r = adapter.send(request, **kwargs)</span>
-<span class="g g-Whitespace">    </span><span class="mi">646</span><span class="s2"> </span>
-<span class="g g-Whitespace">    </span><span class="mi">647</span><span class="s2">         # Total elapsed time of the request (approximately)</span>
+<span class="nn">/usr/local/lib/python3.10/dist-packages/html5lib/html5parser.py</span> in <span class="ni">parse</span><span class="nt">(self, stream, *args, **kwargs)</span>
+<span class="g g-Whitespace">    </span><span class="mi">282</span> 
+<span class="g g-Whitespace">    </span><span class="mi">283</span>         <span class="s2">&quot;&quot;&quot;</span>
+<span class="ne">--&gt; </span><span class="mi">284</span><span class="s2">         self._parse(stream, False, None, *args, **kwargs)</span>
+<span class="g g-Whitespace">    </span><span class="mi">285</span><span class="s2">         return self.tree.getDocument()</span>
+<span class="g g-Whitespace">    </span><span class="mi">286</span><span class="s2"> </span>
 
-<span class="nn">/usr/local/lib/python3.10/dist-packages/requests/adapters.py</span> in <span class="ni">send</span><span class="nt">(self, request, stream, timeout, verify, cert, proxies)</span>
-<span class="g g-Whitespace">    </span><span class="mi">438</span><span class="s2">         try:</span>
-<span class="g g-Whitespace">    </span><span class="mi">439</span><span class="s2">             if not chunked:</span>
-<span class="ne">--&gt; </span><span class="mi">440</span><span class="s2">                 resp = conn.urlopen(</span>
-<span class="g g-Whitespace">    </span><span class="mi">441</span><span class="s2">                     method=request.method,</span>
-<span class="g g-Whitespace">    </span><span class="mi">442</span><span class="s2">                     url=url,</span>
+<span class="nn">/usr/local/lib/python3.10/dist-packages/html5lib/html5parser.py</span> in <span class="ni">_parse</span><span class="nt">(self, stream, innerHTML, container, scripting, **kwargs)</span>
+<span class="g g-Whitespace">    </span><span class="mi">131</span><span class="s2"> </span>
+<span class="g g-Whitespace">    </span><span class="mi">132</span><span class="s2">         try:</span>
+<span class="ne">--&gt; </span><span class="mi">133</span><span class="s2">             self.mainLoop()</span>
+<span class="g g-Whitespace">    </span><span class="mi">134</span><span class="s2">         except _ReparseException:</span>
+<span class="g g-Whitespace">    </span><span class="mi">135</span><span class="s2">             self.reset()</span>
 
-<span class="nn">/usr/local/lib/python3.10/dist-packages/urllib3/connectionpool.py</span> in <span class="ni">urlopen</span><span class="nt">(self, method, url, body, headers, retries, redirect, assert_same_host, timeout, pool_timeout, release_conn, chunked, body_pos, **response_kw)</span>
-<span class="g g-Whitespace">    </span><span class="mi">701</span><span class="s2"> </span>
-<span class="g g-Whitespace">    </span><span class="mi">702</span><span class="s2">             # Make the request on the httplib connection object.</span>
-<span class="ne">--&gt; </span><span class="mi">703</span><span class="s2">             httplib_response = self._make_request(</span>
-<span class="g g-Whitespace">    </span><span class="mi">704</span><span class="s2">                 conn,</span>
-<span class="g g-Whitespace">    </span><span class="mi">705</span><span class="s2">                 method,</span>
+<span class="nn">/usr/local/lib/python3.10/dist-packages/html5lib/html5parser.py</span> in <span class="ni">mainLoop</span><span class="nt">(self)</span>
+<span class="g g-Whitespace">    </span><span class="mi">202</span><span class="s2">         ParseErrorToken = tokenTypes[&quot;ParseError&quot;]</span>
+<span class="g g-Whitespace">    </span><span class="mi">203</span><span class="s2"> </span>
+<span class="ne">--&gt; </span><span class="mi">204</span><span class="s2">         for token in self.tokenizer:</span>
+<span class="g g-Whitespace">    </span><span class="mi">205</span><span class="s2">             prev_token = None</span>
+<span class="g g-Whitespace">    </span><span class="mi">206</span><span class="s2">             new_token = token</span>
 
-<span class="nn">/usr/local/lib/python3.10/dist-packages/urllib3/connectionpool.py</span> in <span class="ni">_make_request</span><span class="nt">(self, conn, method, url, timeout, chunked, **httplib_request_kw)</span>
-<span class="g g-Whitespace">    </span><span class="mi">384</span><span class="s2">         # Trigger any extra validation we need to do.</span>
-<span class="g g-Whitespace">    </span><span class="mi">385</span><span class="s2">         try:</span>
-<span class="ne">--&gt; </span><span class="mi">386</span><span class="s2">             self._validate_conn(conn)</span>
-<span class="g g-Whitespace">    </span><span class="mi">387</span><span class="s2">         except (SocketTimeout, BaseSSLError) as e:</span>
-<span class="g g-Whitespace">    </span><span class="mi">388</span><span class="s2">             # Py2 raises this as a BaseSSLError, Py3 raises it as socket timeout.</span>
-
-<span class="nn">/usr/local/lib/python3.10/dist-packages/urllib3/connectionpool.py</span> in <span class="ni">_validate_conn</span><span class="nt">(self, conn)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1040</span><span class="s2">         # Force connect early to allow us to validate the connection.</span>
-<span class="g g-Whitespace">   </span><span class="mi">1041</span><span class="s2">         if not getattr(conn, &quot;sock&quot;, None):  # AppEngine might not have  `.sock`</span>
-<span class="ne">-&gt; </span><span class="mi">1042</span><span class="s2">             conn.connect()</span>
-<span class="g g-Whitespace">   </span><span class="mi">1043</span><span class="s2"> </span>
-<span class="g g-Whitespace">   </span><span class="mi">1044</span><span class="s2">         if not conn.is_verified:</span>
-
-<span class="nn">/usr/local/lib/python3.10/dist-packages/urllib3/connection.py</span> in <span class="ni">connect</span><span class="nt">(self)</span>
-<span class="g g-Whitespace">    </span><span class="mi">361</span><span class="s2">     def connect(self):</span>
-<span class="g g-Whitespace">    </span><span class="mi">362</span><span class="s2">         # Add certificate verification</span>
-<span class="ne">--&gt; </span><span class="mi">363</span><span class="s2">         self.sock = conn = self._new_conn()</span>
-<span class="g g-Whitespace">    </span><span class="mi">364</span><span class="s2">         hostname = self.host</span>
-<span class="g g-Whitespace">    </span><span class="mi">365</span><span class="s2">         tls_in_tls = False</span>
-
-<span class="nn">/usr/local/lib/python3.10/dist-packages/urllib3/connection.py</span> in <span class="ni">_new_conn</span><span class="nt">(self)</span>
-<span class="g g-Whitespace">    </span><span class="mi">172</span><span class="s2"> </span>
-<span class="g g-Whitespace">    </span><span class="mi">173</span><span class="s2">         try:</span>
-<span class="ne">--&gt; </span><span class="mi">174</span><span class="s2">             conn = connection.create_connection(</span>
-<span class="g g-Whitespace">    </span><span class="mi">175</span><span class="s2">                 (self._dns_host, self.port), self.timeout, **extra_kw</span>
-<span class="g g-Whitespace">    </span><span class="mi">176</span><span class="s2">             )</span>
-
-<span class="nn">/usr/local/lib/python3.10/dist-packages/urllib3/util/connection.py</span> in <span class="ni">create_connection</span><span class="nt">(address, timeout, source_address, socket_options)</span>
-<span class="g g-Whitespace">     </span><span class="mi">83</span><span class="s2">             if source_address:</span>
-<span class="g g-Whitespace">     </span><span class="mi">84</span><span class="s2">                 sock.bind(source_address)</span>
-<span class="ne">---&gt; </span><span class="mi">85</span><span class="s2">             sock.connect(sa)</span>
-<span class="g g-Whitespace">     </span><span class="mi">86</span><span class="s2">             return sock</span>
-<span class="g g-Whitespace">     </span><span class="mi">87</span><span class="s2"> </span>
+<span class="nn">/usr/local/lib/python3.10/dist-packages/html5lib/_tokenizer.py</span> in <span class="ni">__iter__</span><span class="nt">(self)</span>
+<span class="g g-Whitespace">     </span><span class="mi">64</span><span class="s2">         # instead of True and the loop will terminate.</span>
+<span class="g g-Whitespace">     </span><span class="mi">65</span><span class="s2">         while self.state():</span>
+<span class="ne">---&gt; </span><span class="mi">66</span><span class="s2">             while self.stream.errors:</span>
+<span class="g g-Whitespace">     </span><span class="mi">67</span><span class="s2">                 yield {&quot;type&quot;: tokenTypes[&quot;ParseError&quot;], &quot;data&quot;: self.stream.errors.pop(0)}</span>
+<span class="g g-Whitespace">     </span><span class="mi">68</span><span class="s2">             while self.tokenQueue:</span>
 
 <span class="ne">KeyboardInterrupt</span>: 
 </pre></div>
