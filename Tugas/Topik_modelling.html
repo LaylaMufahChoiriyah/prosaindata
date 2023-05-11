@@ -1749,7 +1749,7 @@ Requirement already satisfied: indoNLP in /usr/local/lib/python3.10/dist-package
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">slang_dict</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;https://raw.githubusercontent.com/LaylaMufahChoiriyah/prosaindata/gh-pages/Tugas/slankwordcapres2024.csv&quot;</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">slang_dict</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;https://github.com/LaylaMufahChoiriyah/prosaindata/blob/gh-pages/Tugas/slankwordcapres2024.csv&quot;</span><span class="p">)</span>
 <span class="kn">from</span> <span class="nn">indoNLP.preprocessing</span> <span class="kn">import</span> <span class="n">replace_slang</span>
 <span class="kn">from</span> <span class="nn">indoNLP.preprocessing</span> <span class="kn">import</span> <span class="n">replace_word_elongation</span>
 <span class="n">replace_slang</span>
@@ -1778,206 +1778,69 @@ Requirement already satisfied: indoNLP in /usr/local/lib/python3.10/dist-package
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html">
-  <div id="df-2156d000-a602-4baf-93db-82850454a45f">
-    <div class="colab-df-container">
-      <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ParserError</span><span class="g g-Whitespace">                               </span>Traceback (most recent call last)
+<span class="nn">&lt;ipython-input-75-61920bd42656&gt;</span> in <span class="ni">&lt;cell line: 1&gt;</span><span class="nt">()</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">slang_dict</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;https://github.com/LaylaMufahChoiriyah/prosaindata/blob/gh-pages/Tugas/slankwordcapres2024.csv&quot;</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="kn">from</span> <span class="nn">indoNLP.preprocessing</span> <span class="kn">import</span> <span class="n">replace_slang</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="kn">from</span> <span class="nn">indoNLP.preprocessing</span> <span class="kn">import</span> <span class="n">replace_word_elongation</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="n">replace_slang</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="k">def</span> <span class="nf">replace_slang_words</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
+<span class="nn">/usr/local/lib/python3.10/dist-packages/pandas/util/_decorators.py</span> in <span class="ni">wrapper</span><span class="nt">(*args, **kwargs)</span>
+<span class="g g-Whitespace">    </span><span class="mi">209</span>                 <span class="k">else</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">210</span>                     <span class="n">kwargs</span><span class="p">[</span><span class="n">new_arg_name</span><span class="p">]</span> <span class="o">=</span> <span class="n">new_arg_value</span>
+<span class="ne">--&gt; </span><span class="mi">211</span>             <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">212</span> 
+<span class="g g-Whitespace">    </span><span class="mi">213</span>         <span class="k">return</span> <span class="n">cast</span><span class="p">(</span><span class="n">F</span><span class="p">,</span> <span class="n">wrapper</span><span class="p">)</span>
 
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>data</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>prabowo presiden mudah han urusan papua langsu...</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>anies baswedan is the best</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>the best of the best prabowo presiden ri menang</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>the best of the best prabowo presiden ri dukun...</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>prabowo tersandra karena koalisinya pkb deklar...</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>seandainya pasangan capres semangat pasangan a...</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>golput presidenya menegakan sila keadilab raky...</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>prabowo presiden ganjar mentri negeri anies me...</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>orang semangat</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>benar ya ayo dukung</td>
-    </tr>
-    <tr>
-      <th>10</th>
-      <td>hubungannya kursi pilpres</td>
-    </tr>
-    <tr>
-      <th>11</th>
-      <td>kursi ya duduk</td>
-    </tr>
-    <tr>
-      <th>12</th>
-      <td>prabowo subianto djojohadikusumo</td>
-    </tr>
-    <tr>
-      <th>13</th>
-      <td></td>
-    </tr>
-    <tr>
-      <th>14</th>
-      <td>golkar kapan enggak nyalonin presiden takut ka...</td>
-    </tr>
-    <tr>
-      <th>15</th>
-      <td>waspada munculnya soehartoisme</td>
-    </tr>
-    <tr>
-      <th>16</th>
-      <td>senang dan cinta mbak puan bangga pakai prabow...</td>
-    </tr>
-    <tr>
-      <th>17</th>
-      <td>benar ayo</td>
-    </tr>
-    <tr>
-      <th>18</th>
-      <td>pendukungnya gp yang berafiliasi dengan kaum b...</td>
-    </tr>
-    <tr>
-      <th>19</th>
-      <td>iwan pahlawan noor mbak ketapang sampit hadir ...</td>
-    </tr>
-    <tr>
-      <th>20</th>
-      <td>p nyungsep tahu kursi dpr ri zonk akar rumput ...</td>
-    </tr>
-    <tr>
-      <th>21</th>
-      <td>amin ya robbal</td>
-    </tr>
-    <tr>
-      <th>22</th>
-      <td>munculkan ridwan kamil erick tohir biar partai</td>
-    </tr>
-    <tr>
-      <th>23</th>
-      <td>gerindra pkb gas pool capres n cawapres yang g...</td>
-    </tr>
-  </tbody>
-</table>
+<span class="nn">/usr/local/lib/python3.10/dist-packages/pandas/util/_decorators.py</span> in <span class="ni">wrapper</span><span class="nt">(*args, **kwargs)</span>
+<span class="g g-Whitespace">    </span><span class="mi">329</span>                     <span class="n">stacklevel</span><span class="o">=</span><span class="n">find_stack_level</span><span class="p">(),</span>
+<span class="g g-Whitespace">    </span><span class="mi">330</span>                 <span class="p">)</span>
+<span class="ne">--&gt; </span><span class="mi">331</span>             <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">332</span> 
+<span class="g g-Whitespace">    </span><span class="mi">333</span>         <span class="c1"># error: &quot;Callable[[VarArg(Any), KwArg(Any)], Any]&quot; has no</span>
+
+<span class="nn">/usr/local/lib/python3.10/dist-packages/pandas/io/parsers/readers.py</span> in <span class="ni">read_csv</span><span class="nt">(filepath_or_buffer, sep, delimiter, header, names, index_col, usecols, squeeze, prefix, mangle_dupe_cols, dtype, engine, converters, true_values, false_values, skipinitialspace, skiprows, skipfooter, nrows, na_values, keep_default_na, na_filter, verbose, skip_blank_lines, parse_dates, infer_datetime_format, keep_date_col, date_parser, dayfirst, cache_dates, iterator, chunksize, compression, thousands, decimal, lineterminator, quotechar, quoting, doublequote, escapechar, comment, encoding, encoding_errors, dialect, error_bad_lines, warn_bad_lines, on_bad_lines, delim_whitespace, low_memory, memory_map, float_precision, storage_options)</span>
+<span class="g g-Whitespace">    </span><span class="mi">948</span>     <span class="n">kwds</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">kwds_defaults</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">949</span> 
+<span class="ne">--&gt; </span><span class="mi">950</span>     <span class="k">return</span> <span class="n">_read</span><span class="p">(</span><span class="n">filepath_or_buffer</span><span class="p">,</span> <span class="n">kwds</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">951</span> 
+<span class="g g-Whitespace">    </span><span class="mi">952</span> 
+
+<span class="nn">/usr/local/lib/python3.10/dist-packages/pandas/io/parsers/readers.py</span> in <span class="ni">_read</span><span class="nt">(filepath_or_buffer, kwds)</span>
+<span class="g g-Whitespace">    </span><span class="mi">609</span> 
+<span class="g g-Whitespace">    </span><span class="mi">610</span>     <span class="k">with</span> <span class="n">parser</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">611</span>         <span class="k">return</span> <span class="n">parser</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">nrows</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">612</span> 
+<span class="g g-Whitespace">    </span><span class="mi">613</span> 
+
+<span class="nn">/usr/local/lib/python3.10/dist-packages/pandas/io/parsers/readers.py</span> in <span class="ni">read</span><span class="nt">(self, nrows)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1776</span>                     <span class="n">columns</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1777</span>                     <span class="n">col_dict</span><span class="p">,</span>
+<span class="ne">-&gt; </span><span class="mi">1778</span>                 <span class="p">)</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_engine</span><span class="o">.</span><span class="n">read</span><span class="p">(</span>  <span class="c1"># type: ignore[attr-defined]</span>
+<span class="g g-Whitespace">   </span><span class="mi">1779</span>                     <span class="n">nrows</span>
+<span class="g g-Whitespace">   </span><span class="mi">1780</span>                 <span class="p">)</span>
+
+<span class="nn">/usr/local/lib/python3.10/dist-packages/pandas/io/parsers/c_parser_wrapper.py</span> in <span class="ni">read</span><span class="nt">(self, nrows)</span>
+<span class="g g-Whitespace">    </span><span class="mi">228</span>         <span class="k">try</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">229</span>             <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">low_memory</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">230</span>                 <span class="n">chunks</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_reader</span><span class="o">.</span><span class="n">read_low_memory</span><span class="p">(</span><span class="n">nrows</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">231</span>                 <span class="c1"># destructive to chunks</span>
+<span class="g g-Whitespace">    </span><span class="mi">232</span>                 <span class="n">data</span> <span class="o">=</span> <span class="n">_concatenate_chunks</span><span class="p">(</span><span class="n">chunks</span><span class="p">)</span>
+
+<span class="nn">/usr/local/lib/python3.10/dist-packages/pandas/_libs/parsers.pyx</span> in <span class="ni">pandas._libs.parsers.TextReader.read_low_memory</span><span class="nt">()</span>
+
+<span class="nn">/usr/local/lib/python3.10/dist-packages/pandas/_libs/parsers.pyx</span> in <span class="ni">pandas._libs.parsers.TextReader._read_rows</span><span class="nt">()</span>
+
+<span class="nn">/usr/local/lib/python3.10/dist-packages/pandas/_libs/parsers.pyx</span> in <span class="ni">pandas._libs.parsers.TextReader._tokenize_rows</span><span class="nt">()</span>
+
+<span class="nn">/usr/local/lib/python3.10/dist-packages/pandas/_libs/parsers.pyx</span> in <span class="ni">pandas._libs.parsers.raise_parser_error</span><span class="nt">()</span>
+
+<span class="ne">ParserError</span>: Error tokenizing data. C error: Expected 1 fields in line 28, saw 367
+</pre></div>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-2156d000-a602-4baf-93db-82850454a45f')"
-              title="Convert this dataframe to an interactive table."
-              style="display:none;">
-        
-  <svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
-       width="24px">
-    <path d="M0 0h24v24H0V0z" fill="none"/>
-    <path d="M18.56 5.44l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94zm-11 1L8.5 8.5l.94-2.06 2.06-.94-2.06-.94L8.5 2.5l-.94 2.06-2.06.94zm10 10l.94 2.06.94-2.06 2.06-.94-2.06-.94-.94-2.06-.94 2.06-2.06.94z"/><path d="M17.41 7.96l-1.37-1.37c-.4-.4-.92-.59-1.43-.59-.52 0-1.04.2-1.43.59L10.3 9.45l-7.72 7.72c-.78.78-.78 2.05 0 2.83L4 21.41c.39.39.9.59 1.41.59.51 0 1.02-.2 1.41-.59l7.78-7.78 2.81-2.81c.8-.78.8-2.07 0-2.86zM5.41 20L4 18.59l7.72-7.72 1.47 1.35L5.41 20z"/>
-  </svg>
-      </button>
-      
-  <style>
-    .colab-df-container {
-      display:flex;
-      flex-wrap:wrap;
-      gap: 12px;
-    }
-
-    .colab-df-convert {
-      background-color: #E8F0FE;
-      border: none;
-      border-radius: 50%;
-      cursor: pointer;
-      display: none;
-      fill: #1967D2;
-      height: 32px;
-      padding: 0 0 0 0;
-      width: 32px;
-    }
-
-    .colab-df-convert:hover {
-      background-color: #E2EBFA;
-      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
-      fill: #174EA6;
-    }
-
-    [theme=dark] .colab-df-convert {
-      background-color: #3B4455;
-      fill: #D2E3FC;
-    }
-
-    [theme=dark] .colab-df-convert:hover {
-      background-color: #434B5C;
-      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
-      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
-      fill: #FFFFFF;
-    }
-  </style>
-
-      <script>
-        const buttonEl =
-          document.querySelector('#df-2156d000-a602-4baf-93db-82850454a45f button.colab-df-convert');
-        buttonEl.style.display =
-          google.colab.kernel.accessAllowed ? 'block' : 'none';
-
-        async function convertToInteractive(key) {
-          const element = document.querySelector('#df-2156d000-a602-4baf-93db-82850454a45f');
-          const dataTable =
-            await google.colab.kernel.invokeFunction('convertToInteractive',
-                                                     [key], {});
-          if (!dataTable) return;
-
-          const docLinkHtml = 'Like what you see? Visit the ' +
-            '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
-            + ' to learn more about interactive tables.';
-          element.innerHTML = '';
-          dataTable['output_type'] = 'display_data';
-          await google.colab.output.renderOutput(dataTable, element);
-          const docLink = document.createElement('div');
-          docLink.innerHTML = docLinkHtml;
-          element.appendChild(docLink);
-        }
-      </script>
-    </div>
-  </div>
-  </div></div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
